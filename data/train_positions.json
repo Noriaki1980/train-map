@@ -1,30 +1,70 @@
 {
-  "updated_at": "2026-07-29T06:21:00.187404+09:00",
-  "count": 40,
+  "updated_at": "2026-07-29T07:28:16.318875+09:00",
+  "count": 84,
   "trains": [
     {
-      "trip_id": "1-631",
-      "train_number": "ひかり631号",
+      "trip_id": "2-805",
+      "train_number": "こだま805号",
       "direction": "down",
       "lat": 35.6812,
       "lng": 139.7671,
       "status": "stopped",
       "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-11",
+      "train_number": "のぞみ11号",
+      "direction": "down",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "status": "stopped",
+      "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-633",
+      "train_number": "ひかり633号",
+      "direction": "down",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "status": "stopped",
+      "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-237",
+      "train_number": "のぞみ237号",
+      "direction": "down",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "status": "stopped",
+      "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-235",
+      "train_number": "のぞみ235号",
+      "direction": "down",
+      "lat": 35.6285,
+      "lng": 139.7387,
+      "status": "stopped",
+      "current_segment": "品川",
       "delay_min": 0
     },
     {
       "trip_id": "2-801",
       "train_number": "こだま801号",
       "direction": "down",
-      "lat": 35.6812,
-      "lng": 139.7671,
+      "lat": 35.1226,
+      "lng": 138.9106,
       "status": "stopped",
-      "current_segment": "東京",
+      "current_segment": "三島",
       "delay_min": 0
     },
     {
-      "trip_id": "6-101",
-      "train_number": "のぞみ101号",
+      "trip_id": "1-733",
+      "train_number": "ひかり733号",
       "direction": "down",
       "lat": 35.1706,
       "lng": 136.8816,
@@ -33,8 +73,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "11-741",
-      "train_number": "さくら741号",
+      "trip_id": "2-941",
+      "train_number": "こだま941号",
       "direction": "down",
       "lat": 34.7334,
       "lng": 135.5002,
@@ -43,68 +83,18 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-937",
-      "train_number": "こだま937号",
+      "trip_id": "2-933",
+      "train_number": "こだま933号",
       "direction": "down",
-      "lat": 34.8283,
-      "lng": 134.6931,
+      "lat": 34.4308,
+      "lng": 132.6367,
       "status": "stopped",
-      "current_segment": "姫路",
+      "current_segment": "東広島",
       "delay_min": 0
     },
     {
-      "trip_id": "2-931",
-      "train_number": "こだま931号",
-      "direction": "down",
-      "lat": 34.6023,
-      "lng": 133.7211,
-      "status": "stopped",
-      "current_segment": "新倉敷",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-875",
-      "train_number": "こだま875号",
-      "direction": "down",
-      "lat": 34.1489,
-      "lng": 132.1808,
-      "status": "stopped",
-      "current_segment": "新岩国",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-873",
-      "train_number": "こだま873号",
-      "direction": "down",
-      "lat": 34.0989,
-      "lng": 131.4739,
-      "status": "stopped",
-      "current_segment": "新山口",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-871",
-      "train_number": "こだま871号",
-      "direction": "down",
-      "lat": 33.8859,
-      "lng": 130.8817,
-      "status": "stopped",
-      "current_segment": "小倉",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-904",
-      "train_number": "こだま904号",
-      "direction": "up",
-      "lat": 34.9709,
-      "lng": 138.3888,
-      "status": "stopped",
-      "current_segment": "静岡",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-908",
-      "train_number": "こだま908号",
+      "trip_id": "2-800",
+      "train_number": "こだま800号",
       "direction": "up",
       "lat": 34.7025,
       "lng": 137.7346,
@@ -113,28 +103,18 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-630",
-      "train_number": "ひかり630号",
+      "trip_id": "1-640",
+      "train_number": "ひかり640号",
       "direction": "up",
-      "lat": 35.1706,
-      "lng": 136.8816,
+      "lat": 34.7334,
+      "lng": 135.5002,
       "status": "stopped",
-      "current_segment": "名古屋",
+      "current_segment": "新大阪",
       "delay_min": 0
     },
     {
-      "trip_id": "2-800",
-      "train_number": "こだま800号",
-      "direction": "up",
-      "lat": 35.3167,
-      "lng": 136.6961,
-      "status": "stopped",
-      "current_segment": "岐阜羽島",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-70",
-      "train_number": "のぞみ70号",
+      "trip_id": "6-76",
+      "train_number": "のぞみ76号",
       "direction": "up",
       "lat": 34.8283,
       "lng": 134.6931,
@@ -143,68 +123,68 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-934",
-      "train_number": "こだま934号",
-      "direction": "up",
-      "lat": 34.3968,
-      "lng": 133.0789,
-      "status": "stopped",
-      "current_segment": "三原",
-      "delay_min": 0
-    },
-    {
       "trip_id": "1-700",
       "train_number": "ひかり700号",
       "direction": "up",
-      "lat": 34.3978,
-      "lng": 132.4753,
+      "lat": 34.6663,
+      "lng": 133.9189,
       "status": "stopped",
-      "current_segment": "広島",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-76",
-      "train_number": "のぞみ76号",
-      "direction": "up",
-      "lat": 34.3978,
-      "lng": 132.4753,
-      "status": "stopped",
-      "current_segment": "広島",
+      "current_segment": "岡山",
       "delay_min": 0
     },
     {
       "trip_id": "2-936",
       "train_number": "こだま936号",
       "direction": "up",
-      "lat": 34.1489,
-      "lng": 132.1808,
+      "lat": 34.4108,
+      "lng": 133.1878,
       "status": "stopped",
-      "current_segment": "新岩国",
+      "current_segment": "新尾道",
       "delay_min": 0
     },
     {
-      "trip_id": "2-940",
-      "train_number": "こだま940号",
+      "trip_id": "1-680",
+      "train_number": "ひかり680号",
       "direction": "up",
-      "lat": 33.5902,
-      "lng": 130.4207,
+      "lat": 34.4308,
+      "lng": 132.6367,
       "status": "stopped",
-      "current_segment": "博多",
+      "current_segment": "東広島",
       "delay_min": 0
     },
     {
-      "trip_id": "6-3",
-      "train_number": "のぞみ3号",
+      "trip_id": "6-82",
+      "train_number": "のぞみ82号",
+      "direction": "up",
+      "lat": 34.3978,
+      "lng": 132.4753,
+      "status": "stopped",
+      "current_segment": "広島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-9",
+      "train_number": "のぞみ9号",
       "direction": "down",
-      "lat": 35.65485,
-      "lng": 139.7529,
+      "lat": 35.568,
+      "lng": 139.67775,
       "status": "running",
-      "current_segment": "東京→品川",
+      "current_segment": "品川→新横浜",
       "delay_min": 0
     },
     {
-      "trip_id": "6-99",
-      "train_number": "のぞみ99号",
+      "trip_id": "6-317",
+      "train_number": "のぞみ317号",
+      "direction": "down",
+      "lat": 35.568,
+      "lng": 139.67775,
+      "status": "running",
+      "current_segment": "品川→新横浜",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-803",
+      "train_number": "こだま803号",
       "direction": "down",
       "lat": 35.3811,
       "lng": 139.3847,
@@ -213,8 +193,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-1",
-      "train_number": "のぞみ1号",
+      "trip_id": "6-233",
+      "train_number": "のぞみ233号",
       "direction": "down",
       "lat": 35.3811,
       "lng": 139.3847,
@@ -223,18 +203,28 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-733",
-      "train_number": "ひかり733号",
+      "trip_id": "1-701",
+      "train_number": "ひかり701号",
       "direction": "down",
-      "lat": 35.17525,
-      "lng": 139.11295,
+      "lat": 35.3811,
+      "lng": 139.3847,
       "status": "running",
-      "current_segment": "小田原→熱海",
+      "current_segment": "新横浜→小田原",
       "delay_min": 0
     },
     {
-      "trip_id": "2-865",
-      "train_number": "こだま865号",
+      "trip_id": "6-7",
+      "train_number": "のぞみ7号",
+      "direction": "down",
+      "lat": 35.1092,
+      "lng": 138.99195,
+      "status": "running",
+      "current_segment": "熱海→三島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-231",
+      "train_number": "のぞみ231号",
       "direction": "down",
       "lat": 35.13895,
       "lng": 138.77945,
@@ -243,18 +233,128 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-863",
-      "train_number": "こだま863号",
+      "trip_id": "6-5",
+      "train_number": "のぞみ5号",
       "direction": "down",
-      "lat": 34.73555,
-      "lng": 137.8737,
+      "lat": 35.0631,
+      "lng": 138.51855,
       "status": "running",
-      "current_segment": "掛川→浜松",
+      "current_segment": "新富士→静岡",
       "delay_min": 0
     },
     {
-      "trip_id": "1-681",
-      "train_number": "ひかり681号",
+      "trip_id": "2-867",
+      "train_number": "こだま867号",
+      "direction": "down",
+      "lat": 34.86975,
+      "lng": 138.2008,
+      "status": "running",
+      "current_segment": "静岡→掛川",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-631",
+      "train_number": "ひかり631号",
+      "direction": "down",
+      "lat": 34.86975,
+      "lng": 138.2008,
+      "status": "running",
+      "current_segment": "静岡→掛川",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-3",
+      "train_number": "のぞみ3号",
+      "direction": "down",
+      "lat": 34.7325,
+      "lng": 137.563,
+      "status": "running",
+      "current_segment": "浜松→豊橋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-865",
+      "train_number": "こだま865号",
+      "direction": "down",
+      "lat": 34.8564,
+      "lng": 137.2361,
+      "status": "running",
+      "current_segment": "豊橋→三河安城",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-99",
+      "train_number": "のぞみ99号",
+      "direction": "down",
+      "lat": 35.06045,
+      "lng": 136.9812,
+      "status": "running",
+      "current_segment": "三河安城→名古屋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-1",
+      "train_number": "のぞみ1号",
+      "direction": "down",
+      "lat": 35.06045,
+      "lng": 136.9812,
+      "status": "running",
+      "current_segment": "三河安城→名古屋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-863",
+      "train_number": "こだま863号",
+      "direction": "down",
+      "lat": 35.316,
+      "lng": 136.4936,
+      "status": "running",
+      "current_segment": "岐阜羽島→米原",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-861",
+      "train_number": "こだま861号",
+      "direction": "down",
+      "lat": 35.15055,
+      "lng": 136.02495,
+      "status": "running",
+      "current_segment": "米原→京都",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-103",
+      "train_number": "のぞみ103号",
+      "direction": "down",
+      "lat": 35.15055,
+      "lng": 136.02495,
+      "status": "running",
+      "current_segment": "米原→京都",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-731",
+      "train_number": "ひかり731号",
+      "direction": "down",
+      "lat": 34.8596,
+      "lng": 135.6295,
+      "status": "running",
+      "current_segment": "京都→新大阪",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "10-603",
+      "train_number": "みずほ603号",
+      "direction": "down",
+      "lat": 34.7172,
+      "lng": 135.34795,
+      "status": "running",
+      "current_segment": "新大阪→新神戸",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-101",
+      "train_number": "のぞみ101号",
       "direction": "down",
       "lat": 34.6767,
       "lng": 135.08605,
@@ -263,8 +363,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "10-601",
-      "train_number": "みずほ601号",
+      "trip_id": "2-939",
+      "train_number": "こだま939号",
       "direction": "down",
       "lat": 34.74035,
       "lng": 134.83475,
@@ -273,8 +373,158 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-900",
-      "train_number": "こだま900号",
+      "trip_id": "2-937",
+      "train_number": "こだま937号",
+      "direction": "down",
+      "lat": 34.7348,
+      "lng": 134.19585,
+      "status": "running",
+      "current_segment": "相生→岡山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "11-743",
+      "train_number": "さくら743号",
+      "direction": "down",
+      "lat": 34.7348,
+      "lng": 134.19585,
+      "status": "running",
+      "current_segment": "相生→岡山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-935",
+      "train_number": "こだま935号",
+      "direction": "down",
+      "lat": 34.6343,
+      "lng": 133.82,
+      "status": "running",
+      "current_segment": "岡山→新倉敷",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "11-741",
+      "train_number": "さくら741号",
+      "direction": "down",
+      "lat": 34.54405,
+      "lng": 133.54185,
+      "status": "running",
+      "current_segment": "新倉敷→福山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-681",
+      "train_number": "ひかり681号",
+      "direction": "down",
+      "lat": 34.4483,
+      "lng": 133.2752,
+      "status": "running",
+      "current_segment": "福山→新尾道",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "10-601",
+      "train_number": "みずほ601号",
+      "direction": "down",
+      "lat": 34.4143,
+      "lng": 132.556,
+      "status": "running",
+      "current_segment": "東広島→広島",
+      "delay_min": 2
+    },
+    {
+      "trip_id": "2-931",
+      "train_number": "こだま931号",
+      "direction": "down",
+      "lat": 34.0982,
+      "lng": 131.9933,
+      "status": "running",
+      "current_segment": "新岩国→徳山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-881",
+      "train_number": "こだま881号",
+      "direction": "down",
+      "lat": 34.0732,
+      "lng": 131.63985,
+      "status": "running",
+      "current_segment": "徳山→新山口",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "11-401",
+      "train_number": "さくら401号",
+      "direction": "down",
+      "lat": 34.0627,
+      "lng": 131.1043,
+      "status": "running",
+      "current_segment": "厚狭→新下関",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-877",
+      "train_number": "こだま877号",
+      "direction": "down",
+      "lat": 33.9313,
+      "lng": 130.91285,
+      "status": "running",
+      "current_segment": "新下関→小倉",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-875",
+      "train_number": "こだま875号",
+      "direction": "down",
+      "lat": 33.73805,
+      "lng": 130.6512,
+      "status": "running",
+      "current_segment": "小倉→博多",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-904",
+      "train_number": "こだま904号",
+      "direction": "up",
+      "lat": 35.568,
+      "lng": 139.67775,
+      "status": "running",
+      "current_segment": "新横浜→品川",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-906",
+      "train_number": "こだま906号",
+      "direction": "up",
+      "lat": 35.3811,
+      "lng": 139.3847,
+      "status": "running",
+      "current_segment": "小田原→新横浜",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-908",
+      "train_number": "こだま908号",
+      "direction": "up",
+      "lat": 35.3811,
+      "lng": 139.3847,
+      "status": "running",
+      "current_segment": "小田原→新横浜",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-910",
+      "train_number": "こだま910号",
+      "direction": "up",
+      "lat": 35.17525,
+      "lng": 139.11295,
+      "status": "running",
+      "current_segment": "熱海→小田原",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-288",
+      "train_number": "のぞみ288号",
       "direction": "up",
       "lat": 35.1092,
       "lng": 138.99195,
@@ -283,8 +533,138 @@
       "delay_min": 0
     },
     {
+      "trip_id": "2-912",
+      "train_number": "こだま912号",
+      "direction": "up",
+      "lat": 35.1092,
+      "lng": 138.99195,
+      "status": "running",
+      "current_segment": "三島→熱海",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-914",
+      "train_number": "こだま914号",
+      "direction": "up",
+      "lat": 35.13895,
+      "lng": 138.77945,
+      "status": "running",
+      "current_segment": "新富士→三島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-630",
+      "train_number": "ひかり630号",
+      "direction": "up",
+      "lat": 35.0631,
+      "lng": 138.51855,
+      "status": "running",
+      "current_segment": "静岡→新富士",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-918",
+      "train_number": "こだま918号",
+      "direction": "up",
+      "lat": 34.86975,
+      "lng": 138.2008,
+      "status": "running",
+      "current_segment": "掛川→静岡",
+      "delay_min": 0
+    },
+    {
       "trip_id": "6-230",
       "train_number": "のぞみ230号",
+      "direction": "up",
+      "lat": 34.86975,
+      "lng": 138.2008,
+      "status": "running",
+      "current_segment": "掛川→静岡",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-632",
+      "train_number": "ひかり632号",
+      "direction": "up",
+      "lat": 34.73555,
+      "lng": 137.8737,
+      "status": "running",
+      "current_segment": "浜松→掛川",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-232",
+      "train_number": "のぞみ232号",
+      "direction": "up",
+      "lat": 34.7325,
+      "lng": 137.563,
+      "status": "running",
+      "current_segment": "豊橋→浜松",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-66",
+      "train_number": "のぞみ66号",
+      "direction": "up",
+      "lat": 34.8564,
+      "lng": 137.2361,
+      "status": "running",
+      "current_segment": "三河安城→豊橋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-634",
+      "train_number": "ひかり634号",
+      "direction": "up",
+      "lat": 34.8564,
+      "lng": 137.2361,
+      "status": "running",
+      "current_segment": "三河安城→豊橋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-68",
+      "train_number": "のぞみ68号",
+      "direction": "up",
+      "lat": 35.06045,
+      "lng": 136.9812,
+      "status": "running",
+      "current_segment": "名古屋→三河安城",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-308",
+      "train_number": "のぞみ308号",
+      "direction": "up",
+      "lat": 35.24365,
+      "lng": 136.78885,
+      "status": "running",
+      "current_segment": "岐阜羽島→名古屋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-636",
+      "train_number": "ひかり636号",
+      "direction": "up",
+      "lat": 35.316,
+      "lng": 136.4936,
+      "status": "running",
+      "current_segment": "米原→岐阜羽島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-70",
+      "train_number": "のぞみ70号",
+      "direction": "up",
+      "lat": 35.316,
+      "lng": 136.4936,
+      "status": "running",
+      "current_segment": "米原→岐阜羽島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-234",
+      "train_number": "のぞみ234号",
       "direction": "up",
       "lat": 35.15055,
       "lng": 136.02495,
@@ -293,78 +673,88 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-634",
-      "train_number": "ひかり634号",
-      "direction": "up",
-      "lat": 34.8596,
-      "lng": 135.6295,
-      "status": "running",
-      "current_segment": "新大阪→京都",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-232",
-      "train_number": "のぞみ232号",
-      "direction": "up",
-      "lat": 34.8596,
-      "lng": 135.6295,
-      "status": "running",
-      "current_segment": "新大阪→京都",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-66",
-      "train_number": "のぞみ66号",
-      "direction": "up",
-      "lat": 34.7172,
-      "lng": 135.34795,
-      "status": "running",
-      "current_segment": "新神戸→新大阪",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-68",
-      "train_number": "のぞみ68号",
-      "direction": "up",
-      "lat": 34.7172,
-      "lng": 135.34795,
-      "status": "running",
-      "current_segment": "新神戸→新大阪",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-930",
-      "train_number": "こだま930号",
-      "direction": "up",
-      "lat": 34.7348,
-      "lng": 134.19585,
-      "status": "running",
-      "current_segment": "岡山→相生",
-      "delay_min": 0
-    },
-    {
       "trip_id": "6-72",
       "train_number": "のぞみ72号",
       "direction": "up",
-      "lat": 34.7348,
-      "lng": 134.19585,
+      "lat": 35.15055,
+      "lng": 136.02495,
       "status": "running",
-      "current_segment": "岡山→相生",
+      "current_segment": "京都→米原",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-236",
+      "train_number": "のぞみ236号",
+      "direction": "up",
+      "lat": 34.8596,
+      "lng": 135.6295,
+      "status": "running",
+      "current_segment": "新大阪→京都",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-638",
+      "train_number": "ひかり638号",
+      "direction": "up",
+      "lat": 34.8596,
+      "lng": 135.6295,
+      "status": "running",
+      "current_segment": "新大阪→京都",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-316",
+      "train_number": "のぞみ316号",
+      "direction": "up",
+      "lat": 34.8596,
+      "lng": 135.6295,
+      "status": "running",
+      "current_segment": "新大阪→京都",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-74",
+      "train_number": "のぞみ74号",
+      "direction": "up",
+      "lat": 34.7172,
+      "lng": 135.34795,
+      "status": "running",
+      "current_segment": "新神戸→新大阪",
       "delay_min": 0
     },
     {
       "trip_id": "2-932",
       "train_number": "こだま932号",
       "direction": "up",
-      "lat": 34.54405,
-      "lng": 133.54185,
+      "lat": 34.6767,
+      "lng": 135.08605,
       "status": "running",
-      "current_segment": "福山→新倉敷",
+      "current_segment": "西明石→新神戸",
       "delay_min": 0
     },
     {
-      "trip_id": "6-74",
-      "train_number": "のぞみ74号",
+      "trip_id": "2-934",
+      "train_number": "こだま934号",
+      "direction": "up",
+      "lat": 34.7348,
+      "lng": 134.19585,
+      "status": "running",
+      "current_segment": "岡山→相生",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-78",
+      "train_number": "のぞみ78号",
+      "direction": "up",
+      "lat": 34.7348,
+      "lng": 134.19585,
+      "status": "running",
+      "current_segment": "岡山→相生",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-2",
+      "train_number": "のぞみ2号",
       "direction": "up",
       "lat": 34.4483,
       "lng": 133.2752,
@@ -373,18 +763,58 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-680",
-      "train_number": "ひかり680号",
+      "trip_id": "6-80",
+      "train_number": "のぞみ80号",
       "direction": "up",
-      "lat": 34.1238,
-      "lng": 131.36925,
+      "lat": 34.4138,
+      "lng": 132.8578,
       "status": "running",
-      "current_segment": "厚狭→新山口",
+      "current_segment": "東広島→三原",
       "delay_min": 0
     },
     {
-      "trip_id": "6-2",
-      "train_number": "のぞみ2号",
+      "trip_id": "2-938",
+      "train_number": "こだま938号",
+      "direction": "up",
+      "lat": 34.27335,
+      "lng": 132.32805,
+      "status": "running",
+      "current_segment": "新岩国→広島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-4",
+      "train_number": "のぞみ4号",
+      "direction": "up",
+      "lat": 34.0982,
+      "lng": 131.9933,
+      "status": "running",
+      "current_segment": "徳山→新岩国",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-940",
+      "train_number": "こだま940号",
+      "direction": "up",
+      "lat": 34.0732,
+      "lng": 131.63985,
+      "status": "running",
+      "current_segment": "新山口→徳山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "11-740",
+      "train_number": "さくら740号",
+      "direction": "up",
+      "lat": 34.0627,
+      "lng": 131.1043,
+      "status": "running",
+      "current_segment": "新下関→厚狭",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-942",
+      "train_number": "こだま942号",
       "direction": "up",
       "lat": 33.9313,
       "lng": 130.91285,
@@ -393,8 +823,18 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-938",
-      "train_number": "こだま938号",
+      "trip_id": "6-6",
+      "train_number": "のぞみ6号",
+      "direction": "up",
+      "lat": 33.73805,
+      "lng": 130.6512,
+      "status": "running",
+      "current_segment": "博多→小倉",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-870",
+      "train_number": "こだま870号",
       "direction": "up",
       "lat": 33.73805,
       "lng": 130.6512,
