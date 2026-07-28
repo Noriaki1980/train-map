@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新幹線ライブマップ | 東海道・山陽新幹線</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #0B1220;
+    --panel: #121A2B;
+    --panel-2: #17223A;
+    --line: rgba(255,255,255,0.08);
+    --text: #E8ECF4;
+    --text-muted: #8A94A6;
+    --accent: #3B6BFF;
+    --accent-dim: #1E4FD9;
+    --live: #FFB020;
+    --stopped: #4A5568;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+
+  html, body{
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    overflow: hidden;
+  }
+
+  .app{
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    height: 100vh;
+  }
+
+  /* ---------- サイドパネル ---------- */
+  .panel{
+    background: var(--panel);
+    border-right: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .panel-header{
+    padding: 28px 24px 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .panel-header h1{
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+  }
+
+  .panel-header .sub{
+    margin-top: 6px;
+    font-size: 12.5px;
+    color: var(--text-muted);
+  }
+
+  .status-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--line);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .status-row .clock{
+    color: var(--text);
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .train-list{
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+  }
+
+  .train-list::-webkit-scrollbar{ width: 6px; }
+  .train-list::-webkit-scrollbar-thumb{ background: var(--panel-2); border-radius: 3px; }
+
+  .train-card{
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .train-card:hover{ background: var(--panel-2); }
+  .train-card.active{ background: var(--panel-2); border-left: 3px solid var(--accent); }
+
+  .train-card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .train-number{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .badge{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  .badge.running{ background: rgba(255,176,32,0.15); color: var(--live); }
+  .badge.stopped{ background: rgba(74,85,104,0.3); color: var(--text-muted); }
+
+  .train-segment{
+    font-size: 12.5px;
+    color: var(--text-muted);
+  }
+
+  .empty-state{
+    padding: 40px 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .panel-footer{
+    padding: 14px 24px;
+    border-top: 1px solid var(--line);
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ---------- マップ ---------- */
+  #map{
+    height: 100vh;
+    background: var(--bg);
+  }
+
+  .leaflet-container{
+    background: var(--bg) !important;
+  }
+
+  .station-dot{
+    background: var(--text-muted);
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  .station-dot.major{
+    background: var(--text);
+  }
+
+  .station-label{
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    text-shadow: 0 0 4px var(--bg), 0 0 4px var(--bg);
+  }
+
+  /* 新幹線アイコン */
+  .shinkansen-icon{
+    position: relative;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shinkansen-icon svg{
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.6));
+  }
+  .shinkansen-icon.running::before{
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,176,32,0.35) 0%, rgba(255,176,32,0) 70%);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%, 100%{ transform: scale(0.9); opacity: 0.6; }
+    50%{ transform: scale(1.25); opacity: 1; }
+  }
+
+  .leaflet-popup-content-wrapper{
+    background: var(--panel-2);
+    color: var(--text);
+    border-radius: 8px;
+  }
+  .leaflet-popup-tip{ background: var(--panel-2); }
+  .leaflet-popup-content{
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 13px;
+  }
+  .leaflet-popup-content b{
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  @media (max-width: 720px){
+    .app{ grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+    .panel{ border-right: none; border-bottom: 1px solid var(--line); max-height: 40vh; }
+    #map{ height: 60vh; }
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <div class="panel">
+    <div class="panel-header">
+      <div class="eyebrow">Live Train Map</div>
+      <h1>新幹線ライブマップ</h1>
+      <div class="sub">東海道・山陽新幹線 こだま号</div>
+    </div>
+
+    <div class="status-row">
+      <span>現在時刻(JST)</span>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+
+    <div class="train-list" id="trainList">
+      <div class="empty-state">読み込み中…</div>
+    </div>
+
+    <div class="panel-footer">
+      時刻表に基づく推定位置です。遅延・運休は反映されません。
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+</div>
+
+<script>
+// ---------------------------------------------------------------------
+// 設定
+// ---------------------------------------------------------------------
+const DATA_URLS = {
+  stations: "data/stations.json",
+  positions: "data/train_positions.json",
+};
+
+// このデモ環境用のフォールバック(fetchが使えない/データが無い場合のサンプル)
+const FALLBACK_STATIONS = null; // 実運用では data/stations.json を必ずfetchする
+const FALLBACK_POSITIONS = null;
+
+let map, stationLayer, trainLayer, stationsByName = {}, trainMarkers = {};
+
+// ---------------------------------------------------------------------
+// 地図初期化
+// ---------------------------------------------------------------------
+function initMap(){
+  map = L.map('map', {
+    zoomControl: false,
+    attributionControl: true,
+  }).setView([34.9, 135.0], 6);
+
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+  // ダークテーマのタイル(CARTO dark)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    subdomains: 'abcd',
+    maxZoom: 19,
+  }).addTo(map);
+
+  stationLayer = L.layerGroup().addTo(map);
+  trainLayer = L.layerGroup().addTo(map);
+}
+
+// ---------------------------------------------------------------------
+// 駅・路線の描画
+// ---------------------------------------------------------------------
+function renderStations(stationsData){
+  const stations = stationsData.stations;
+  stationsByName = {};
+  stations.forEach(s => stationsByName[s.name] = s);
+
+  // 路線(直線でつなぐ簡易版。将来は実際の線路形状GeoJSONに差し替え可能)
+  const latlngs = stations.sort((a,b)=>a.order-b.order).map(s => [s.lat, s.lng]);
+  L.polyline(latlngs, {
+    color: '#3B6BFF',
+    weight: 2,
+    opacity: 0.5,
+  }).addTo(stationLayer);
+
+  stations.forEach(s => {
+    const isMajor = s.stops.includes('nozomi');
+    const marker = L.circleMarker([s.lat, s.lng], {
+      radius: isMajor ? 4 : 2.5,
+      className: 'station-dot' + (isMajor ? ' major' : ''),
+      color: isMajor ? '#E8ECF4' : '#8A94A6',
+      fillColor: isMajor ? '#E8ECF4' : '#8A94A6',
+      fillOpacity: 0.9,
+      weight: 0,
+    }).addTo(stationLayer);
+
+    if(isMajor){
+      marker.bindTooltip(s.name, {
+        permanent: true,
+        direction: 'top',
+        className: 'station-label',
+        offset: [0, -6],
+      });
+    }
+    marker.bindPopup(`<b>${s.name}</b> / ${s.name_en}`);
+  });
+}
+
+// ---------------------------------------------------------------------
+// 新幹線アイコン (SVG divIcon)
+// ---------------------------------------------------------------------
+function shinkansenIcon(status, bearing){
+  const color = status === 'running' ? '#3B6BFF' : '#4A5568';
+  const glowClass = status === 'running' ? 'running' : '';
+  const rotation = bearing || 0;
+
+  const svg = `
+    <svg width="22" height="22" viewBox="0 0 22 22" style="transform: rotate(${rotation}deg)">
+      <path d="M11 1 C 15 3, 18 8, 18 12 L 18 18 C 18 19.5, 16.8 20.5, 15 20.5 L 7 20.5 C 5.2 20.5, 4 19.5, 4 18 L 4 12 C 4 8, 7 3, 11 1 Z"
+            fill="${color}" stroke="#E8ECF4" stroke-width="0.8"/>
+      <circle cx="11" cy="7" r="1.4" fill="#E8ECF4" opacity="0.85"/>
+    </svg>`;
+
+  return L.divIcon({
+    className: `shinkansen-icon ${glowClass}`,
+    html: svg,
+    iconSize: [34, 34],
+    iconAnchor: [17, 17],
+  });
+}
+
+function bearingBetween(a, b){
+  const toRad = d => d * Math.PI / 180;
+  const toDeg = r => r * 180 / Math.PI;
+  const dLng = toRad(b.lng - a.lng);
+  const y = Math.sin(dLng) * Math.cos(toRad(b.lat));
+  const x = Math.cos(toRad(a.lat)) * Math.sin(toRad(b.lat)) -
+            Math.sin(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.cos(dLng);
+  return (toDeg(Math.atan2(y, x)) + 360) % 360;
+}
+
+// ---------------------------------------------------------------------
+// 列車マーカーの描画・更新
+// ---------------------------------------------------------------------
+function renderTrains(positionsData){
+  const trains = positionsData.trains || [];
+  const seen = new Set();
+
+  trains.forEach(t => {
+    seen.add(t.trip_id);
+    const [fromName, toName] = (t.current_segment || '').split('→');
+    const from = stationsByName[fromName];
+    const to = stationsByName[toName];
+    const bearing = (from && to) ? bearingBetween(from, to) : 0;
+
+    const icon = shinkansenIcon(t.status, bearing);
+
+    if(trainMarkers[t.trip_id]){
+      trainMarkers[t.trip_id].setLatLng([t.lat, t.lng]);
+      trainMarkers[t.trip_id].setIcon(icon);
+    } else {
+      const marker = L.marker([t.lat, t.lng], { icon }).addTo(trainLayer);
+      marker.bindPopup(popupHtml(t));
+      trainMarkers[t.trip_id] = marker;
+    }
+    trainMarkers[t.trip_id].setPopupContent(popupHtml(t));
+  });
+
+  // 運行終了した列車のマーカーを削除
+  Object.keys(trainMarkers).forEach(id => {
+    if(!seen.has(id)){
+      trainLayer.removeLayer(trainMarkers[id]);
+      delete trainMarkers[id];
+    }
+  });
+
+  renderTrainList(trains);
+}
+
+function popupHtml(t){
+  return `<b>${t.train_number}</b><br>${t.current_segment}<br>${t.status === 'running' ? '走行中' : '停車中'}`;
+}
+
+function renderTrainList(trains){
+  const list = document.getElementById('trainList');
+  if(trains.length === 0){
+    list.innerHTML = `<div class="empty-state">現在運行中のこだま号はありません<br>(サンプルデータの運行時間外です)</div>`;
+    return;
+  }
+
+  list.innerHTML = trains.map(t => `
+    <div class="train-card" data-id="${t.trip_id}">
+      <div class="train-card-top">
+        <span class="train-number">${t.train_number}</span>
+        <span class="badge ${t.status}">${t.status === 'running' ? 'LIVE' : 'STOP'}</span>
+      </div>
+      <div class="train-segment">${t.current_segment}</div>
+    </div>
+  `).join('');
+
+  document.querySelectorAll('.train-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const id = card.dataset.id;
+      const marker = trainMarkers[id];
+      if(marker){
+        map.setView(marker.getLatLng(), 9, { animate: true });
+        marker.openPopup();
+      }
+      document.querySelectorAll('.train-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    });
+  });
+}
+
+// ---------------------------------------------------------------------
+// 時計
+// ---------------------------------------------------------------------
+function updateClock(){
+  const now = new Date();
+  const jst = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  const hh = String(jst.getHours()).padStart(2,'0');
+  const mm = String(jst.getMinutes()).padStart(2,'0');
+  const ss = String(jst.getSeconds()).padStart(2,'0');
+  document.getElementById('clock').textContent = `${hh}:${mm}:${ss}`;
+}
+
+// ---------------------------------------------------------------------
+// データ取得・更新ループ
+// ---------------------------------------------------------------------
+async function loadStations(){
+  try{
+    const res = await fetch(DATA_URLS.stations);
+    const data = await res.json();
+    renderStations(data);
+  } catch(e){
+    console.error('stations.json の取得に失敗しました', e);
+    document.getElementById('trainList').innerHTML =
+      `<div class="empty-state">stations.json を読み込めませんでした。<br>data/stations.json の配置を確認してください。</div>`;
+  }
+}
+
+async function loadPositions(){
+  try{
+    const res = await fetch(DATA_URLS.positions);
+    const data = await res.json();
+    renderTrains(data);
+  } catch(e){
+    console.error('train_positions.json の取得に失敗しました', e);
+  }
+}
+
+async function init(){
+  initMap();
+  await loadStations();
+  await loadPositions();
+  updateClock();
+  setInterval(updateClock, 1000);
+  setInterval(loadPositions, 60 * 1000); // 1分おきに位置を再取得
+}
+
+init();
+</script>
+
+</body>
+</html>
