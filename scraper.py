@@ -112,8 +112,24 @@ def fetch_train_positions():
     timestamp_ms = int(datetime.now().timestamp() * 1000)
     url = f"{TRAIN_LOCATION_URL}?timestamp={timestamp_ms}"
     resp = requests.get(url, headers=API_HEADERS, timeout=10)
-    resp.raise_for_status()
-    return resp.json()
+
+    if resp.status_code != 200:
+        preview = resp.text[:300].replace("\n", " ")
+        raise RuntimeError(
+            f"HTTPエラー: status={resp.status_code}, body_preview='{preview}'"
+        )
+
+    # 診断用: JSONとして読めなかった場合に、ステータスコードと中身の
+    # 先頭部分をログに残す(GitHub Actions側からのアクセスがブロック
+    # されている場合、空の本文や別内容が返ってくることがあるため)
+    try:
+        return resp.json()
+    except ValueError as e:
+        preview = resp.text[:300].replace("\n", " ")
+        raise RuntimeError(
+            f"JSON解析失敗: status={resp.status_code}, "
+            f"content-length={len(resp.content)}, body_preview='{preview}'"
+        ) from e
 
 
 def load_jr_id_map(path=None):
