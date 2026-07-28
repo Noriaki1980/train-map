@@ -1,0 +1,40 @@
+name: Update train positions
+
+on:
+  schedule:
+    # 5分おきに実行 (GitHub Actionsのcronは負荷状況により多少遅延することがある)
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}  # 手動実行用ボタンも有効化しておく
+
+permissions:
+  contents: write
+
+jobs:
+  update-positions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/train_positions.json
+          if git diff --cached --quiet; then
+            echo "変更なし。コミットをスキップします。"
+          else
+            git commit -m "chore: update train positions [skip ci]"
+            git push
+          fi

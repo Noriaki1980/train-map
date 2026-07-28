@@ -158,11 +158,12 @@
   /* ---------- マップ ---------- */
   #map{
     height: 100vh;
-    background: var(--bg);
+    width: 100%;
+    background: #EDEBE6;
   }
 
   .leaflet-container{
-    background: var(--bg) !important;
+    background: #EDEBE6 !important;
   }
 
   .station-dot{
@@ -177,24 +178,47 @@
   .station-label{
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-size: 11px;
-    color: var(--text-muted);
+    font-weight: 500;
+    color: var(--text);
     white-space: nowrap;
-    text-shadow: 0 0 4px var(--bg), 0 0 4px var(--bg);
+    background: rgba(11,18,32,0.85) !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 1px 6px !important;
+    border-radius: 3px;
+  }
+  .leaflet-tooltip.station-label::before{
+    display: none; /* leafletデフォルトの吹き出し矢印を消す */
   }
 
   /* 新幹線アイコン */
+  .leaflet-div-icon.shinkansen-icon{
+    background: transparent !important;
+    border: none !important;
+  }
   .shinkansen-icon{
-    position: relative;
+    /* position は指定しない: Leafletが要求する position:absolute を
+       上書きしてしまうと、マーカーの座標変換が壊れて位置がズレるため */
     width: 34px;
     height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.2s linear; /* 位置更新時になめらかに移動させる */
+  }
+  .shinkansen-inner{
+    position: relative;
+    width: 22px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .shinkansen-icon svg{
     filter: drop-shadow(0 0 3px rgba(0,0,0,0.6));
+    display: block;
   }
-  .shinkansen-icon.running::before{
+  .shinkansen-inner.running::before{
     content: "";
     position: absolute;
     inset: -6px;
@@ -236,12 +260,16 @@
     <div class="panel-header">
       <div class="eyebrow">Live Train Map</div>
       <h1>新幹線ライブマップ</h1>
-      <div class="sub">東海道・山陽新幹線 こだま号</div>
+      <div class="sub">東海道・山陽新幹線 リアルタイム運行状況</div>
     </div>
 
     <div class="status-row">
       <span>現在時刻(JST)</span>
       <span class="clock" id="clock">--:--:--</span>
+    </div>
+    <div class="status-row">
+      <span>最終更新</span>
+      <span class="clock" id="lastUpdated">--:--:--</span>
     </div>
 
     <div class="train-list" id="trainList">
@@ -283,8 +311,8 @@ function initMap(){
 
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-  // ダークテーマのタイル(CARTO dark)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  // 明るいベースマップ(CARTO Positron)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; OpenStreetMap &copy; CARTO',
     subdomains: 'abcd',
     maxZoom: 19,
@@ -315,8 +343,8 @@ function renderStations(stationsData){
     const marker = L.circleMarker([s.lat, s.lng], {
       radius: isMajor ? 4 : 2.5,
       className: 'station-dot' + (isMajor ? ' major' : ''),
-      color: isMajor ? '#E8ECF4' : '#8A94A6',
-      fillColor: isMajor ? '#E8ECF4' : '#8A94A6',
+      color: isMajor ? '#0B1220' : '#5A6578',
+      fillColor: isMajor ? '#0B1220' : '#5A6578',
       fillOpacity: 0.9,
       weight: 0,
     }).addTo(stationLayer);
@@ -342,15 +370,17 @@ function shinkansenIcon(status, bearing){
   const rotation = bearing || 0;
 
   const svg = `
-    <svg width="22" height="22" viewBox="0 0 22 22" style="transform: rotate(${rotation}deg)">
+    <svg width="22" height="22" viewBox="0 0 22 22" style="transform: rotate(${rotation}deg); transform-origin: 50% 50%; transform-box: fill-box;">
       <path d="M11 1 C 15 3, 18 8, 18 12 L 18 18 C 18 19.5, 16.8 20.5, 15 20.5 L 7 20.5 C 5.2 20.5, 4 19.5, 4 18 L 4 12 C 4 8, 7 3, 11 1 Z"
-            fill="${color}" stroke="#E8ECF4" stroke-width="0.8"/>
-      <circle cx="11" cy="7" r="1.4" fill="#E8ECF4" opacity="0.85"/>
+            fill="${color}" stroke="#0B1220" stroke-width="0.8"/>
+      <circle cx="11" cy="7" r="1.4" fill="#FFFFFF" opacity="0.9"/>
     </svg>`;
 
+  const html = `<div class="shinkansen-inner ${glowClass}">${svg}</div>`;
+
   return L.divIcon({
-    className: `shinkansen-icon ${glowClass}`,
-    html: svg,
+    className: `shinkansen-icon`,
+    html: html,
     iconSize: [34, 34],
     iconAnchor: [17, 17],
   });
@@ -372,6 +402,8 @@ function bearingBetween(a, b){
 function renderTrains(positionsData){
   const trains = positionsData.trains || [];
   const seen = new Set();
+
+  updateLastUpdatedLabel(positionsData.updated_at);
 
   trains.forEach(t => {
     seen.add(t.trip_id);
@@ -411,7 +443,7 @@ function popupHtml(t){
 function renderTrainList(trains){
   const list = document.getElementById('trainList');
   if(trains.length === 0){
-    list.innerHTML = `<div class="empty-state">現在運行中のこだま号はありません<br>(サンプルデータの運行時間外です)</div>`;
+    list.innerHTML = `<div class="empty-state">現在運行中の列車はありません</div>`;
     return;
   }
 
@@ -437,6 +469,27 @@ function renderTrainList(trains){
       card.classList.add('active');
     });
   });
+}
+
+// ---------------------------------------------------------------------
+// 最終更新表示
+// ---------------------------------------------------------------------
+function updateLastUpdatedLabel(isoString){
+  const el = document.getElementById('lastUpdated');
+  if (!isoString) {
+    el.textContent = '--:--:--';
+    return;
+  }
+  const d = new Date(isoString);
+  const jst = new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  const hh = String(jst.getHours()).padStart(2,'0');
+  const mm = String(jst.getMinutes()).padStart(2,'0');
+  const ss = String(jst.getSeconds()).padStart(2,'0');
+  el.textContent = `${hh}:${mm}:${ss}`;
+
+  // 更新があったことが一目でわかるよう、一瞬ハイライトさせる
+  el.style.color = 'var(--live)';
+  setTimeout(() => { el.style.color = ''; }, 800);
 }
 
 // ---------------------------------------------------------------------
@@ -468,7 +521,7 @@ async function loadStations(){
 
 async function loadPositions(){
   try{
-    const res = await fetch(DATA_URLS.positions);
+    const res = await fetch(`${DATA_URLS.positions}?t=${Date.now()}`, { cache: 'no-store' });
     const data = await res.json();
     renderTrains(data);
   } catch(e){
@@ -482,7 +535,20 @@ async function init(){
   await loadPositions();
   updateClock();
   setInterval(updateClock, 1000);
-  setInterval(loadPositions, 60 * 1000); // 1分おきに位置を再取得
+  setInterval(loadPositions, 30 * 1000); // 30秒おきに位置を再取得
+
+  // --- レイアウト確定後にLeafletへサイズ再計算を促す ---
+  // CSS Gridのレイアウト確定やWebフォント読み込みのタイミングによって
+  // 地図コンテナの実サイズが初期化時と食い違うと、タイル・マーカー・
+  // ラベルの位置ズレや描画のにじみが発生するため、複数のタイミングで補正する。
+  requestAnimationFrame(() => map.invalidateSize());
+  setTimeout(() => map.invalidateSize(), 300);
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => map.invalidateSize());
+  }
+
+  window.addEventListener('resize', () => map.invalidateSize());
 }
 
 init();
