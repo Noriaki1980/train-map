@@ -341,14 +341,27 @@ def save_positions(positions, output_path=None):
 def main():
     stations = load_stations()
 
+    # 1. まずリアルタイムAPIを試す(手元PCなど、ブロックされない環境用)
     try:
         jr_id_map = load_jr_id_map()
         raw = fetch_train_positions()
         positions = parse_train_positions(raw, stations, jr_id_map)
         save_positions(positions)
+        print("[info] リアルタイムAPIから取得しました")
+        return
     except Exception as e:
-        # jreit-mapと同じ設計: 取得失敗時は既存のtrain_positions.jsonを上書きしない
         print(f"[warn] リアルタイムAPI取得に失敗しました: {e}")
+        print("[warn] 時刻表ベースの推定にフォールバックします")
+
+    # 2. フォールバック: 時刻表(trips_kodama.json)からの線形補間
+    #    ※ 現時点ではサンプル2本分のみ。実運用には全便分のデータが必要。
+    try:
+        trips = load_trips(DATA_DIR / "trips_kodama.json")
+        positions = calculate_positions(trips, stations)
+        save_positions(positions)
+        print(f"[info] 時刻表ベースで {len(positions)} 本の位置を計算しました")
+    except Exception as e:
+        print(f"[warn] 時刻表ベースの計算にも失敗しました: {e}")
         print("[warn] train_positions.json は更新しません(既存データを保持)")
 
 
