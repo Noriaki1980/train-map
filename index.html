@@ -283,6 +283,23 @@
     font-size: 12px;
     color: var(--text);
     white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: opacity 0.15s ease, background 0.15s ease;
+  }
+
+  .legend-item:hover{
+    background: rgba(255,255,255,0.08);
+  }
+
+  .legend-item.off{
+    opacity: 0.35;
+  }
+
+  .legend-item.off .legend-dot{
+    background: var(--text-muted) !important;
   }
 
   .legend-dot{
@@ -290,6 +307,13 @@
     height: 10px;
     border-radius: 50%;
     flex-shrink: 0;
+  }
+
+  .legend-caption{
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
   }
 
   @media (max-width: 720px){
@@ -349,6 +373,8 @@ const FALLBACK_STATIONS = null; // 実運用では data/stations.json を必ずf
 const FALLBACK_POSITIONS = null;
 
 let map, stationLayer, trainLayer, stationsByName = {}, trainMarkers = {};
+let hiddenTypes = new Set(); // 凡例クリックで非表示にした種別
+let lastPositionsData = null; // フィルタ切り替え時に再取得なしで再描画するため
 
 // ---------------------------------------------------------------------
 // 地図初期化
@@ -464,7 +490,9 @@ function bearingBetween(a, b){
 // 列車マーカーの描画・更新
 // ---------------------------------------------------------------------
 function renderTrains(positionsData){
-  const trains = positionsData.trains || [];
+  lastPositionsData = positionsData;
+  const allTrains = positionsData.trains || [];
+  const trains = allTrains.filter(t => !hiddenTypes.has(t.train_type || 'other'));
   const seen = new Set();
 
   updateLastUpdatedLabel(positionsData.updated_at);
@@ -529,13 +557,27 @@ function renderTrainList(trains){
       const id = card.dataset.id;
       const marker = trainMarkers[id];
       if(marker){
-        map.setView(marker.getLatLng(), 9, { animate: true });
+        focusOnLatLng(marker.getLatLng(), 9);
         marker.openPopup();
       }
       document.querySelectorAll('.train-card').forEach(c => c.classList.remove('active'));
       card.classList.add('active');
     });
   });
+}
+
+// サイドパネル(幅360px、モバイルでは上段)の分だけ地図コンテナの中心と
+// 画面全体の中心がズレるため、そのズレを補正してから中央寄せする
+function focusOnLatLng(latlng, zoom){
+  const isDesktop = window.innerWidth > 720;
+  const sidebarOffsetPx = isDesktop ? 180 : 0; // サイドパネル幅360pxの半分
+  if(sidebarOffsetPx === 0){
+    map.setView(latlng, zoom, { animate: true });
+    return;
+  }
+  const targetPoint = map.project(latlng, zoom).add([sidebarOffsetPx, 0]);
+  const adjustedLatLng = map.unproject(targetPoint, zoom);
+  map.setView(adjustedLatLng, zoom, { animate: true });
 }
 
 // ---------------------------------------------------------------------
@@ -565,12 +607,25 @@ function updateLastUpdatedLabel(isoString){
 function renderLegend(){
   const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'other'];
   const el = document.getElementById('legend');
-  el.innerHTML = order.map(key => `
-    <div class="legend-item">
+  el.innerHTML = `<div class="legend-caption">タップで表示/非表示</div>` + order.map(key => `
+    <div class="legend-item ${hiddenTypes.has(key) ? 'off' : ''}" data-type="${key}">
       <span class="legend-dot" style="background:${TRAIN_TYPE_COLORS[key]}"></span>
       <span>${TRAIN_TYPE_LABELS[key]}</span>
     </div>
   `).join('');
+
+  el.querySelectorAll('.legend-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const type = item.dataset.type;
+      if(hiddenTypes.has(type)){
+        hiddenTypes.delete(type);
+      } else {
+        hiddenTypes.add(type);
+      }
+      item.classList.toggle('off');
+      if(lastPositionsData) renderTrains(lastPositionsData);
+    });
+  });
 }
 
 // ---------------------------------------------------------------------
