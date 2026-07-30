@@ -1,0 +1,4267 @@
+{
+  "line": "tokaido_sanyo",
+  "train_type": "hikari",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-hikari/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。岡山以西(広島・博多方面)へ直通する列車は、時刻データがないため岡山までで打ち切っている。",
+  "trips": [
+    {
+      "trip_id": "hikari_731",
+      "train_number": "731号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "名古屋",
+          "arr": null,
+          "dep": "6:36"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "6:47"
+        },
+        {
+          "station": "米原",
+          "arr": "6:59",
+          "dep": "7:00"
+        },
+        {
+          "station": "京都",
+          "arr": "7:19",
+          "dep": "7:20"
+        },
+        {
+          "station": "新大阪",
+          "arr": "7:32",
+          "dep": "7:34"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "7:47"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "8:03"
+        },
+        {
+          "station": "岡山",
+          "arr": "8:23",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_733",
+      "train_number": "733号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "6:00"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "6:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "6:41",
+          "dep": "6:42"
+        },
+        {
+          "station": "名古屋",
+          "arr": "7:25",
+          "dep": "7:26"
+        },
+        {
+          "station": "京都",
+          "arr": "8:00",
+          "dep": "8:01"
+        },
+        {
+          "station": "新大阪",
+          "arr": "8:13",
+          "dep": "8:15"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "8:28"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "8:39"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "8:52"
+        },
+        {
+          "station": "岡山",
+          "arr": "9:13",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_735",
+      "train_number": "735号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "名古屋",
+          "arr": null,
+          "dep": "7:37"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "7:50"
+        },
+        {
+          "station": "米原",
+          "arr": "8:02",
+          "dep": "8:09"
+        },
+        {
+          "station": "京都",
+          "arr": "8:27",
+          "dep": "8:29"
+        },
+        {
+          "station": "新大阪",
+          "arr": "8:42",
+          "dep": "8:44"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "8:58"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "9:18"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "9:36"
+        },
+        {
+          "station": "岡山",
+          "arr": "9:53",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_631",
+      "train_number": "631号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "6:21"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "6:28"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "6:39"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "6:56"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "7:49"
+        },
+        {
+          "station": "名古屋",
+          "arr": "8:08",
+          "dep": "8:13"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "8:30"
+        },
+        {
+          "station": "米原",
+          "arr": "8:42",
+          "dep": "8:48"
+        },
+        {
+          "station": "京都",
+          "arr": "9:06",
+          "dep": "9:08"
+        },
+        {
+          "station": "新大阪",
+          "arr": "9:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_701",
+      "train_number": "701号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "7:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "7:21"
+        },
+        {
+          "station": "静岡",
+          "arr": "8:02",
+          "dep": "8:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "8:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "9:01",
+          "dep": "9:03"
+        },
+        {
+          "station": "京都",
+          "arr": "9:37",
+          "dep": "9:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "9:57",
+          "dep": "9:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "10:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "10:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "10:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "10:50"
+        },
+        {
+          "station": "岡山",
+          "arr": "11:06",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_633",
+      "train_number": "633号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:36"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "7:43"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "7:54"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "名古屋",
+          "arr": "9:19",
+          "dep": "9:21"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "9:35"
+        },
+        {
+          "station": "米原",
+          "arr": "9:48",
+          "dep": "9:53"
+        },
+        {
+          "station": "京都",
+          "arr": "10:12",
+          "dep": "10:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "10:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_703",
+      "train_number": "703号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "8:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "8:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "8:21"
+        },
+        {
+          "station": "静岡",
+          "arr": "9:02",
+          "dep": "9:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "9:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "10:01",
+          "dep": "10:03"
+        },
+        {
+          "station": "京都",
+          "arr": "10:37",
+          "dep": "10:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "10:57",
+          "dep": "10:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "11:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "11:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "11:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "11:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "12:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_635",
+      "train_number": "635号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "8:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "8:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "8:51"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "10:00"
+        },
+        {
+          "station": "名古屋",
+          "arr": "10:19",
+          "dep": "10:21"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "10:35"
+        },
+        {
+          "station": "米原",
+          "arr": "10:48",
+          "dep": "10:53"
+        },
+        {
+          "station": "京都",
+          "arr": "11:12",
+          "dep": "11:14"
+        },
+        {
+          "station": "新大阪",
+          "arr": "11:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_705",
+      "train_number": "705号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "9:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "9:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "9:21"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "9:46"
+        },
+        {
+          "station": "静岡",
+          "arr": "10:02",
+          "dep": "10:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "10:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "11:01",
+          "dep": "11:03"
+        },
+        {
+          "station": "京都",
+          "arr": "11:37",
+          "dep": "11:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "11:57",
+          "dep": "11:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "12:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "12:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "12:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "12:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "13:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_637",
+      "train_number": "637号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "9:36"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "9:43"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "9:54"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "10:11"
+        },
+        {
+          "station": "名古屋",
+          "arr": "11:19",
+          "dep": "11:21"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "11:35"
+        },
+        {
+          "station": "米原",
+          "arr": "11:48",
+          "dep": "11:53"
+        },
+        {
+          "station": "京都",
+          "arr": "12:12",
+          "dep": "12:14"
+        },
+        {
+          "station": "新大阪",
+          "arr": "12:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_707",
+      "train_number": "707号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "10:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "10:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "10:21"
+        },
+        {
+          "station": "熱海",
+          "arr": null,
+          "dep": "10:40"
+        },
+        {
+          "station": "静岡",
+          "arr": "11:02",
+          "dep": "11:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "11:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "12:01",
+          "dep": "12:03"
+        },
+        {
+          "station": "京都",
+          "arr": "12:37",
+          "dep": "12:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "12:57",
+          "dep": "12:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "13:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "13:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "13:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "13:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "14:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_639",
+      "train_number": "639号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "10:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "10:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "10:51"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "12:00"
+        },
+        {
+          "station": "名古屋",
+          "arr": "12:19",
+          "dep": "12:21"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "12:35"
+        },
+        {
+          "station": "米原",
+          "arr": "12:48",
+          "dep": "12:53"
+        },
+        {
+          "station": "京都",
+          "arr": "13:12",
+          "dep": "13:14"
+        },
+        {
+          "station": "新大阪",
+          "arr": "13:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_709",
+      "train_number": "709号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "11:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "11:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "11:21"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "11:46"
+        },
+        {
+          "station": "静岡",
+          "arr": "12:02",
+          "dep": "12:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "12:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "13:01",
+          "dep": "13:03"
+        },
+        {
+          "station": "京都",
+          "arr": "13:37",
+          "dep": "13:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "13:57",
+          "dep": "13:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "14:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "14:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "14:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "14:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "15:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_641",
+      "train_number": "641号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "11:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "11:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "11:51"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "12:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "13:14",
+          "dep": "13:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "13:35"
+        },
+        {
+          "station": "米原",
+          "arr": "13:47",
+          "dep": "13:53"
+        },
+        {
+          "station": "京都",
+          "arr": "14:12",
+          "dep": "14:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "14:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_711",
+      "train_number": "711号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "12:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "12:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "12:21"
+        },
+        {
+          "station": "静岡",
+          "arr": "13:02",
+          "dep": "13:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "13:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "14:01",
+          "dep": "14:03"
+        },
+        {
+          "station": "京都",
+          "arr": "14:37",
+          "dep": "14:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "14:57",
+          "dep": "14:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "15:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "15:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "15:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "15:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "16:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_643",
+      "train_number": "643号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "12:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "12:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "12:51"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "13:54"
+        },
+        {
+          "station": "名古屋",
+          "arr": "14:14",
+          "dep": "14:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "14:35"
+        },
+        {
+          "station": "米原",
+          "arr": "14:47",
+          "dep": "14:53"
+        },
+        {
+          "station": "京都",
+          "arr": "15:12",
+          "dep": "15:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "15:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_713",
+      "train_number": "713号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "13:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "13:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "13:21"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "13:46"
+        },
+        {
+          "station": "静岡",
+          "arr": "14:02",
+          "dep": "14:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "14:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "15:01",
+          "dep": "15:03"
+        },
+        {
+          "station": "京都",
+          "arr": "15:37",
+          "dep": "15:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "15:57",
+          "dep": "15:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "16:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "16:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "16:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "16:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "17:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_645",
+      "train_number": "645号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "13:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "13:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "13:51"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "14:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "15:14",
+          "dep": "15:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "15:35"
+        },
+        {
+          "station": "米原",
+          "arr": "15:47",
+          "dep": "15:53"
+        },
+        {
+          "station": "京都",
+          "arr": "16:12",
+          "dep": "16:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "16:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_715",
+      "train_number": "715号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "14:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "14:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "14:21"
+        },
+        {
+          "station": "静岡",
+          "arr": "15:02",
+          "dep": "15:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "15:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "16:01",
+          "dep": "16:03"
+        },
+        {
+          "station": "京都",
+          "arr": "16:37",
+          "dep": "16:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "16:57",
+          "dep": "16:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "17:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "17:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "17:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "17:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "18:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_647",
+      "train_number": "647号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "14:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "14:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "14:51"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "15:54"
+        },
+        {
+          "station": "名古屋",
+          "arr": "16:14",
+          "dep": "16:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "16:35"
+        },
+        {
+          "station": "米原",
+          "arr": "16:47",
+          "dep": "16:53"
+        },
+        {
+          "station": "京都",
+          "arr": "17:12",
+          "dep": "17:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "17:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_717",
+      "train_number": "717号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "15:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "15:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "15:21"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "15:46"
+        },
+        {
+          "station": "静岡",
+          "arr": "16:02",
+          "dep": "16:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "16:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "17:01",
+          "dep": "17:03"
+        },
+        {
+          "station": "京都",
+          "arr": "17:37",
+          "dep": "17:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "17:57",
+          "dep": "17:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "18:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "18:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "18:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "18:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "19:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_649",
+      "train_number": "649号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "15:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "15:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "15:51"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "16:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "17:14",
+          "dep": "17:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "17:35"
+        },
+        {
+          "station": "米原",
+          "arr": "17:47",
+          "dep": "17:53"
+        },
+        {
+          "station": "京都",
+          "arr": "18:12",
+          "dep": "18:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "18:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_719",
+      "train_number": "719号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "16:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "16:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "16:21"
+        },
+        {
+          "station": "熱海",
+          "arr": null,
+          "dep": "16:40"
+        },
+        {
+          "station": "静岡",
+          "arr": "17:02",
+          "dep": "17:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "17:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "18:01",
+          "dep": "18:03"
+        },
+        {
+          "station": "京都",
+          "arr": "18:37",
+          "dep": "18:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "18:57",
+          "dep": "18:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "19:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "19:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "19:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "19:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "20:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_651",
+      "train_number": "651号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "16:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "16:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "16:51"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "17:54"
+        },
+        {
+          "station": "名古屋",
+          "arr": "18:14",
+          "dep": "18:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "18:35"
+        },
+        {
+          "station": "米原",
+          "arr": "18:47",
+          "dep": "18:53"
+        },
+        {
+          "station": "京都",
+          "arr": "19:12",
+          "dep": "19:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "19:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_721",
+      "train_number": "721号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "17:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "17:21"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "17:46"
+        },
+        {
+          "station": "静岡",
+          "arr": "18:02",
+          "dep": "18:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "18:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "19:01",
+          "dep": "19:03"
+        },
+        {
+          "station": "京都",
+          "arr": "19:37",
+          "dep": "19:43"
+        },
+        {
+          "station": "新大阪",
+          "arr": "19:57",
+          "dep": "19:59"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "20:12"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "20:23"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "20:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "20:47"
+        },
+        {
+          "station": "岡山",
+          "arr": "21:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_653",
+      "train_number": "653号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "17:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "17:51"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "18:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "19:14",
+          "dep": "19:19"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "19:35"
+        },
+        {
+          "station": "米原",
+          "arr": "19:47",
+          "dep": "19:53"
+        },
+        {
+          "station": "京都",
+          "arr": "20:12",
+          "dep": "20:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "20:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_655",
+      "train_number": "655号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "18:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "18:21"
+        },
+        {
+          "station": "熱海",
+          "arr": null,
+          "dep": "18:40"
+        },
+        {
+          "station": "静岡",
+          "arr": "19:02",
+          "dep": "19:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "19:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "20:01",
+          "dep": "20:02"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "20:19"
+        },
+        {
+          "station": "米原",
+          "arr": "20:32",
+          "dep": "20:35"
+        },
+        {
+          "station": "京都",
+          "arr": "20:54",
+          "dep": "20:56"
+        },
+        {
+          "station": "新大阪",
+          "arr": "21:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_657",
+      "train_number": "657号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:33"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "18:40"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "18:51"
+        },
+        {
+          "station": "静岡",
+          "arr": "19:29",
+          "dep": "19:30"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "19:59"
+        },
+        {
+          "station": "名古屋",
+          "arr": "20:19",
+          "dep": "20:20"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "20:35"
+        },
+        {
+          "station": "米原",
+          "arr": "20:47",
+          "dep": "20:53"
+        },
+        {
+          "station": "京都",
+          "arr": "21:12",
+          "dep": "21:13"
+        },
+        {
+          "station": "新大阪",
+          "arr": "21:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_659",
+      "train_number": "659号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "19:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "19:21"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "19:46"
+        },
+        {
+          "station": "静岡",
+          "arr": "20:02",
+          "dep": "20:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "20:31"
+        },
+        {
+          "station": "名古屋",
+          "arr": "21:01",
+          "dep": "21:02"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "21:14"
+        },
+        {
+          "station": "米原",
+          "arr": "21:27",
+          "dep": "21:30"
+        },
+        {
+          "station": "京都",
+          "arr": "21:49",
+          "dep": "21:50"
+        },
+        {
+          "station": "新大阪",
+          "arr": "22:03",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_661",
+      "train_number": "661号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:30"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "19:37"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "19:48"
+        },
+        {
+          "station": "静岡",
+          "arr": "20:24",
+          "dep": "20:27"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "20:47"
+        },
+        {
+          "station": "名古屋",
+          "arr": "21:14",
+          "dep": "21:15"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "21:27"
+        },
+        {
+          "station": "米原",
+          "arr": "21:40",
+          "dep": "21:45"
+        },
+        {
+          "station": "京都",
+          "arr": "22:04",
+          "dep": "22:05"
+        },
+        {
+          "station": "新大阪",
+          "arr": "22:18",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_663",
+      "train_number": "663号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "20:12"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "20:19"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "20:31"
+        },
+        {
+          "station": "静岡",
+          "arr": "21:09",
+          "dep": "21:15"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "21:39"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "21:51"
+        },
+        {
+          "station": "名古屋",
+          "arr": "21:11",
+          "dep": "22:12"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "22:27"
+        },
+        {
+          "station": "米原",
+          "arr": "22:39",
+          "dep": "22:42"
+        },
+        {
+          "station": "京都",
+          "arr": "23:01",
+          "dep": "23:02"
+        },
+        {
+          "station": "新大阪",
+          "arr": "23:15",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_665",
+      "train_number": "665号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "21:06"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "21:13"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "21:24"
+        },
+        {
+          "station": "静岡",
+          "arr": "22:02",
+          "dep": "22:07"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "22:33"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "22:45"
+        },
+        {
+          "station": "名古屋",
+          "arr": "23:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_669",
+      "train_number": "669号",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "22:03"
+        },
+        {
+          "station": "品川",
+          "arr": null,
+          "dep": "22:10"
+        },
+        {
+          "station": "新横浜",
+          "arr": null,
+          "dep": "22:21"
+        },
+        {
+          "station": "静岡",
+          "arr": "22:56",
+          "dep": "22:57"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "23:18"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "23:30"
+        },
+        {
+          "station": "名古屋",
+          "arr": "23:49",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_630",
+      "train_number": "630号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "名古屋",
+          "arr": null,
+          "dep": "6:20"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "6:46"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "6:58"
+        },
+        {
+          "station": "静岡",
+          "arr": "7:18",
+          "dep": "7:20"
+        },
+        {
+          "station": "新横浜",
+          "arr": "7:56",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "8:08",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:15",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_632",
+      "train_number": "632号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "名古屋",
+          "arr": null,
+          "dep": "6:45"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "7:09"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "7:23"
+        },
+        {
+          "station": "静岡",
+          "arr": "7:42",
+          "dep": "7:45"
+        },
+        {
+          "station": "新横浜",
+          "arr": "8:23",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "8:34",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_634",
+      "train_number": "634号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "6:11"
+        },
+        {
+          "station": "京都",
+          "arr": "6:24",
+          "dep": "6:25"
+        },
+        {
+          "station": "米原",
+          "arr": "6:44",
+          "dep": "6:47"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "7:05"
+        },
+        {
+          "station": "名古屋",
+          "arr": "7:14",
+          "dep": "7:16"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "7:50"
+        },
+        {
+          "station": "静岡",
+          "arr": "8:10",
+          "dep": "8:12"
+        },
+        {
+          "station": "新横浜",
+          "arr": "8:50",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "9:01",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_636",
+      "train_number": "636号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "6:42"
+        },
+        {
+          "station": "京都",
+          "arr": "6:55",
+          "dep": "6:57"
+        },
+        {
+          "station": "米原",
+          "arr": "7:15",
+          "dep": "7:18"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "7:33"
+        },
+        {
+          "station": "名古屋",
+          "arr": "7:42",
+          "dep": "7:44"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "8:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "8:37",
+          "dep": "8:41"
+        },
+        {
+          "station": "新横浜",
+          "arr": "9:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "9:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_638",
+      "train_number": "638号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "7:18"
+        },
+        {
+          "station": "京都",
+          "arr": "7:31",
+          "dep": "7:33"
+        },
+        {
+          "station": "米原",
+          "arr": "7:52",
+          "dep": "7:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "8:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "8:25",
+          "dep": "8:31"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "8:51"
+        },
+        {
+          "station": "新横浜",
+          "arr": "9:54",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "10:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_640",
+      "train_number": "640号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "7:36"
+        },
+        {
+          "station": "京都",
+          "arr": "7:49",
+          "dep": "7:51"
+        },
+        {
+          "station": "米原",
+          "arr": "8:09",
+          "dep": "8:12"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "8:32"
+        },
+        {
+          "station": "名古屋",
+          "arr": "8:42",
+          "dep": "8:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "9:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "9:37",
+          "dep": "9:41"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "9:58"
+        },
+        {
+          "station": "新横浜",
+          "arr": "10:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "10:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_642",
+      "train_number": "642号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "8:19"
+        },
+        {
+          "station": "京都",
+          "arr": "8:32",
+          "dep": "8:33"
+        },
+        {
+          "station": "米原",
+          "arr": "8:52",
+          "dep": "8:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "9:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "9:25",
+          "dep": "9:31"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "10:39"
+        },
+        {
+          "station": "新横浜",
+          "arr": "10:53",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "11:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "11:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_700",
+      "train_number": "700号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "7:40"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "8:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "8:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "8:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "8:46",
+          "dep": "8:48"
+        },
+        {
+          "station": "京都",
+          "arr": "9:02",
+          "dep": "9:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "9:42",
+          "dep": "9:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "10:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "10:37",
+          "dep": "10:41"
+        },
+        {
+          "station": "熱海",
+          "arr": null,
+          "dep": "11:05"
+        },
+        {
+          "station": "新横浜",
+          "arr": "11:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "11:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "11:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_644",
+      "train_number": "644号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "9:18"
+        },
+        {
+          "station": "京都",
+          "arr": "9:31",
+          "dep": "9:33"
+        },
+        {
+          "station": "米原",
+          "arr": "9:52",
+          "dep": "9:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "10:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "10:25",
+          "dep": "10:31"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "10:51"
+        },
+        {
+          "station": "新横浜",
+          "arr": "11:54",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "12:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "12:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_702",
+      "train_number": "702号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "8:42"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "9:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "9:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "9:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "9:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "9:46",
+          "dep": "9:48"
+        },
+        {
+          "station": "京都",
+          "arr": "10:02",
+          "dep": "10:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "10:42",
+          "dep": "10:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "11:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "11:37",
+          "dep": "11:41"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "11:58"
+        },
+        {
+          "station": "新横浜",
+          "arr": "12:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "12:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "12:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_646",
+      "train_number": "646号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "10:18"
+        },
+        {
+          "station": "京都",
+          "arr": "10:31",
+          "dep": "10:33"
+        },
+        {
+          "station": "米原",
+          "arr": "10:52",
+          "dep": "10:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "11:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "11:25",
+          "dep": "11:31"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "12:39"
+        },
+        {
+          "station": "新横浜",
+          "arr": "12:53",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "13:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "13:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_704",
+      "train_number": "704号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "9:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "10:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "10:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "10:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "10:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "10:46",
+          "dep": "10:48"
+        },
+        {
+          "station": "京都",
+          "arr": "11:02",
+          "dep": "11:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "11:42",
+          "dep": "11:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "12:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "12:37",
+          "dep": "12:41"
+        },
+        {
+          "station": "熱海",
+          "arr": null,
+          "dep": "13:05"
+        },
+        {
+          "station": "新横浜",
+          "arr": "13:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "13:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "13:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_648",
+      "train_number": "648号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "11:18"
+        },
+        {
+          "station": "京都",
+          "arr": "11:31",
+          "dep": "11:33"
+        },
+        {
+          "station": "米原",
+          "arr": "11:52",
+          "dep": "11:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "12:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "12:25",
+          "dep": "12:31"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "12:51"
+        },
+        {
+          "station": "新横浜",
+          "arr": "13:54",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "14:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "14:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_706",
+      "train_number": "706号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "10:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "11:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "11:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "11:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "11:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "11:46",
+          "dep": "11:48"
+        },
+        {
+          "station": "京都",
+          "arr": "12:02",
+          "dep": "12:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "12:42",
+          "dep": "12:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "13:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "13:37",
+          "dep": "13:41"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "13:58"
+        },
+        {
+          "station": "新横浜",
+          "arr": "14:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "14:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "14:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_650",
+      "train_number": "650号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "12:18"
+        },
+        {
+          "station": "京都",
+          "arr": "12:31",
+          "dep": "12:33"
+        },
+        {
+          "station": "米原",
+          "arr": "12:52",
+          "dep": "12:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "13:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "13:25",
+          "dep": "13:31"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "14:39"
+        },
+        {
+          "station": "新横浜",
+          "arr": "14:53",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "15:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "15:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_708",
+      "train_number": "708号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "11:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "12:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "12:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "12:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "12:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "12:46",
+          "dep": "12:48"
+        },
+        {
+          "station": "京都",
+          "arr": "13:02",
+          "dep": "13:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "13:42",
+          "dep": "13:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "14:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "14:37",
+          "dep": "14:41"
+        },
+        {
+          "station": "新横浜",
+          "arr": "15:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "15:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "15:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_652",
+      "train_number": "652号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "13:18"
+        },
+        {
+          "station": "京都",
+          "arr": "13:31",
+          "dep": "13:33"
+        },
+        {
+          "station": "米原",
+          "arr": "13:52",
+          "dep": "13:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "14:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "14:25",
+          "dep": "14:31"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "14:51"
+        },
+        {
+          "station": "新横浜",
+          "arr": "15:54",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "16:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "16:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_710",
+      "train_number": "710号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "12:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "13:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "13:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "13:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "13:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "13:46",
+          "dep": "13:48"
+        },
+        {
+          "station": "京都",
+          "arr": "14:02",
+          "dep": "14:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "14:42",
+          "dep": "14:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "15:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "15:37",
+          "dep": "15:41"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "15:58"
+        },
+        {
+          "station": "新横浜",
+          "arr": "16:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "16:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "16:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_654",
+      "train_number": "654号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "14:18"
+        },
+        {
+          "station": "京都",
+          "arr": "14:31",
+          "dep": "14:33"
+        },
+        {
+          "station": "米原",
+          "arr": "14:51",
+          "dep": "14:56"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "15:14"
+        },
+        {
+          "station": "名古屋",
+          "arr": "15:23",
+          "dep": "15:25"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "16:36"
+        },
+        {
+          "station": "新横浜",
+          "arr": "16:50",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "17:02",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_712",
+      "train_number": "712号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "13:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "14:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "14:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "14:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "14:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "14:46",
+          "dep": "14:48"
+        },
+        {
+          "station": "京都",
+          "arr": "15:02",
+          "dep": "15:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "15:42",
+          "dep": "15:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "16:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "16:37",
+          "dep": "16:41"
+        },
+        {
+          "station": "新横浜",
+          "arr": "17:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "17:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_656",
+      "train_number": "656号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "15:18"
+        },
+        {
+          "station": "京都",
+          "arr": "15:31",
+          "dep": "15:33"
+        },
+        {
+          "station": "米原",
+          "arr": "15:51",
+          "dep": "15:56"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "16:14"
+        },
+        {
+          "station": "名古屋",
+          "arr": "16:23",
+          "dep": "16:25"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "16:48"
+        },
+        {
+          "station": "新横浜",
+          "arr": "17:54",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "18:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "18:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_714",
+      "train_number": "714号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "14:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "15:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "15:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "15:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "15:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "15:46",
+          "dep": "15:48"
+        },
+        {
+          "station": "京都",
+          "arr": "16:02",
+          "dep": "16:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "16:42",
+          "dep": "16:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "17:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "17:37",
+          "dep": "17:41"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "17:58"
+        },
+        {
+          "station": "新横浜",
+          "arr": "18:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "18:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "18:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_658",
+      "train_number": "658号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "16:18"
+        },
+        {
+          "station": "京都",
+          "arr": "16:31",
+          "dep": "16:33"
+        },
+        {
+          "station": "米原",
+          "arr": "16:51",
+          "dep": "16:58"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "17:14"
+        },
+        {
+          "station": "名古屋",
+          "arr": "17:23",
+          "dep": "17:25"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "18:36"
+        },
+        {
+          "station": "新横浜",
+          "arr": "18:50",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "19:02",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_716",
+      "train_number": "716号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "15:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "16:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "16:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "16:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "16:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "16:46",
+          "dep": "16:48"
+        },
+        {
+          "station": "京都",
+          "arr": "17:02",
+          "dep": "17:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "17:42",
+          "dep": "17:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "18:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "18:37",
+          "dep": "18:41"
+        },
+        {
+          "station": "熱海",
+          "arr": null,
+          "dep": "19:05"
+        },
+        {
+          "station": "新横浜",
+          "arr": "19:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "19:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_660",
+      "train_number": "660号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "17:18"
+        },
+        {
+          "station": "京都",
+          "arr": "17:31",
+          "dep": "17:33"
+        },
+        {
+          "station": "米原",
+          "arr": "17:51",
+          "dep": "17:56"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "18:14"
+        },
+        {
+          "station": "名古屋",
+          "arr": "18:23",
+          "dep": "18:25"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "18:48"
+        },
+        {
+          "station": "新横浜",
+          "arr": "19:54",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "20:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_718",
+      "train_number": "718号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "16:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "17:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "17:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "17:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "17:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "17:46",
+          "dep": "17:48"
+        },
+        {
+          "station": "京都",
+          "arr": "18:02",
+          "dep": "18:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "18:42",
+          "dep": "18:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "19:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "19:37",
+          "dep": "19:41"
+        },
+        {
+          "station": "三島",
+          "arr": null,
+          "dep": "19:58"
+        },
+        {
+          "station": "新横浜",
+          "arr": "20:24",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "20:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:42",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_662",
+      "train_number": "662号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "18:18"
+        },
+        {
+          "station": "京都",
+          "arr": "18:31",
+          "dep": "18:33"
+        },
+        {
+          "station": "米原",
+          "arr": "18:51",
+          "dep": "18:56"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "19:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "19:25",
+          "dep": "19:31"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "20:39"
+        },
+        {
+          "station": "新横浜",
+          "arr": "20:53",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "21:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "21:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_720",
+      "train_number": "720号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "17:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "18:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "18:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "18:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "18:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "18:46",
+          "dep": "18:48"
+        },
+        {
+          "station": "京都",
+          "arr": "19:02",
+          "dep": "19:07"
+        },
+        {
+          "station": "名古屋",
+          "arr": "19:42",
+          "dep": "19:43"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "20:17"
+        },
+        {
+          "station": "静岡",
+          "arr": "20:37",
+          "dep": "20:39"
+        },
+        {
+          "station": "新横浜",
+          "arr": "21:16",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "21:28",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "21:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_664",
+      "train_number": "664号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "19:21"
+        },
+        {
+          "station": "京都",
+          "arr": "19:34",
+          "dep": "19:36"
+        },
+        {
+          "station": "米原",
+          "arr": "19:54",
+          "dep": "19:57"
+        },
+        {
+          "station": "岐阜羽島",
+          "arr": null,
+          "dep": "20:15"
+        },
+        {
+          "station": "名古屋",
+          "arr": "20:25",
+          "dep": "20:31"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "21:04"
+        },
+        {
+          "station": "新横浜",
+          "arr": "21:59",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "22:11",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "22:18",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_722",
+      "train_number": "722号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "岡山",
+          "arr": null,
+          "dep": "18:36"
+        },
+        {
+          "station": "相生",
+          "arr": null,
+          "dep": "19:00"
+        },
+        {
+          "station": "姫路",
+          "arr": null,
+          "dep": "19:11"
+        },
+        {
+          "station": "西明石",
+          "arr": null,
+          "dep": "19:24"
+        },
+        {
+          "station": "新神戸",
+          "arr": null,
+          "dep": "19:34"
+        },
+        {
+          "station": "新大阪",
+          "arr": "19:46",
+          "dep": "19:48"
+        },
+        {
+          "station": "京都",
+          "arr": "20:02",
+          "dep": "20:03"
+        },
+        {
+          "station": "名古屋",
+          "arr": "20:38",
+          "dep": "20:40"
+        },
+        {
+          "station": "豊橋",
+          "arr": null,
+          "dep": "21:02"
+        },
+        {
+          "station": "静岡",
+          "arr": "21:29",
+          "dep": "21:31"
+        },
+        {
+          "station": "新横浜",
+          "arr": "22:08",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "22:20",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "22:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_666",
+      "train_number": "666号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "20:21"
+        },
+        {
+          "station": "京都",
+          "arr": "20:34",
+          "dep": "20:36"
+        },
+        {
+          "station": "米原",
+          "arr": "20:54",
+          "dep": "21:00"
+        },
+        {
+          "station": "名古屋",
+          "arr": "21:18",
+          "dep": "21:24"
+        },
+        {
+          "station": "静岡",
+          "arr": "22:07",
+          "dep": "22:11"
+        },
+        {
+          "station": "新横浜",
+          "arr": "22:47",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "22:59",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "23:06",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hikari_668",
+      "train_number": "668号",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大阪",
+          "arr": null,
+          "dep": "20:45"
+        },
+        {
+          "station": "京都",
+          "arr": "20:58",
+          "dep": "20:59"
+        },
+        {
+          "station": "名古屋",
+          "arr": "21:33",
+          "dep": "21:39"
+        },
+        {
+          "station": "浜松",
+          "arr": null,
+          "dep": "22:07"
+        },
+        {
+          "station": "静岡",
+          "arr": "22:26",
+          "dep": "22:29"
+        },
+        {
+          "station": "小田原",
+          "arr": null,
+          "dep": "22:56"
+        },
+        {
+          "station": "新横浜",
+          "arr": "23:11",
+          "dep": null
+        },
+        {
+          "station": "品川",
+          "arr": "23:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "23:29",
+          "dep": null
+        }
+      ]
+    }
+  ]
+}

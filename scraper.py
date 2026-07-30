@@ -138,6 +138,12 @@ def load_jr_id_map(path=None):
         return json.load(f)
 
 
+TRAIN_TYPE_KEY = {
+    "1": "hikari", "2": "kodama", "6": "nozomi",
+    "10": "mizuho", "11": "sakura", "12": "tsubame",
+}
+
+
 def parse_train_positions(raw, stations, jr_id_map):
     """train_location_info.json の生データを、地図表示用の共通フォーマットに変換する。
 
@@ -172,6 +178,7 @@ def parse_train_positions(raw, stations, jr_id_map):
                 positions.append({
                     "trip_id": f"{t['train']}-{t['trainNumber']}",
                     "train_number": f"{train_types.get(t['train'], '?')}{t['trainNumber']}号",
+                    "train_type": TRAIN_TYPE_KEY.get(t['train'], "other"),
                     "direction": "up" if bound_id == "1" else "down",
                     "lat": st["lat"],
                     "lng": st["lng"],
@@ -205,6 +212,7 @@ def parse_train_positions(raw, stations, jr_id_map):
                 positions.append({
                     "trip_id": f"{t['train']}-{t['trainNumber']}",
                     "train_number": f"{train_types.get(t['train'], '?')}{t['trainNumber']}号",
+                    "train_type": TRAIN_TYPE_KEY.get(t['train'], "other"),
                     "direction": "up" if bound_id == "1" else "down",
                     "lat": round(lat, 5),
                     "lng": round(lng, 5),
@@ -306,6 +314,7 @@ def calculate_positions(trips, stations, now=None):
                 positions.append({
                     "trip_id": trip["trip_id"],
                     "train_number": trip["train_number"],
+                    "train_type": trip.get("train_type", "other"),
                     "direction": trip["direction"],
                     "lat": round(lat, 5),
                     "lng": round(lng, 5),
@@ -353,10 +362,13 @@ def main():
         print(f"[warn] リアルタイムAPI取得に失敗しました: {e}")
         print("[warn] 時刻表ベースの推定にフォールバックします")
 
-    # 2. フォールバック: 時刻表(trips_kodama.json)からの線形補間
-    #    ※ 現時点ではサンプル2本分のみ。実運用には全便分のデータが必要。
+    # 2. フォールバック: 時刻表(trips_*.json)からの線形補間
     try:
-        trips = load_trips(DATA_DIR / "trips_kodama.json")
+        trips = []
+        for fname in ["trips_kodama.json", "trips_hikari.json"]:
+            path = DATA_DIR / fname
+            if path.exists():
+                trips.extend(load_trips(path))
         positions = calculate_positions(trips, stations)
         save_positions(positions)
         print(f"[info] 時刻表ベースで {len(positions)} 本の位置を計算しました")

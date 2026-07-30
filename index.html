@@ -121,6 +121,17 @@
     font-family: "JetBrains Mono", monospace;
     font-weight: 700;
     font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .type-dot{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
   }
 
   .badge{
@@ -156,8 +167,14 @@
   }
 
   /* ---------- マップ ---------- */
-  #map{
+  .map-wrap{
+    position: relative;
     height: 100vh;
+    width: 100%;
+  }
+
+  #map{
+    height: 100%;
     width: 100%;
     background: #EDEBE6;
   }
@@ -245,10 +262,40 @@
     font-family: "JetBrains Mono", monospace;
   }
 
+  .legend{
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    z-index: 500;
+    background: rgba(11,18,32,0.88);
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  }
+
+  .legend-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .legend-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
   @media (max-width: 720px){
     .app{ grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
     .panel{ border-right: none; border-bottom: 1px solid var(--line); max-height: 40vh; }
-    #map{ height: 60vh; }
+    .map-wrap{ height: 60vh; }
   }
 </style>
 </head>
@@ -281,7 +328,10 @@
     </div>
   </div>
 
-  <div id="map"></div>
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div id="legend" class="legend"></div>
+  </div>
 
 </div>
 
@@ -364,8 +414,22 @@ function renderStations(stationsData){
 // ---------------------------------------------------------------------
 // 新幹線アイコン (SVG divIcon)
 // ---------------------------------------------------------------------
-function shinkansenIcon(status, bearing){
-  const color = status === 'running' ? '#3B6BFF' : '#4A5568';
+const TRAIN_TYPE_COLORS = {
+  nozomi: '#E8384F',   // 赤系
+  hikari: '#F5A623',   // 橙系
+  kodama: '#3B6BFF',   // 青系(既存アクセントカラー)
+  mizuho: '#B23BD8',   // 紫系(山陽・九州直通の速達型)
+  sakura: '#2FBF71',   // 緑系
+  tsubame: '#3BC9DB',  // 水色系
+  other: '#8A94A6',    // その他(回送・団体等)
+};
+const TRAIN_TYPE_LABELS = {
+  nozomi: 'のぞみ', hikari: 'ひかり', kodama: 'こだま',
+  mizuho: 'みずほ', sakura: 'さくら', tsubame: 'つばめ', other: 'その他',
+};
+
+function shinkansenIcon(trainType, status, bearing){
+  const color = TRAIN_TYPE_COLORS[trainType] || TRAIN_TYPE_COLORS.other;
   const glowClass = status === 'running' ? 'running' : '';
   const rotation = bearing || 0;
 
@@ -412,7 +476,7 @@ function renderTrains(positionsData){
     const to = stationsByName[toName];
     const bearing = (from && to) ? bearingBetween(from, to) : 0;
 
-    const icon = shinkansenIcon(t.status, bearing);
+    const icon = shinkansenIcon(t.train_type || 'other', t.status, bearing);
 
     if(trainMarkers[t.trip_id]){
       trainMarkers[t.trip_id].setLatLng([t.lat, t.lng]);
@@ -450,7 +514,10 @@ function renderTrainList(trains){
   list.innerHTML = trains.map(t => `
     <div class="train-card" data-id="${t.trip_id}">
       <div class="train-card-top">
-        <span class="train-number">${t.train_number}</span>
+        <span class="train-number">
+          <span class="type-dot" style="background:${TRAIN_TYPE_COLORS[t.train_type] || TRAIN_TYPE_COLORS.other}"></span>
+          ${t.train_number}
+        </span>
         <span class="badge ${t.status}">${t.status === 'running' ? 'LIVE' : 'STOP'}</span>
       </div>
       <div class="train-segment">${t.current_segment}</div>
@@ -493,6 +560,20 @@ function updateLastUpdatedLabel(isoString){
 }
 
 // ---------------------------------------------------------------------
+// 凡例
+// ---------------------------------------------------------------------
+function renderLegend(){
+  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'other'];
+  const el = document.getElementById('legend');
+  el.innerHTML = order.map(key => `
+    <div class="legend-item">
+      <span class="legend-dot" style="background:${TRAIN_TYPE_COLORS[key]}"></span>
+      <span>${TRAIN_TYPE_LABELS[key]}</span>
+    </div>
+  `).join('');
+}
+
+// ---------------------------------------------------------------------
 // 時計
 // ---------------------------------------------------------------------
 function updateClock(){
@@ -531,6 +612,7 @@ async function loadPositions(){
 
 async function init(){
   initMap();
+  renderLegend();
   await loadStations();
   await loadPositions();
   updateClock();
