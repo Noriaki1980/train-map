@@ -269,11 +269,44 @@
     z-index: 500;
     background: rgba(11,18,32,0.88);
     border-radius: 10px;
-    padding: 10px 14px;
+    padding: 8px 14px;
     display: flex;
     flex-direction: column;
     gap: 6px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    max-width: calc(100vw - 48px);
+  }
+
+  .legend-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text);
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 0;
+  }
+
+  .legend-toggle-icon{
+    color: var(--text-muted);
+    font-size: 10px;
+  }
+
+  .legend-body{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .legend.collapsed .legend-body{
+    display: none;
+  }
+
+  .legend.collapsed{
+    padding-bottom: 8px;
   }
 
   .legend-item{
@@ -629,25 +662,46 @@ function updateLastUpdatedLabel(isoString){
 function renderLegend(){
   const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'other'];
   const el = document.getElementById('legend');
-  el.innerHTML = `
-    <div class="legend-caption">タップで表示/非表示</div>
-    <div class="legend-actions">
-      <button type="button" class="legend-action-btn" data-action="show-all">すべて表示</button>
-      <button type="button" class="legend-action-btn" data-action="hide-all">すべて非表示</button>
-    </div>
-  ` + order.map(key => `
-    <div class="legend-item ${hiddenTypes.has(key) ? 'off' : ''}" data-type="${key}">
-      <span class="legend-dot" style="background:${TRAIN_TYPE_COLORS[key]}"></span>
-      <span>${TRAIN_TYPE_LABELS[key]}</span>
-    </div>
-  `).join('');
 
-  el.querySelector('[data-action="show-all"]').addEventListener('click', () => {
+  const isMobile = window.innerWidth <= 720;
+  if(el.dataset.initialized !== 'true'){
+    if(isMobile) el.classList.add('collapsed');
+    el.dataset.initialized = 'true';
+  }
+
+  el.innerHTML = `
+    <div class="legend-header" id="legendHeader">
+      <span>凡例</span>
+      <span class="legend-toggle-icon">${el.classList.contains('collapsed') ? '▸' : '▾'}</span>
+    </div>
+    <div class="legend-body">
+      <div class="legend-caption">タップで表示/非表示</div>
+      <div class="legend-actions">
+        <button type="button" class="legend-action-btn" data-action="show-all">すべて表示</button>
+        <button type="button" class="legend-action-btn" data-action="hide-all">すべて非表示</button>
+      </div>
+      ${order.map(key => `
+        <div class="legend-item ${hiddenTypes.has(key) ? 'off' : ''}" data-type="${key}">
+          <span class="legend-dot" style="background:${TRAIN_TYPE_COLORS[key]}"></span>
+          <span>${TRAIN_TYPE_LABELS[key]}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  el.querySelector('#legendHeader').addEventListener('click', () => {
+    el.classList.toggle('collapsed');
+    el.querySelector('.legend-toggle-icon').textContent = el.classList.contains('collapsed') ? '▸' : '▾';
+  });
+
+  el.querySelector('[data-action="show-all"]').addEventListener('click', (e) => {
+    e.stopPropagation();
     hiddenTypes.clear();
     renderLegend();
     if(lastPositionsData) renderTrains(lastPositionsData);
   });
-  el.querySelector('[data-action="hide-all"]').addEventListener('click', () => {
+  el.querySelector('[data-action="hide-all"]').addEventListener('click', (e) => {
+    e.stopPropagation();
     order.forEach(key => hiddenTypes.add(key));
     renderLegend();
     if(lastPositionsData) renderTrains(lastPositionsData);

@@ -349,31 +349,48 @@ def save_positions(positions, output_path=None):
 
 def main():
     stations = load_stations()
+    positions = []
 
-    # 1. まずリアルタイムAPIを試す(手元PCなど、ブロックされない環境用)
+    # 1. まずリアルタイムAPIを試す(東海道・山陽新幹線のみカバー、博多まで)
+    api_ok = False
     try:
         jr_id_map = load_jr_id_map()
         raw = fetch_train_positions()
-        positions = parse_train_positions(raw, stations, jr_id_map)
-        save_positions(positions)
-        print("[info] リアルタイムAPIから取得しました")
-        return
+        positions.extend(parse_train_positions(raw, stations, jr_id_map))
+        api_ok = True
+        print("[info] リアルタイムAPIから取得しました(東海道・山陽)")
     except Exception as e:
         print(f"[warn] リアルタイムAPI取得に失敗しました: {e}")
-        print("[warn] 時刻表ベースの推定にフォールバックします")
 
-    # 2. フォールバック: 時刻表(trips_*.json)からの線形補間
+    # 2. APIが失敗した場合のみ、東海道・山陽も時刻表ベースで補う
+    if not api_ok:
+        try:
+            trips = []
+            for fname in ["trips_kodama.json", "trips_hikari.json"]:
+                path = DATA_DIR / fname
+                if path.exists():
+                    trips.extend(load_trips(path))
+            fallback = calculate_positions(trips, stations)
+            positions.extend(fallback)
+            print(f"[info] 時刻表ベースで東海道・山陽 {len(fallback)} 本を計算しました")
+        except Exception as e:
+            print(f"[warn] 東海道・山陽の時刻表ベース計算に失敗しました: {e}")
+
+    # 3. 九州新幹線はAPIの対象外(博多で追跡が止まる)なので、
+    #    APIの成否に関わらず常に時刻表ベースで補う
     try:
-        trips = []
-        for fname in ["trips_kodama.json", "trips_hikari.json", "trips_kyushu.json"]:
-            path = DATA_DIR / fname
-            if path.exists():
-                trips.extend(load_trips(path))
-        positions = calculate_positions(trips, stations)
-        save_positions(positions)
-        print(f"[info] 時刻表ベースで {len(positions)} 本の位置を計算しました")
+        kyushu_path = DATA_DIR / "trips_kyushu.json"
+        if kyushu_path.exists():
+            kyushu_trips = load_trips(kyushu_path)
+            kyushu_positions = calculate_positions(kyushu_trips, stations)
+            positions.extend(kyushu_positions)
+            print(f"[info] 時刻表ベースで九州新幹線 {len(kyushu_positions)} 本を計算しました")
     except Exception as e:
-        print(f"[warn] 時刻表ベースの計算にも失敗しました: {e}")
+        print(f"[warn] 九州新幹線の時刻表ベース計算に失敗しました: {e}")
+
+    if positions:
+        save_positions(positions)
+    else:
         print("[warn] train_positions.json は更新しません(既存データを保持)")
 
 
