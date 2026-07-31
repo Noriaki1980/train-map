@@ -437,7 +437,7 @@ function renderStations(stationsData){
   }).addTo(stationLayer);
 
   stations.forEach(s => {
-    const isMajor = s.stops.includes('nozomi');
+    const isMajor = s.stops.includes('nozomi') || s.stops.includes('mizuho');
     const marker = L.circleMarker([s.lat, s.lng], {
       radius: isMajor ? 4 : 2.5,
       className: 'station-dot' + (isMajor ? ' major' : ''),

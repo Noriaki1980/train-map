@@ -2,40 +2,551 @@
   "line": "tokaido_sanyo",
   "line_name": "東海道・山陽新幹線",
   "stations": [
-    { "order": 1,  "name": "東京",       "name_en": "Tokyo",           "sub_line": "tokaido", "lat": 35.6812, "lng": 139.7671, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 2,  "name": "品川",       "name_en": "Shinagawa",       "sub_line": "tokaido", "lat": 35.6285, "lng": 139.7387, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 3,  "name": "新横浜",     "name_en": "Shin-Yokohama",   "sub_line": "tokaido", "lat": 35.5075, "lng": 139.6168, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 4,  "name": "小田原",     "name_en": "Odawara",         "sub_line": "tokaido", "lat": 35.2547, "lng": 139.1526, "stops": ["kodama"] },
-    { "order": 5,  "name": "熱海",       "name_en": "Atami",           "sub_line": "tokaido", "lat": 35.0958, "lng": 139.0733, "stops": ["kodama"] },
-    { "order": 6,  "name": "三島",       "name_en": "Mishima",         "sub_line": "tokaido", "lat": 35.1226, "lng": 138.9106, "stops": ["kodama"] },
-    { "order": 7,  "name": "新富士",     "name_en": "Shin-Fuji",       "sub_line": "tokaido", "lat": 35.1553, "lng": 138.6483, "stops": ["kodama"] },
-    { "order": 8,  "name": "静岡",       "name_en": "Shizuoka",        "sub_line": "tokaido", "lat": 34.9709, "lng": 138.3888, "stops": ["kodama"] },
-    { "order": 9,  "name": "掛川",       "name_en": "Kakegawa",        "sub_line": "tokaido", "lat": 34.7686, "lng": 138.0128, "stops": ["kodama"] },
-    { "order": 10, "name": "浜松",       "name_en": "Hamamatsu",       "sub_line": "tokaido", "lat": 34.7025, "lng": 137.7346, "stops": ["kodama"] },
-    { "order": 11, "name": "豊橋",       "name_en": "Toyohashi",       "sub_line": "tokaido", "lat": 34.7625, "lng": 137.3914, "stops": ["kodama"] },
-    { "order": 12, "name": "三河安城",   "name_en": "Mikawa-Anjo",     "sub_line": "tokaido", "lat": 34.9503, "lng": 137.0808, "stops": ["kodama"] },
-    { "order": 13, "name": "名古屋",     "name_en": "Nagoya",          "sub_line": "tokaido", "lat": 35.1706, "lng": 136.8816, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 14, "name": "岐阜羽島",   "name_en": "Gifu-Hashima",    "sub_line": "tokaido", "lat": 35.3167, "lng": 136.6961, "stops": ["kodama"] },
-    { "order": 15, "name": "米原",       "name_en": "Maibara",         "sub_line": "tokaido", "lat": 35.3153, "lng": 136.2911, "stops": ["kodama"] },
-    { "order": 16, "name": "京都",       "name_en": "Kyoto",           "sub_line": "tokaido", "lat": 34.9858, "lng": 135.7588, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 17, "name": "新大阪",     "name_en": "Shin-Osaka",      "sub_line": "boundary","lat": 34.7334, "lng": 135.5002, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 18, "name": "新神戸",     "name_en": "Shin-Kobe",       "sub_line": "sanyo",   "lat": 34.7010, "lng": 135.1957, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 19, "name": "西明石",     "name_en": "Nishi-Akashi",    "sub_line": "sanyo",   "lat": 34.6524, "lng": 134.9764, "stops": ["kodama"] },
-    { "order": 20, "name": "姫路",       "name_en": "Himeji",          "sub_line": "sanyo",   "lat": 34.8283, "lng": 134.6931, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 21, "name": "相生",       "name_en": "Aioi",            "sub_line": "sanyo",   "lat": 34.8033, "lng": 134.4728, "stops": ["kodama"] },
-    { "order": 22, "name": "岡山",       "name_en": "Okayama",         "sub_line": "sanyo",   "lat": 34.6663, "lng": 133.9189, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 23, "name": "新倉敷",     "name_en": "Shin-Kurashiki",  "sub_line": "sanyo",   "lat": 34.6023, "lng": 133.7211, "stops": ["kodama"] },
-    { "order": 24, "name": "福山",       "name_en": "Fukuyama",        "sub_line": "sanyo",   "lat": 34.4858, "lng": 133.3626, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 25, "name": "新尾道",     "name_en": "Shin-Onomichi",   "sub_line": "sanyo",   "lat": 34.4108, "lng": 133.1878, "stops": ["kodama"] },
-    { "order": 26, "name": "三原",       "name_en": "Mihara",          "sub_line": "sanyo",   "lat": 34.3968, "lng": 133.0789, "stops": ["kodama"] },
-    { "order": 27, "name": "東広島",     "name_en": "Higashi-Hiroshima","sub_line": "sanyo",  "lat": 34.4308, "lng": 132.6367, "stops": ["kodama"] },
-    { "order": 28, "name": "広島",       "name_en": "Hiroshima",       "sub_line": "sanyo",   "lat": 34.3978, "lng": 132.4753, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 29, "name": "新岩国",     "name_en": "Shin-Iwakuni",    "sub_line": "sanyo",   "lat": 34.1489, "lng": 132.1808, "stops": ["kodama"] },
-    { "order": 30, "name": "徳山",       "name_en": "Tokuyama",        "sub_line": "sanyo",   "lat": 34.0475, "lng": 131.8058, "stops": ["hikari", "kodama"] },
-    { "order": 31, "name": "新山口",     "name_en": "Shin-Yamaguchi",  "sub_line": "sanyo",   "lat": 34.0989, "lng": 131.4739, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 32, "name": "厚狭",       "name_en": "Asa",             "sub_line": "sanyo",   "lat": 34.1487, "lng": 131.2646, "stops": ["kodama"] },
-    { "order": 33, "name": "新下関",     "name_en": "Shin-Shimonoseki","sub_line": "sanyo",   "lat": 33.9767, "lng": 130.9440, "stops": ["hikari", "kodama"] },
-    { "order": 34, "name": "小倉",       "name_en": "Kokura",          "sub_line": "sanyo",   "lat": 33.8859, "lng": 130.8817, "stops": ["nozomi", "hikari", "kodama"] },
-    { "order": 35, "name": "博多",       "name_en": "Hakata",          "sub_line": "sanyo",   "lat": 33.5902, "lng": 130.4207, "stops": ["nozomi", "hikari", "kodama"] }
+    {
+      "order": 1,
+      "name": "東京",
+      "name_en": "Tokyo",
+      "sub_line": "tokaido",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 2,
+      "name": "品川",
+      "name_en": "Shinagawa",
+      "sub_line": "tokaido",
+      "lat": 35.6285,
+      "lng": 139.7387,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 3,
+      "name": "新横浜",
+      "name_en": "Shin-Yokohama",
+      "sub_line": "tokaido",
+      "lat": 35.5075,
+      "lng": 139.6168,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 4,
+      "name": "小田原",
+      "name_en": "Odawara",
+      "sub_line": "tokaido",
+      "lat": 35.2547,
+      "lng": 139.1526,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 5,
+      "name": "熱海",
+      "name_en": "Atami",
+      "sub_line": "tokaido",
+      "lat": 35.0958,
+      "lng": 139.0733,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 6,
+      "name": "三島",
+      "name_en": "Mishima",
+      "sub_line": "tokaido",
+      "lat": 35.1226,
+      "lng": 138.9106,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 7,
+      "name": "新富士",
+      "name_en": "Shin-Fuji",
+      "sub_line": "tokaido",
+      "lat": 35.1553,
+      "lng": 138.6483,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 8,
+      "name": "静岡",
+      "name_en": "Shizuoka",
+      "sub_line": "tokaido",
+      "lat": 34.9709,
+      "lng": 138.3888,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 9,
+      "name": "掛川",
+      "name_en": "Kakegawa",
+      "sub_line": "tokaido",
+      "lat": 34.7686,
+      "lng": 138.0128,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 10,
+      "name": "浜松",
+      "name_en": "Hamamatsu",
+      "sub_line": "tokaido",
+      "lat": 34.7025,
+      "lng": 137.7346,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 11,
+      "name": "豊橋",
+      "name_en": "Toyohashi",
+      "sub_line": "tokaido",
+      "lat": 34.7625,
+      "lng": 137.3914,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 12,
+      "name": "三河安城",
+      "name_en": "Mikawa-Anjo",
+      "sub_line": "tokaido",
+      "lat": 34.9503,
+      "lng": 137.0808,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 13,
+      "name": "名古屋",
+      "name_en": "Nagoya",
+      "sub_line": "tokaido",
+      "lat": 35.1706,
+      "lng": 136.8816,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 14,
+      "name": "岐阜羽島",
+      "name_en": "Gifu-Hashima",
+      "sub_line": "tokaido",
+      "lat": 35.3167,
+      "lng": 136.6961,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 15,
+      "name": "米原",
+      "name_en": "Maibara",
+      "sub_line": "tokaido",
+      "lat": 35.3153,
+      "lng": 136.2911,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 16,
+      "name": "京都",
+      "name_en": "Kyoto",
+      "sub_line": "tokaido",
+      "lat": 34.9858,
+      "lng": 135.7588,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 17,
+      "name": "新大阪",
+      "name_en": "Shin-Osaka",
+      "sub_line": "boundary",
+      "lat": 34.7334,
+      "lng": 135.5002,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 18,
+      "name": "新神戸",
+      "name_en": "Shin-Kobe",
+      "sub_line": "sanyo",
+      "lat": 34.701,
+      "lng": 135.1957,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 19,
+      "name": "西明石",
+      "name_en": "Nishi-Akashi",
+      "sub_line": "sanyo",
+      "lat": 34.6524,
+      "lng": 134.9764,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 20,
+      "name": "姫路",
+      "name_en": "Himeji",
+      "sub_line": "sanyo",
+      "lat": 34.8283,
+      "lng": 134.6931,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 21,
+      "name": "相生",
+      "name_en": "Aioi",
+      "sub_line": "sanyo",
+      "lat": 34.8033,
+      "lng": 134.4728,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 22,
+      "name": "岡山",
+      "name_en": "Okayama",
+      "sub_line": "sanyo",
+      "lat": 34.6663,
+      "lng": 133.9189,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 23,
+      "name": "新倉敷",
+      "name_en": "Shin-Kurashiki",
+      "sub_line": "sanyo",
+      "lat": 34.6023,
+      "lng": 133.7211,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 24,
+      "name": "福山",
+      "name_en": "Fukuyama",
+      "sub_line": "sanyo",
+      "lat": 34.4858,
+      "lng": 133.3626,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 25,
+      "name": "新尾道",
+      "name_en": "Shin-Onomichi",
+      "sub_line": "sanyo",
+      "lat": 34.4108,
+      "lng": 133.1878,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 26,
+      "name": "三原",
+      "name_en": "Mihara",
+      "sub_line": "sanyo",
+      "lat": 34.3968,
+      "lng": 133.0789,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 27,
+      "name": "東広島",
+      "name_en": "Higashi-Hiroshima",
+      "sub_line": "sanyo",
+      "lat": 34.4308,
+      "lng": 132.6367,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 28,
+      "name": "広島",
+      "name_en": "Hiroshima",
+      "sub_line": "sanyo",
+      "lat": 34.3978,
+      "lng": 132.4753,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 29,
+      "name": "新岩国",
+      "name_en": "Shin-Iwakuni",
+      "sub_line": "sanyo",
+      "lat": 34.1489,
+      "lng": 132.1808,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 30,
+      "name": "徳山",
+      "name_en": "Tokuyama",
+      "sub_line": "sanyo",
+      "lat": 34.0475,
+      "lng": 131.8058,
+      "stops": [
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 31,
+      "name": "新山口",
+      "name_en": "Shin-Yamaguchi",
+      "sub_line": "sanyo",
+      "lat": 34.0989,
+      "lng": 131.4739,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 32,
+      "name": "厚狭",
+      "name_en": "Asa",
+      "sub_line": "sanyo",
+      "lat": 34.1487,
+      "lng": 131.2646,
+      "stops": [
+        "kodama"
+      ]
+    },
+    {
+      "order": 33,
+      "name": "新下関",
+      "name_en": "Shin-Shimonoseki",
+      "sub_line": "sanyo",
+      "lat": 33.9767,
+      "lng": 130.944,
+      "stops": [
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 34,
+      "name": "小倉",
+      "name_en": "Kokura",
+      "sub_line": "sanyo",
+      "lat": 33.8859,
+      "lng": 130.8817,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 35,
+      "name": "博多",
+      "name_en": "Hakata",
+      "sub_line": "sanyo",
+      "lat": 33.5902,
+      "lng": 130.4207,
+      "stops": [
+        "nozomi",
+        "hikari",
+        "kodama"
+      ]
+    },
+    {
+      "order": 36,
+      "name": "新鳥栖",
+      "name_en": "Shin-Tosu",
+      "sub_line": "kyushu",
+      "lat": 33.3733,
+      "lng": 130.5083,
+      "stops": [
+        "tsubame",
+        "sakura"
+      ]
+    },
+    {
+      "order": 37,
+      "name": "久留米",
+      "name_en": "Kurume",
+      "sub_line": "kyushu",
+      "lat": 33.3192,
+      "lng": 130.5286,
+      "stops": [
+        "tsubame",
+        "sakura"
+      ]
+    },
+    {
+      "order": 38,
+      "name": "筑後船小屋",
+      "name_en": "Chikugo-Funagoya",
+      "sub_line": "kyushu",
+      "lat": 33.2006,
+      "lng": 130.5589,
+      "stops": [
+        "tsubame"
+      ]
+    },
+    {
+      "order": 39,
+      "name": "新大牟田",
+      "name_en": "Shin-Omuta",
+      "sub_line": "kyushu",
+      "lat": 33.0439,
+      "lng": 130.4728,
+      "stops": [
+        "tsubame"
+      ]
+    },
+    {
+      "order": 40,
+      "name": "新玉名",
+      "name_en": "Shin-Tamana",
+      "sub_line": "kyushu",
+      "lat": 32.9375,
+      "lng": 130.5686,
+      "stops": [
+        "tsubame"
+      ]
+    },
+    {
+      "order": 41,
+      "name": "熊本",
+      "name_en": "Kumamoto",
+      "sub_line": "kyushu",
+      "lat": 32.7898,
+      "lng": 130.7059,
+      "stops": [
+        "tsubame",
+        "sakura",
+        "mizuho"
+      ]
+    },
+    {
+      "order": 42,
+      "name": "新八代",
+      "name_en": "Shin-Yatsushiro",
+      "sub_line": "kyushu",
+      "lat": 32.5058,
+      "lng": 130.6033,
+      "stops": [
+        "tsubame",
+        "sakura"
+      ]
+    },
+    {
+      "order": 43,
+      "name": "新水俣",
+      "name_en": "Shin-Minamata",
+      "sub_line": "kyushu",
+      "lat": 32.2075,
+      "lng": 130.4022,
+      "stops": [
+        "tsubame",
+        "sakura"
+      ]
+    },
+    {
+      "order": 44,
+      "name": "出水",
+      "name_en": "Izumi",
+      "sub_line": "kyushu",
+      "lat": 32.0872,
+      "lng": 130.3453,
+      "stops": [
+        "tsubame",
+        "sakura"
+      ]
+    },
+    {
+      "order": 45,
+      "name": "川内",
+      "name_en": "Sendai",
+      "sub_line": "kyushu",
+      "lat": 31.8136,
+      "lng": 130.3038,
+      "stops": [
+        "tsubame",
+        "sakura"
+      ]
+    },
+    {
+      "order": 46,
+      "name": "鹿児島中央",
+      "name_en": "Kagoshima-Chuo",
+      "sub_line": "kyushu",
+      "lat": 31.5847,
+      "lng": 130.5414,
+      "stops": [
+        "tsubame",
+        "sakura",
+        "mizuho"
+      ]
+    }
   ]
 }

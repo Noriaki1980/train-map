@@ -1,0 +1,5372 @@
+{
+  "line": "kyushu",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-kyushu/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。山陽新幹線からの直通区間(新大阪・広島等始発)は時刻データがないため博多までで打ち切っている。",
+  "trips": [
+    {
+      "trip_id": "kyushu_301",
+      "train_number": "つばめ301号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "6:19"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "6:31",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_303",
+      "train_number": "つばめ303号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "6:11"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "6:23"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "6:37"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "6:44"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "6:56"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "7:08",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_305",
+      "train_number": "つばめ305号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "6:35"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "6:47"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "7:00"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "7:08"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "7:19"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "7:31",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_307",
+      "train_number": "つばめ307号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "6:10"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "6:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "6:29"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "6:36"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "6:43"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "6:51"
+        },
+        {
+          "station": "熊本",
+          "arr": "7:00",
+          "dep": "7:01"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "7:13"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "7:27"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "7:34"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "7:46"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "7:58",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_309",
+      "train_number": "つばめ309号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "6:42"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "6:55"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "7:00"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "7:07"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "7:13"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "7:21"
+        },
+        {
+          "station": "熊本",
+          "arr": "7:30",
+          "dep": "7:31"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "7:43"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "7:57"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "8:04"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "8:16"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "8:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_311",
+      "train_number": "つばめ311号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "7:24"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "7:37"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "7:42"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "7:49"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "7:56"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "8:04"
+        },
+        {
+          "station": "熊本",
+          "arr": "8:12",
+          "dep": "8:13"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "8:25"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "8:39"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "8:47"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "8:59"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "9:10",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_401",
+      "train_number": "さくら401号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "7:58"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:12"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "8:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "8:36",
+          "dep": "8:37"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "8:49"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "9:03"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "9:10"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "9:22"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "9:34",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_313",
+      "train_number": "つばめ313号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "8:10"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "8:28"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "8:36"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "8:42"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "8:50"
+        },
+        {
+          "station": "熊本",
+          "arr": "8:59",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_601",
+      "train_number": "みずほ601号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "8:30"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:02",
+          "dep": "9:03"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "9:46",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_403",
+      "train_number": "さくら403号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "8:40"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:53"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "8:58"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:18",
+          "dep": "9:19"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "9:31"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "9:44"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "9:52"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "10:04"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "10:15",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_315",
+      "train_number": "つばめ315号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "8:51"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "9:05"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:09"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "9:17"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "9:23"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "9:31"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_541",
+      "train_number": "さくら541号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "9:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "9:20"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:24"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:44",
+          "dep": "9:45"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "10:20"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "10:31",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_543",
+      "train_number": "さくら543号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "9:28"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "9:41"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "10:06",
+          "dep": "10:07"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "10:19"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "10:33"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "10:40"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "10:52"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "11:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_317",
+      "train_number": "つばめ317号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "9:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "9:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:54"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "10:01"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "10:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "10:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "10:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_603",
+      "train_number": "みずほ603号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "9:53"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "10:08"
+        },
+        {
+          "station": "熊本",
+          "arr": "10:28",
+          "dep": "10:29"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "11:11",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_605",
+      "train_number": "みずほ605号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "10:20"
+        },
+        {
+          "station": "熊本",
+          "arr": "10:52",
+          "dep": "10:53"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "11:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_545",
+      "train_number": "さくら545号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "10:38"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "10:51"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "10:56"
+        },
+        {
+          "station": "熊本",
+          "arr": "11:16",
+          "dep": "11:17"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "11:29"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "11:43"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "11:50"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "12:02"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "12:14",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_319",
+      "train_number": "つばめ319号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "10:47"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "11:00"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "11:05"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "11:12"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "11:19"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "11:26"
+        },
+        {
+          "station": "熊本",
+          "arr": "11:35",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_547",
+      "train_number": "さくら547号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "11:28"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "11:41"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "11:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "12:06",
+          "dep": "12:07"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "12:42"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "12:53",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_321",
+      "train_number": "つばめ321号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "11:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "11:50"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "11:55"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "12:02"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "12:09"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "12:17"
+        },
+        {
+          "station": "熊本",
+          "arr": "12:26",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_549",
+      "train_number": "さくら549号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "12:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "12:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "12:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "12:39",
+          "dep": "12:40"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "12:52"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "13:06"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "13:14"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "13:26"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "13:37",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_607",
+      "train_number": "みずほ607号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "12:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "12:39"
+        },
+        {
+          "station": "熊本",
+          "arr": "12:59",
+          "dep": "13:00"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "13:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_323",
+      "train_number": "つばめ323号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "12:47"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "13:00"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "13:05"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "13:12"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "13:19"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "13:27"
+        },
+        {
+          "station": "熊本",
+          "arr": "13:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_551",
+      "train_number": "さくら551号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "13:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "13:15"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "13:20"
+        },
+        {
+          "station": "熊本",
+          "arr": "13:40",
+          "dep": "13:41"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "14:16"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "14:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_405",
+      "train_number": "さくら405号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "13:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "13:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "13:54"
+        },
+        {
+          "station": "熊本",
+          "arr": "14:14",
+          "dep": "14:15"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "14:27"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "14:41"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "14:48"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "15:00"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "15:11",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_553",
+      "train_number": "さくら553号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "14:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "14:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "14:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "14:39",
+          "dep": "14:40"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "14:52"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "15:06"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "15:14"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "15:26"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "15:37",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_325",
+      "train_number": "つばめ325号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "14:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "14:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "14:54"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "15:01"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "15:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "15:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "15:24",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_555",
+      "train_number": "さくら555号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "15:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "15:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "15:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "15:39",
+          "dep": "15:40"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "16:15"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "16:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_327",
+      "train_number": "つばめ327号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "15:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "15:19"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "15:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "15:32"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "15:38"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "15:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "15:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_407",
+      "train_number": "さくら407号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "15:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "15:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "15:54"
+        },
+        {
+          "station": "熊本",
+          "arr": "16:14",
+          "dep": "16:15"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "16:27"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "16:41"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "16:48"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "17:00"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "17:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_557",
+      "train_number": "さくら557号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "16:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "16:39",
+          "dep": "16:40"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "17:15"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "17:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_329",
+      "train_number": "つばめ329号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "16:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:19"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "16:32"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "16:38"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "16:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "16:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_409",
+      "train_number": "さくら409号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "16:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:54"
+        },
+        {
+          "station": "熊本",
+          "arr": "17:14",
+          "dep": "17:15"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "17:27"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "17:41"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "17:48"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "18:00"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "18:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_559",
+      "train_number": "さくら559号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "17:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "17:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "17:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "17:39",
+          "dep": "17:40"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "18:14"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "18:26",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_331",
+      "train_number": "つばめ331号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "17:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "17:19"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "17:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "17:31"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "17:39"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "17:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "17:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_411",
+      "train_number": "さくら411号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "17:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "17:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "17:54"
+        },
+        {
+          "station": "熊本",
+          "arr": "18:14",
+          "dep": "18:15"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "18:27"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "18:41"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "18:48"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "19:00"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "19:11",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_561",
+      "train_number": "さくら561号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "18:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "18:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "18:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "18:39",
+          "dep": "18:40"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "18:52"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "19:05"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "19:13"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "19:25"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "19:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_333",
+      "train_number": "つばめ333号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "18:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "18:19"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "18:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "18:32"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "18:38"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "18:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "18:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_609",
+      "train_number": "みずほ609号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "18:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "18:39"
+        },
+        {
+          "station": "熊本",
+          "arr": "18:59",
+          "dep": "19:00"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "19:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_335",
+      "train_number": "つばめ335号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "18:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "18:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "18:54"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "19:01"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "19:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "19:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "19:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_563",
+      "train_number": "さくら563号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "19:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "19:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "19:19"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "19:33"
+        },
+        {
+          "station": "熊本",
+          "arr": "19:42",
+          "dep": "19:43"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "19:55"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "20:09"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "20:16"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "20:28"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "20:39",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_611",
+      "train_number": "みずほ611号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "19:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "19:39"
+        },
+        {
+          "station": "熊本",
+          "arr": "20:00",
+          "dep": "20:01"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "20:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_337",
+      "train_number": "つばめ337号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "19:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "19:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "19:54"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "20:01"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "20:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "20:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "20:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_565",
+      "train_number": "さくら565号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "20:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "20:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "20:19"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "20:29"
+        },
+        {
+          "station": "熊本",
+          "arr": "20:42",
+          "dep": "20:43"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "20:55"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "21:09"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "21:16"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "21:28"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "21:39",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_339",
+      "train_number": "つばめ339号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "20:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "20:19"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "20:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "20:31"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "20:38"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "20:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "20:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_567",
+      "train_number": "さくら567号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "20:25"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "20:38"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "20:43"
+        },
+        {
+          "station": "熊本",
+          "arr": "21:03",
+          "dep": "21:04"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "21:39"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "21:51",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_341",
+      "train_number": "つばめ341号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "20:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "20:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "20:54"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "21:01"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "21:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "21:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "21:24",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_569",
+      "train_number": "さくら569号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "21:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "21:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "21:19"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "21:26"
+        },
+        {
+          "station": "熊本",
+          "arr": "21:42",
+          "dep": "21:43"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "21:55"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "22:09"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "22:16"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "22:28"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "22:39",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_613",
+      "train_number": "みずほ613号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "21:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "21:39"
+        },
+        {
+          "station": "熊本",
+          "arr": "22:00",
+          "dep": "22:01"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "22:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_343",
+      "train_number": "つばめ343号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "21:45"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "21:58"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "22:03"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "22:11"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "22:18"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "22:26"
+        },
+        {
+          "station": "熊本",
+          "arr": "22:35",
+          "dep": "23:00"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "23:13"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "23:26"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "23:34"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "23:46"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "23:57",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_571",
+      "train_number": "さくら571号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "22:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "22:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "22:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "22:39",
+          "dep": "22:40"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "23:14"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "23:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_615",
+      "train_number": "みずほ615号",
+      "train_type": "mizuho",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "22:20"
+        },
+        {
+          "station": "熊本",
+          "arr": "22:52",
+          "dep": "22:53"
+        },
+        {
+          "station": "鹿児島中央",
+          "arr": "23:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_345",
+      "train_number": "つばめ345号",
+      "train_type": "tsubame",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "22:36"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "22:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "22:54"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "23:01"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "23:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "23:16"
+        },
+        {
+          "station": "熊本",
+          "arr": "23:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_573",
+      "train_number": "さくら573号",
+      "train_type": "sakura",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "博多",
+          "arr": null,
+          "dep": "23:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "23:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "23:19"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "23:26"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "23:32"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "23:40"
+        },
+        {
+          "station": "熊本",
+          "arr": "23:49",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_740",
+      "train_number": "さくら740号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "6:08"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "6:18"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "6:26"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "6:32"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "6:39"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "6:44"
+        },
+        {
+          "station": "博多",
+          "arr": "6:57",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_300",
+      "train_number": "つばめ300号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "6:30"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "6:40"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "6:48"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "6:54"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "7:02"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "7:06"
+        },
+        {
+          "station": "博多",
+          "arr": "7:19",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_400",
+      "train_number": "さくら400号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "6:04"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "6:17"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "6:29"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "6:36"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "6:50"
+        },
+        {
+          "station": "熊本",
+          "arr": "7:01",
+          "dep": "7:02"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "7:23"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "7:28"
+        },
+        {
+          "station": "博多",
+          "arr": "7:41",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_600",
+      "train_number": "みずほ600号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "6:35"
+        },
+        {
+          "station": "熊本",
+          "arr": "7:18",
+          "dep": "7:19"
+        },
+        {
+          "station": "博多",
+          "arr": "7:51",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_302",
+      "train_number": "つばめ302号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "7:07"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "7:17"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "7:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "7:35"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "7:44"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "7:48"
+        },
+        {
+          "station": "博多",
+          "arr": "8:01",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_304",
+      "train_number": "つばめ304号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "7:28"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "7:38"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "7:45"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "7:52"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "7:59"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:04"
+        },
+        {
+          "station": "博多",
+          "arr": "8:18",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_306",
+      "train_number": "つばめ306号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "6:42"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "6:54"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "7:06"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "7:13"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "7:27"
+        },
+        {
+          "station": "熊本",
+          "arr": "7:38",
+          "dep": "7:45"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "7:55"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "8:03"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "8:09"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "8:16"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:21"
+        },
+        {
+          "station": "博多",
+          "arr": "8:33",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_742",
+      "train_number": "さくら742号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "6:56"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "7:08"
+        },
+        {
+          "station": "熊本",
+          "arr": "7:41",
+          "dep": "7:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "8:04"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:09"
+        },
+        {
+          "station": "博多",
+          "arr": "8:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_602",
+      "train_number": "みずほ602号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "7:32"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "7:45"
+        },
+        {
+          "station": "熊本",
+          "arr": "8:18",
+          "dep": "8:19"
+        },
+        {
+          "station": "博多",
+          "arr": "8:51",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_308",
+      "train_number": "つばめ308号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "7:09"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "7:21"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "7:33"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "7:41"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "7:55"
+        },
+        {
+          "station": "熊本",
+          "arr": "8:05",
+          "dep": "8:06"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "8:16"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "8:24"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "8:36"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "8:44"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "8:48"
+        },
+        {
+          "station": "博多",
+          "arr": "9:01",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_744",
+      "train_number": "さくら744号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "7:42"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "7:54"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "8:06"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "8:13"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "8:27"
+        },
+        {
+          "station": "熊本",
+          "arr": "8:38",
+          "dep": "8:39"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "8:56"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:04"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "9:08"
+        },
+        {
+          "station": "博多",
+          "arr": "9:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_604",
+      "train_number": "みずほ604号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "8:32"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:15",
+          "dep": "9:16"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:37"
+        },
+        {
+          "station": "博多",
+          "arr": "9:51",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_310",
+      "train_number": "つばめ310号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "8:12"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "8:24"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "8:36"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "8:44"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "8:58"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:09",
+          "dep": "9:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "9:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "9:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "9:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "9:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "9:56"
+        },
+        {
+          "station": "博多",
+          "arr": "10:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_746",
+      "train_number": "さくら746号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "8:43"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "8:55"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "9:07"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "9:14"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "9:28"
+        },
+        {
+          "station": "熊本",
+          "arr": "9:38",
+          "dep": "9:39"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "9:53"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "10:04"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "10:08"
+        },
+        {
+          "station": "博多",
+          "arr": "10:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_748",
+      "train_number": "さくら748号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "9:17"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "9:30"
+        },
+        {
+          "station": "熊本",
+          "arr": "10:03",
+          "dep": "10:04"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "10:26"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "10:30"
+        },
+        {
+          "station": "博多",
+          "arr": "10:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_312",
+      "train_number": "つばめ312号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "10:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "10:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "10:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "10:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "10:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "10:56"
+        },
+        {
+          "station": "博多",
+          "arr": "11:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_750",
+      "train_number": "さくら750号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "9:41"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "9:53"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "10:05"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "10:13"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "10:27"
+        },
+        {
+          "station": "熊本",
+          "arr": "10:38",
+          "dep": "10:39"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "10:49"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "11:03"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "11:08"
+        },
+        {
+          "station": "博多",
+          "arr": "11:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_606",
+      "train_number": "みずほ606号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "10:32"
+        },
+        {
+          "station": "熊本",
+          "arr": "11:15",
+          "dep": "11:16"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "11:37"
+        },
+        {
+          "station": "博多",
+          "arr": "11:51",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_314",
+      "train_number": "つばめ314号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "11:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "11:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "11:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "11:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "11:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "11:56"
+        },
+        {
+          "station": "博多",
+          "arr": "12:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_752",
+      "train_number": "さくら752号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "10:44"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "10:56"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "11:08"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "11:16"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "11:30"
+        },
+        {
+          "station": "熊本",
+          "arr": "11:41",
+          "dep": "11:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "12:03"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "12:08"
+        },
+        {
+          "station": "博多",
+          "arr": "12:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_402",
+      "train_number": "さくら402号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "11:20"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "11:33"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "11:45"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "11:52"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "12:06"
+        },
+        {
+          "station": "熊本",
+          "arr": "12:16",
+          "dep": "12:17"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "12:40"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "12:45"
+        },
+        {
+          "station": "博多",
+          "arr": "12:57",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_316",
+      "train_number": "つばめ316号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "12:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "12:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "12:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "12:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "12:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "12:56"
+        },
+        {
+          "station": "博多",
+          "arr": "13:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_754",
+      "train_number": "さくら754号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "11:55"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "12:07"
+        },
+        {
+          "station": "熊本",
+          "arr": "12:41",
+          "dep": "12:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "13:03"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "13:08"
+        },
+        {
+          "station": "博多",
+          "arr": "13:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_404",
+      "train_number": "さくら404号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "12:20"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "12:33"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "12:45"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "12:52"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "13:06"
+        },
+        {
+          "station": "熊本",
+          "arr": "13:16",
+          "dep": "13:17"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "13:40"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "13:45"
+        },
+        {
+          "station": "博多",
+          "arr": "13:57",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_318",
+      "train_number": "つばめ318号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "13:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "13:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "13:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "13:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "13:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "13:56"
+        },
+        {
+          "station": "博多",
+          "arr": "14:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_756",
+      "train_number": "さくら756号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "12:55"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "13:07"
+        },
+        {
+          "station": "熊本",
+          "arr": "13:41",
+          "dep": "13:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "14:03"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "14:08"
+        },
+        {
+          "station": "博多",
+          "arr": "14:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_320",
+      "train_number": "つばめ320号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "14:07"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "14:17"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "14:25"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "14:31"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "14:38"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "14:43"
+        },
+        {
+          "station": "博多",
+          "arr": "14:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_758",
+      "train_number": "さくら758号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "13:45"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "13:57"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "14:09"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "14:17"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "14:31"
+        },
+        {
+          "station": "熊本",
+          "arr": "14:41",
+          "dep": "14:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "15:01"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "15:08"
+        },
+        {
+          "station": "博多",
+          "arr": "15:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_760",
+      "train_number": "さくら760号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "14:17"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "14:29"
+        },
+        {
+          "station": "熊本",
+          "arr": "15:03",
+          "dep": "15:04"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "15:26"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "15:30"
+        },
+        {
+          "station": "博多",
+          "arr": "15:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_322",
+      "train_number": "つばめ322号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "15:07"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "15:17"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "15:25"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "15:31"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "15:38"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "15:43"
+        },
+        {
+          "station": "博多",
+          "arr": "15:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_762",
+      "train_number": "さくら762号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "14:45"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "14:57"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "15:09"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "15:17"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "15:31"
+        },
+        {
+          "station": "熊本",
+          "arr": "15:41",
+          "dep": "15:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:03"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:08"
+        },
+        {
+          "station": "博多",
+          "arr": "16:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_324",
+      "train_number": "つばめ324号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "15:50"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "16:00"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "16:07"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "16:14"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:21"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:26"
+        },
+        {
+          "station": "博多",
+          "arr": "16:39",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_764",
+      "train_number": "さくら764号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "15:17"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "15:29"
+        },
+        {
+          "station": "熊本",
+          "arr": "16:03",
+          "dep": "16:04"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:26"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:30"
+        },
+        {
+          "station": "博多",
+          "arr": "16:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_326",
+      "train_number": "つばめ326号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "16:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "16:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "16:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "16:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "16:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "16:56"
+        },
+        {
+          "station": "博多",
+          "arr": "17:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_766",
+      "train_number": "さくら766号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "15:45"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "15:57"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "16:09"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "16:17"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "16:31"
+        },
+        {
+          "station": "熊本",
+          "arr": "16:41",
+          "dep": "16:42"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "17:03"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "17:08"
+        },
+        {
+          "station": "博多",
+          "arr": "17:21",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_768",
+      "train_number": "さくら768号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "16:17"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "16:29"
+        },
+        {
+          "station": "熊本",
+          "arr": "17:03",
+          "dep": "17:04"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "17:26"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "17:30"
+        },
+        {
+          "station": "博多",
+          "arr": "17:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_328",
+      "train_number": "つばめ328号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "16:22"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "16:35"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "16:47"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "16:54"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "17:08"
+        },
+        {
+          "station": "熊本",
+          "arr": "17:19",
+          "dep": "17:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "17:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "17:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "17:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "17:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "17:56"
+        },
+        {
+          "station": "博多",
+          "arr": "18:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_608",
+      "train_number": "みずほ608号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "17:04"
+        },
+        {
+          "station": "熊本",
+          "arr": "17:46",
+          "dep": "17:47"
+        },
+        {
+          "station": "博多",
+          "arr": "18:20",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_770",
+      "train_number": "さくら770号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "17:07"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "17:20"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "17:32"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "17:39"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "17:53"
+        },
+        {
+          "station": "熊本",
+          "arr": "18:03",
+          "dep": "18:04"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "18:25"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "18:30"
+        },
+        {
+          "station": "博多",
+          "arr": "18:43",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_330",
+      "train_number": "つばめ330号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "18:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "18:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "18:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "18:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "18:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "18:56"
+        },
+        {
+          "station": "博多",
+          "arr": "19:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_610",
+      "train_number": "みずほ610号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "17:54"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "18:06"
+        },
+        {
+          "station": "熊本",
+          "arr": "18:40",
+          "dep": "18:41"
+        },
+        {
+          "station": "博多",
+          "arr": "19:13",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_406",
+      "train_number": "さくら406号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "18:05"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "18:17"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "18:29"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "18:36"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "18:50"
+        },
+        {
+          "station": "熊本",
+          "arr": "19:01",
+          "dep": "19:02"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "19:23"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "19:28"
+        },
+        {
+          "station": "博多",
+          "arr": "19:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_612",
+      "train_number": "みずほ612号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "18:30"
+        },
+        {
+          "station": "熊本",
+          "arr": "19:12",
+          "dep": "19:13"
+        },
+        {
+          "station": "博多",
+          "arr": "19:46",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_332",
+      "train_number": "つばめ332号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "熊本",
+          "arr": null,
+          "dep": "19:20"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "19:30"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "19:38"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "19:44"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "19:52"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "19:56"
+        },
+        {
+          "station": "博多",
+          "arr": "20:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_772",
+      "train_number": "さくら772号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "18:41"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "18:53"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "19:05"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "19:12"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "19:26"
+        },
+        {
+          "station": "熊本",
+          "arr": "19:37",
+          "dep": "19:38"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "19:59"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "20:03"
+        },
+        {
+          "station": "博多",
+          "arr": "20:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_334",
+      "train_number": "つばめ334号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "18:59"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "19:11"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "19:23"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "19:30"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "19:44"
+        },
+        {
+          "station": "熊本",
+          "arr": "19:55",
+          "dep": "19:56"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "20:06"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "20:13"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "20:20"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "20:27"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "20:32"
+        },
+        {
+          "station": "博多",
+          "arr": "20:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_614",
+      "train_number": "みずほ614号",
+      "train_type": "mizuho",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "19:51"
+        },
+        {
+          "station": "熊本",
+          "arr": "20:34",
+          "dep": "20:35"
+        },
+        {
+          "station": "博多",
+          "arr": "21:07",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_336",
+      "train_number": "つばめ336号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "19:33"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "19:46"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "19:58"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "20:05"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "20:19"
+        },
+        {
+          "station": "熊本",
+          "arr": "20:30",
+          "dep": "20:38"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "20:48"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "20:56"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "21:02"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "21:10"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "21:14"
+        },
+        {
+          "station": "博多",
+          "arr": "21:27",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_408",
+      "train_number": "さくら408号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "20:14"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "20:26"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "20:38"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "20:45"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "20:59"
+        },
+        {
+          "station": "熊本",
+          "arr": "21:10",
+          "dep": "21:11"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "21:32"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "21:37"
+        },
+        {
+          "station": "博多",
+          "arr": "21:50",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_338",
+      "train_number": "つばめ338号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "20:59"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "21:11"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "21:23"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "21:30"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "21:44"
+        },
+        {
+          "station": "熊本",
+          "arr": "21:55",
+          "dep": "21:56"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "22:06"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "22:14"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "22:20"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "22:27"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "22:32"
+        },
+        {
+          "station": "博多",
+          "arr": "22:45",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_340",
+      "train_number": "つばめ340号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "21:36"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "21:49"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "22:01"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "22:08"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "22:22"
+        },
+        {
+          "station": "熊本",
+          "arr": "22:33",
+          "dep": "22:34"
+        },
+        {
+          "station": "新玉名",
+          "arr": null,
+          "dep": "22:44"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "22:52"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "22:58"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "23:06"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "23:10"
+        },
+        {
+          "station": "博多",
+          "arr": "23:23",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_410",
+      "train_number": "さくら410号",
+      "train_type": "sakura",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "22:19"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "22:31"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "22:43"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "22:51"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "23:05"
+        },
+        {
+          "station": "熊本",
+          "arr": "23:15",
+          "dep": "23:16"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "23:37"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "23:42"
+        },
+        {
+          "station": "博多",
+          "arr": "23:54",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kyushu_342",
+      "train_number": "つばめ342号",
+      "train_type": "tsubame",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "鹿児島中央",
+          "arr": null,
+          "dep": "23:01"
+        },
+        {
+          "station": "川内",
+          "arr": null,
+          "dep": "23:13"
+        },
+        {
+          "station": "出水",
+          "arr": null,
+          "dep": "23:25"
+        },
+        {
+          "station": "新水俣",
+          "arr": null,
+          "dep": "23:32"
+        },
+        {
+          "station": "新八代",
+          "arr": null,
+          "dep": "23:46"
+        },
+        {
+          "station": "熊本",
+          "arr": "23:57",
+          "dep": null
+        }
+      ]
+    }
+  ]
+}

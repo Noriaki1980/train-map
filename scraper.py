@@ -365,7 +365,7 @@ def main():
     # 2. フォールバック: 時刻表(trips_*.json)からの線形補間
     try:
         trips = []
-        for fname in ["trips_kodama.json", "trips_hikari.json"]:
+        for fname in ["trips_kodama.json", "trips_hikari.json", "trips_kyushu.json"]:
             path = DATA_DIR / fname
             if path.exists():
                 trips.extend(load_trips(path))
