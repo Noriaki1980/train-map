@@ -143,6 +143,14 @@ TRAIN_TYPE_KEY = {
     "10": "mizuho", "11": "sakura", "12": "tsubame",
 }
 
+# Sparkling Dreams Shinkansen (2026年6月19日〜運行のディズニー特別編成)
+# 日によって3パターン(A/B/C)あるが、使われる列車番号はこの4つの組み合わせのみ
+SPARKLING_DREAMS_TRAIN_NUMBERS = {"636", "815", "836", "659"}
+
+
+def is_sparkling_dreams(train_number_raw):
+    return train_number_raw in SPARKLING_DREAMS_TRAIN_NUMBERS
+
 
 def parse_train_positions(raw, stations, jr_id_map):
     """train_location_info.json の生データを、地図表示用の共通フォーマットに変換する。
@@ -179,6 +187,7 @@ def parse_train_positions(raw, stations, jr_id_map):
                     "trip_id": f"{t['train']}-{t['trainNumber']}",
                     "train_number": f"{train_types.get(t['train'], '?')}{t['trainNumber']}号",
                     "train_type": TRAIN_TYPE_KEY.get(t['train'], "other"),
+                    "is_special": is_sparkling_dreams(t['trainNumber']),
                     "direction": "up" if bound_id == "1" else "down",
                     "lat": st["lat"],
                     "lng": st["lng"],
@@ -213,6 +222,7 @@ def parse_train_positions(raw, stations, jr_id_map):
                     "trip_id": f"{t['train']}-{t['trainNumber']}",
                     "train_number": f"{train_types.get(t['train'], '?')}{t['trainNumber']}号",
                     "train_type": TRAIN_TYPE_KEY.get(t['train'], "other"),
+                    "is_special": is_sparkling_dreams(t['trainNumber']),
                     "direction": "up" if bound_id == "1" else "down",
                     "lat": round(lat, 5),
                     "lng": round(lng, 5),
@@ -311,10 +321,12 @@ def calculate_positions(trips, stations, now=None):
                 # 停車中かどうか判定 (発車時刻に達していない= 出発駅で停車中)
                 status = "stopped" if ratio <= 0.02 else "running"
 
+                raw_train_no = trip["trip_id"].split("_", 1)[-1]
                 positions.append({
                     "trip_id": trip["trip_id"],
                     "train_number": trip["train_number"],
                     "train_type": trip.get("train_type", "other"),
+                    "is_special": is_sparkling_dreams(raw_train_no),
                     "direction": trip["direction"],
                     "lat": round(lat, 5),
                     "lng": round(lng, 5),

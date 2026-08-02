@@ -109,6 +109,17 @@
   }
   .train-card:hover{ background: var(--panel-2); }
   .train-card.active{ background: var(--panel-2); border-left: 3px solid var(--accent); }
+  .train-card.special{ background: linear-gradient(90deg, rgba(255,215,0,0.08), transparent); }
+
+  .special-badge{
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 10px;
+    color: #FFD700;
+    background: rgba(255,215,0,0.15);
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-left: 4px;
+  }
 
   .train-card-top{
     display: flex;
@@ -246,6 +257,19 @@
   @keyframes pulse{
     0%, 100%{ transform: scale(0.9); opacity: 0.6; }
     50%{ transform: scale(1.25); opacity: 1; }
+  }
+
+  .shinkansen-inner.special::before{
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,215,0,0.5) 0%, rgba(255,215,0,0) 70%);
+    animation: sparkle 1.2s ease-in-out infinite;
+  }
+  @keyframes sparkle{
+    0%, 100%{ transform: scale(0.95) rotate(0deg); opacity: 0.7; }
+    50%{ transform: scale(1.3) rotate(15deg); opacity: 1; }
   }
 
   .leaflet-popup-content-wrapper{
@@ -509,19 +533,38 @@ const TRAIN_TYPE_LABELS = {
   mizuho: 'みずほ', sakura: 'さくら', tsubame: 'つばめ', other: 'その他',
 };
 
-function shinkansenIcon(trainType, status, bearing){
-  const color = TRAIN_TYPE_COLORS[trainType] || TRAIN_TYPE_COLORS.other;
+function shinkansenIcon(trainType, status, bearing, isSpecial){
   const glowClass = status === 'running' ? 'running' : '';
   const rotation = bearing || 0;
 
-  const svg = `
-    <svg width="22" height="22" viewBox="0 0 22 22" style="transform: rotate(${rotation}deg); transform-origin: 50% 50%; transform-box: fill-box;">
-      <path d="M11 1 C 15 3, 18 8, 18 12 L 18 18 C 18 19.5, 16.8 20.5, 15 20.5 L 7 20.5 C 5.2 20.5, 4 19.5, 4 18 L 4 12 C 4 8, 7 3, 11 1 Z"
-            fill="${color}" stroke="#0B1220" stroke-width="0.8"/>
-      <circle cx="11" cy="7" r="1.4" fill="#FFFFFF" opacity="0.9"/>
-    </svg>`;
+  let svg;
+  if(isSpecial){
+    // Sparkling Dreams Shinkansen専用アイコン: ミッキーシルエット+スパークル
+    svg = `
+      <svg width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(${rotation}deg); transform-origin: 50% 50%; transform-box: fill-box;">
+        <defs>
+          <linearGradient id="sdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3B6BFF"/>
+            <stop offset="100%" stop-color="#8A5CFF"/>
+          </linearGradient>
+        </defs>
+        <circle cx="7" cy="6" r="3.4" fill="url(#sdGrad)" stroke="#FFD700" stroke-width="0.6"/>
+        <circle cx="16" cy="6" r="3.4" fill="url(#sdGrad)" stroke="#FFD700" stroke-width="0.6"/>
+        <circle cx="11.5" cy="13" r="8" fill="url(#sdGrad)" stroke="#FFD700" stroke-width="0.9"/>
+        <path d="M11.5 8.2 L12.3 10.6 L14.7 10.6 L12.7 12 L13.5 14.4 L11.5 13 L9.5 14.4 L10.3 12 L8.3 10.6 L10.7 10.6 Z"
+              fill="#FFD700"/>
+      </svg>`;
+  } else {
+    const color = TRAIN_TYPE_COLORS[trainType] || TRAIN_TYPE_COLORS.other;
+    svg = `
+      <svg width="22" height="22" viewBox="0 0 22 22" style="transform: rotate(${rotation}deg); transform-origin: 50% 50%; transform-box: fill-box;">
+        <path d="M11 1 C 15 3, 18 8, 18 12 L 18 18 C 18 19.5, 16.8 20.5, 15 20.5 L 7 20.5 C 5.2 20.5, 4 19.5, 4 18 L 4 12 C 4 8, 7 3, 11 1 Z"
+              fill="${color}" stroke="#0B1220" stroke-width="0.8"/>
+        <circle cx="11" cy="7" r="1.4" fill="#FFFFFF" opacity="0.9"/>
+      </svg>`;
+  }
 
-  const html = `<div class="shinkansen-inner ${glowClass}">${svg}</div>`;
+  const html = `<div class="shinkansen-inner ${glowClass} ${isSpecial ? 'special' : ''}">${svg}</div>`;
 
   return L.divIcon({
     className: `shinkansen-icon`,
@@ -559,7 +602,7 @@ function renderTrains(positionsData){
     const to = stationsByName[toName];
     const bearing = (from && to) ? bearingBetween(from, to) : 0;
 
-    const icon = shinkansenIcon(t.train_type || 'other', t.status, bearing);
+    const icon = shinkansenIcon(t.train_type || 'other', t.status, bearing, !!t.is_special);
 
     if(trainMarkers[t.trip_id]){
       trainMarkers[t.trip_id].setLatLng([t.lat, t.lng]);
@@ -584,7 +627,8 @@ function renderTrains(positionsData){
 }
 
 function popupHtml(t){
-  return `<b>${t.train_number}</b><br>${t.current_segment}<br>${t.status === 'running' ? '走行中' : '停車中'}`;
+  const specialLine = t.is_special ? `<br>✨ Sparkling Dreams Shinkansen` : '';
+  return `<b>${t.train_number}</b>${specialLine}<br>${t.current_segment}<br>${t.status === 'running' ? '走行中' : '停車中'}`;
 }
 
 function renderTrainList(trains){
@@ -595,11 +639,12 @@ function renderTrainList(trains){
   }
 
   list.innerHTML = trains.map(t => `
-    <div class="train-card" data-id="${t.trip_id}">
+    <div class="train-card ${t.is_special ? 'special' : ''}" data-id="${t.trip_id}">
       <div class="train-card-top">
         <span class="train-number">
           <span class="type-dot" style="background:${TRAIN_TYPE_COLORS[t.train_type] || TRAIN_TYPE_COLORS.other}"></span>
           ${t.train_number}
+          ${t.is_special ? '<span class="special-badge">✨ Disney</span>' : ''}
         </span>
         <span class="badge ${t.status}">${t.status === 'running' ? 'LIVE' : 'STOP'}</span>
       </div>
