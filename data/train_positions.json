@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-02T09:08:44.491617+09:00",
-  "count": 113,
+  "updated_at": "2026-08-02T12:47:38.373643+09:00",
+  "count": 109,
   "trains": [
     {
-      "trip_id": "6-245",
-      "train_number": "のぞみ245号",
+      "trip_id": "6-71",
+      "train_number": "のぞみ71号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.6812,
@@ -14,8 +14,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-19",
-      "train_number": "のぞみ19号",
+      "trip_id": "2-827",
+      "train_number": "こだま827号",
+      "train_type": "kodama",
+      "direction": "down",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "status": "stopped",
+      "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-259",
+      "train_number": "のぞみ259号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.6812,
@@ -25,30 +36,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-343",
-      "train_number": "のぞみ343号",
-      "train_type": "nozomi",
-      "direction": "down",
-      "lat": 35.6812,
-      "lng": 139.7671,
-      "status": "stopped",
-      "current_segment": "東京",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-247",
-      "train_number": "のぞみ247号",
-      "train_type": "nozomi",
-      "direction": "down",
-      "lat": 35.6812,
-      "lng": 139.7671,
-      "status": "stopped",
-      "current_segment": "東京",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-243",
-      "train_number": "のぞみ243号",
+      "trip_id": "6-163",
+      "train_number": "のぞみ163号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.6285,
@@ -58,64 +47,31 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-63",
-      "train_number": "のぞみ63号",
+      "trip_id": "2-819",
+      "train_number": "こだま819号",
+      "train_type": "kodama",
+      "direction": "down",
+      "lat": 34.7025,
+      "lng": 137.7346,
+      "status": "stopped",
+      "current_segment": "浜松",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-371",
+      "train_number": "のぞみ371号",
       "train_type": "nozomi",
       "direction": "down",
-      "lat": 35.5075,
-      "lng": 139.6168,
+      "lat": 35.1706,
+      "lng": 136.8816,
       "status": "stopped",
-      "current_segment": "新横浜",
+      "current_segment": "名古屋",
       "delay_min": 0
     },
     {
-      "trip_id": "2-807",
-      "train_number": "こだま807号",
-      "train_type": "kodama",
-      "direction": "down",
-      "lat": 35.1553,
-      "lng": 138.6483,
-      "status": "stopped",
-      "current_segment": "新富士",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "1-703",
-      "train_number": "ひかり703号",
-      "train_type": "hikari",
-      "direction": "down",
-      "lat": 34.9709,
-      "lng": 138.3888,
-      "status": "stopped",
-      "current_segment": "静岡",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-805",
-      "train_number": "こだま805号",
-      "train_type": "kodama",
-      "direction": "down",
-      "lat": 34.7686,
-      "lng": 138.0128,
-      "status": "stopped",
-      "current_segment": "掛川",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-803",
-      "train_number": "こだま803号",
-      "train_type": "kodama",
-      "direction": "down",
-      "lat": 34.7625,
-      "lng": 137.3914,
-      "status": "stopped",
-      "current_segment": "豊橋",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "1-631",
-      "train_number": "ひかり631号",
-      "train_type": "hikari",
+      "trip_id": "6-25",
+      "train_number": "のぞみ25号",
+      "train_type": "nozomi",
       "direction": "down",
       "lat": 34.9858,
       "lng": 135.7588,
@@ -124,41 +80,52 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-937",
-      "train_number": "こだま937号",
-      "train_type": "kodama",
-      "direction": "down",
-      "lat": 34.3978,
-      "lng": 132.4753,
-      "status": "stopped",
-      "current_segment": "広島",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-935",
-      "train_number": "こだま935号",
-      "train_type": "kodama",
-      "direction": "down",
-      "lat": 34.0989,
-      "lng": 131.4739,
-      "status": "stopped",
-      "current_segment": "新山口",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-70",
-      "train_number": "のぞみ70号",
+      "trip_id": "6-65",
+      "train_number": "のぞみ65号",
       "train_type": "nozomi",
-      "direction": "up",
-      "lat": 35.6285,
-      "lng": 139.7387,
+      "direction": "down",
+      "lat": 34.8283,
+      "lng": 134.6931,
       "status": "stopped",
-      "current_segment": "品川",
+      "current_segment": "姫路",
       "delay_min": 0
     },
     {
-      "trip_id": "6-234",
-      "train_number": "のぞみ234号",
+      "trip_id": "1-705",
+      "train_number": "ひかり705号",
+      "train_type": "hikari",
+      "direction": "down",
+      "lat": 34.8033,
+      "lng": 134.4728,
+      "status": "stopped",
+      "current_segment": "相生",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-21",
+      "train_number": "のぞみ21号",
+      "train_type": "nozomi",
+      "direction": "down",
+      "lat": 34.6663,
+      "lng": 133.9189,
+      "status": "stopped",
+      "current_segment": "岡山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-949",
+      "train_number": "こだま949号",
+      "train_type": "kodama",
+      "direction": "down",
+      "lat": 34.6663,
+      "lng": 133.9189,
+      "status": "stopped",
+      "current_segment": "岡山",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-358",
+      "train_number": "のぞみ358号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 35.5075,
@@ -168,75 +135,20 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-802",
-      "train_number": "こだま802号",
+      "trip_id": "2-824",
+      "train_number": "こだま824号",
       "train_type": "kodama",
       "direction": "up",
-      "lat": 35.1553,
-      "lng": 138.6483,
+      "lat": 35.3167,
+      "lng": 136.6961,
       "status": "stopped",
-      "current_segment": "新富士",
+      "current_segment": "岐阜羽島",
       "delay_min": 0
     },
     {
-      "trip_id": "2-804",
-      "train_number": "こだま804号",
-      "train_type": "kodama",
-      "direction": "up",
-      "lat": 34.7686,
-      "lng": 138.0128,
-      "status": "stopped",
-      "current_segment": "掛川",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-806",
-      "train_number": "こだま806号",
-      "train_type": "kodama",
-      "direction": "up",
-      "lat": 34.7625,
-      "lng": 137.3914,
-      "status": "stopped",
-      "current_segment": "豊橋",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-78",
-      "train_number": "のぞみ78号",
-      "train_type": "nozomi",
-      "direction": "up",
-      "lat": 35.1706,
-      "lng": 136.8816,
-      "status": "stopped",
-      "current_segment": "名古屋",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-808",
-      "train_number": "こだま808号",
-      "train_type": "kodama",
-      "direction": "up",
-      "lat": 35.1706,
-      "lng": 136.8816,
-      "status": "stopped",
-      "current_segment": "名古屋",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "1-700",
-      "train_number": "ひかり700号",
+      "trip_id": "1-708",
+      "train_number": "ひかり708号",
       "train_type": "hikari",
-      "direction": "up",
-      "lat": 34.9858,
-      "lng": 135.7588,
-      "status": "stopped",
-      "current_segment": "京都",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-246",
-      "train_number": "のぞみ246号",
-      "train_type": "nozomi",
       "direction": "up",
       "lat": 34.7334,
       "lng": 135.5002,
@@ -245,30 +157,30 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-702",
-      "train_number": "ひかり702号",
-      "train_type": "hikari",
-      "direction": "up",
-      "lat": 34.8283,
-      "lng": 134.6931,
-      "status": "stopped",
-      "current_segment": "姫路",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-942",
-      "train_number": "こだま942号",
+      "trip_id": "2-828",
+      "train_number": "こだま828号",
       "train_type": "kodama",
       "direction": "up",
-      "lat": 34.3968,
-      "lng": 133.0789,
+      "lat": 34.7334,
+      "lng": 135.5002,
       "status": "stopped",
-      "current_segment": "三原",
+      "current_segment": "新大阪",
       "delay_min": 0
     },
     {
-      "trip_id": "6-10",
-      "train_number": "のぞみ10号",
+      "trip_id": "11-746",
+      "train_number": "さくら746号",
+      "train_type": "sakura",
+      "direction": "up",
+      "lat": 34.701,
+      "lng": 135.1957,
+      "status": "stopped",
+      "current_segment": "新神戸",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-96",
+      "train_number": "のぞみ96号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.3978,
@@ -278,20 +190,20 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-946",
-      "train_number": "こだま946号",
+      "trip_id": "2-952",
+      "train_number": "こだま952号",
       "train_type": "kodama",
       "direction": "up",
-      "lat": 33.8859,
-      "lng": 130.8817,
+      "lat": 34.0989,
+      "lng": 131.4739,
       "status": "stopped",
-      "current_segment": "小倉",
+      "current_segment": "新山口",
       "delay_min": 0
     },
     {
-      "trip_id": "6-16",
-      "train_number": "のぞみ16号",
-      "train_type": "nozomi",
+      "trip_id": "2-954",
+      "train_number": "こだま954号",
+      "train_type": "kodama",
       "direction": "up",
       "lat": 33.5902,
       "lng": 130.4207,
@@ -300,19 +212,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-705",
-      "train_number": "ひかり705号",
-      "train_type": "hikari",
-      "direction": "down",
-      "lat": 35.65485,
-      "lng": 139.7529,
-      "status": "running",
-      "current_segment": "東京→品川",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-339",
-      "train_number": "のぞみ339号",
+      "trip_id": "6-33",
+      "train_number": "のぞみ33号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.568,
@@ -322,9 +223,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-811",
-      "train_number": "こだま811号",
-      "train_type": "kodama",
+      "trip_id": "1-643",
+      "train_number": "ひかり643号",
+      "train_type": "hikari",
       "direction": "down",
       "lat": 35.568,
       "lng": 139.67775,
@@ -333,8 +234,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-241",
-      "train_number": "のぞみ241号",
+      "trip_id": "6-389",
+      "train_number": "のぞみ389号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.3811,
@@ -344,8 +245,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-337",
-      "train_number": "のぞみ337号",
+      "trip_id": "6-393",
+      "train_number": "のぞみ393号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.3811,
@@ -355,21 +256,21 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-635",
-      "train_number": "ひかり635号",
-      "train_type": "hikari",
-      "direction": "down",
-      "lat": 35.17525,
-      "lng": 139.11295,
-      "status": "running",
-      "current_segment": "小田原→熱海",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-809",
-      "train_number": "こだま809号",
+      "trip_id": "2-825",
+      "train_number": "こだま825号",
       "train_type": "kodama",
       "direction": "down",
+      "lat": 35.3811,
+      "lng": 139.3847,
+      "status": "running",
+      "current_segment": "新横浜→小田原",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-31",
+      "train_number": "のぞみ31号",
+      "train_type": "nozomi",
+      "direction": "down",
       "lat": 35.17525,
       "lng": 139.11295,
       "status": "running",
@@ -377,9 +278,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-17",
-      "train_number": "のぞみ17号",
-      "train_type": "nozomi",
+      "trip_id": "2-823",
+      "train_number": "こだま823号",
+      "train_type": "kodama",
       "direction": "down",
       "lat": 35.1092,
       "lng": 138.99195,
@@ -388,9 +289,31 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-239",
-      "train_number": "のぞみ239号",
+      "trip_id": "6-257",
+      "train_number": "のぞみ257号",
       "train_type": "nozomi",
+      "direction": "down",
+      "lat": 35.13895,
+      "lng": 138.77945,
+      "status": "running",
+      "current_segment": "三島→新富士",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-711",
+      "train_number": "ひかり711号",
+      "train_type": "hikari",
+      "direction": "down",
+      "lat": 35.13895,
+      "lng": 138.77945,
+      "status": "running",
+      "current_segment": "三島→新富士",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "2-821",
+      "train_number": "こだま821号",
+      "train_type": "kodama",
       "direction": "down",
       "lat": 35.0631,
       "lng": 138.51855,
@@ -399,8 +322,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-329",
-      "train_number": "のぞみ329号",
+      "trip_id": "6-69",
+      "train_number": "のぞみ69号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 34.86975,
@@ -410,19 +333,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-15",
-      "train_number": "のぞみ15号",
-      "train_type": "nozomi",
+      "trip_id": "1-641",
+      "train_number": "ひかり641号",
+      "train_type": "hikari",
       "direction": "down",
-      "lat": 34.86975,
-      "lng": 138.2008,
+      "lat": 34.73555,
+      "lng": 137.8737,
       "status": "running",
-      "current_segment": "静岡→掛川",
+      "current_segment": "掛川→浜松",
       "delay_min": 0
     },
     {
-      "trip_id": "6-327",
-      "train_number": "のぞみ327号",
+      "trip_id": "6-155",
+      "train_number": "のぞみ155号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 34.73555,
@@ -432,19 +355,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-61",
-      "train_number": "のぞみ61号",
-      "train_type": "nozomi",
-      "direction": "down",
-      "lat": 34.73555,
-      "lng": 137.8737,
-      "status": "running",
-      "current_segment": "掛川→浜松",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-13",
-      "train_number": "のぞみ13号",
+      "trip_id": "6-29",
+      "train_number": "のぞみ29号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 34.7325,
@@ -454,8 +366,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-633",
-      "train_number": "ひかり633号",
+      "trip_id": "2-817",
+      "train_number": "こだま817号",
+      "train_type": "kodama",
+      "direction": "down",
+      "lat": 34.8564,
+      "lng": 137.2361,
+      "status": "running",
+      "current_segment": "豊橋→三河安城",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-709",
+      "train_number": "ひかり709号",
       "train_type": "hikari",
       "direction": "down",
       "lat": 34.8564,
@@ -465,8 +388,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-11",
-      "train_number": "のぞみ11号",
+      "trip_id": "6-27",
+      "train_number": "のぞみ27号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.06045,
@@ -476,8 +399,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-237",
-      "train_number": "のぞみ237号",
+      "trip_id": "6-373",
+      "train_number": "のぞみ373号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.06045,
@@ -487,9 +410,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-701",
-      "train_number": "ひかり701号",
-      "train_type": "hikari",
+      "trip_id": "6-255",
+      "train_number": "のぞみ255号",
+      "train_type": "nozomi",
       "direction": "down",
       "lat": 35.24365,
       "lng": 136.78885,
@@ -498,10 +421,21 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-867",
-      "train_number": "こだま867号",
+      "trip_id": "2-815",
+      "train_number": "こだま815号",
       "train_type": "kodama",
       "direction": "down",
+      "lat": 35.24365,
+      "lng": 136.78885,
+      "status": "running",
+      "current_segment": "名古屋→岐阜羽島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-639",
+      "train_number": "ひかり639号",
+      "train_type": "hikari",
+      "direction": "down",
       "lat": 35.316,
       "lng": 136.4936,
       "status": "running",
@@ -509,8 +443,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-235",
-      "train_number": "のぞみ235号",
+      "trip_id": "6-367",
+      "train_number": "のぞみ367号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.316,
@@ -520,8 +454,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-233",
-      "train_number": "のぞみ233号",
+      "trip_id": "6-369",
+      "train_number": "のぞみ369号",
+      "train_type": "nozomi",
+      "direction": "down",
+      "lat": 35.316,
+      "lng": 136.4936,
+      "status": "running",
+      "current_segment": "岐阜羽島→米原",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-361",
+      "train_number": "のぞみ361号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.15055,
@@ -531,8 +476,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-9",
-      "train_number": "のぞみ9号",
+      "trip_id": "6-67",
+      "train_number": "のぞみ67号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 35.15055,
@@ -542,8 +487,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-7",
-      "train_number": "のぞみ7号",
+      "trip_id": "6-253",
+      "train_number": "のぞみ253号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 34.8596,
@@ -553,8 +498,30 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-5",
-      "train_number": "のぞみ5号",
+      "trip_id": "2-811",
+      "train_number": "こだま811号",
+      "train_type": "kodama",
+      "direction": "down",
+      "lat": 34.8596,
+      "lng": 135.6295,
+      "status": "running",
+      "current_segment": "京都→新大阪",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-707",
+      "train_number": "ひかり707号",
+      "train_type": "hikari",
+      "direction": "down",
+      "lat": 34.8596,
+      "lng": 135.6295,
+      "status": "running",
+      "current_segment": "京都→新大阪",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-23",
+      "train_number": "のぞみ23号",
       "train_type": "nozomi",
       "direction": "down",
       "lat": 34.7172,
@@ -564,20 +531,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "11-747",
-      "train_number": "さくら747号",
+      "trip_id": "11-755",
+      "train_number": "さくら755号",
       "train_type": "sakura",
-      "direction": "down",
-      "lat": 34.6767,
-      "lng": 135.08605,
-      "status": "running",
-      "current_segment": "新神戸→西明石",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "1-735",
-      "train_number": "ひかり735号",
-      "train_type": "hikari",
       "direction": "down",
       "lat": 34.74035,
       "lng": 134.83475,
@@ -586,97 +542,31 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-3",
-      "train_number": "のぞみ3号",
+      "trip_id": "6-19",
+      "train_number": "のぞみ19号",
       "train_type": "nozomi",
       "direction": "down",
-      "lat": 34.8158,
-      "lng": 134.58295,
+      "lat": 34.4038,
+      "lng": 133.13335,
       "status": "running",
-      "current_segment": "姫路→相生",
+      "current_segment": "新尾道→三原",
       "delay_min": 0
     },
     {
-      "trip_id": "6-1",
-      "train_number": "のぞみ1号",
-      "train_type": "nozomi",
-      "direction": "down",
-      "lat": 34.7348,
-      "lng": 134.19585,
-      "status": "running",
-      "current_segment": "相生→岡山",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "1-733",
-      "train_number": "ひかり733号",
-      "train_type": "hikari",
-      "direction": "down",
-      "lat": 34.7348,
-      "lng": 134.19585,
-      "status": "running",
-      "current_segment": "相生→岡山",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-99",
-      "train_number": "のぞみ99号",
-      "train_type": "nozomi",
-      "direction": "down",
-      "lat": 34.6343,
-      "lng": 133.82,
-      "status": "running",
-      "current_segment": "岡山→新倉敷",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-941",
-      "train_number": "こだま941号",
+      "trip_id": "2-947",
+      "train_number": "こだま947号",
       "train_type": "kodama",
       "direction": "down",
-      "lat": 34.54405,
-      "lng": 133.54185,
+      "lat": 34.4138,
+      "lng": 132.8578,
       "status": "running",
-      "current_segment": "新倉敷→福山",
+      "current_segment": "三原→東広島",
       "delay_min": 0
     },
     {
-      "trip_id": "11-745",
-      "train_number": "さくら745号",
+      "trip_id": "11-753",
+      "train_number": "さくら753号",
       "train_type": "sakura",
-      "direction": "down",
-      "lat": 34.4483,
-      "lng": 133.2752,
-      "status": "running",
-      "current_segment": "福山→新尾道",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-103",
-      "train_number": "のぞみ103号",
-      "train_type": "nozomi",
-      "direction": "down",
-      "lat": 34.4138,
-      "lng": 132.8578,
-      "status": "running",
-      "current_segment": "三原→東広島",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-939",
-      "train_number": "こだま939号",
-      "train_type": "kodama",
-      "direction": "down",
-      "lat": 34.4138,
-      "lng": 132.8578,
-      "status": "running",
-      "current_segment": "三原→東広島",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "10-605",
-      "train_number": "みずほ605号",
-      "train_type": "mizuho",
       "direction": "down",
       "lat": 34.4143,
       "lng": 132.556,
@@ -685,20 +575,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-731",
-      "train_number": "ひかり731号",
-      "train_type": "hikari",
-      "direction": "down",
-      "lat": 34.27335,
-      "lng": 132.32805,
-      "status": "running",
-      "current_segment": "広島→新岩国",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "10-603",
-      "train_number": "みずほ603号",
-      "train_type": "mizuho",
+      "trip_id": "6-17",
+      "train_number": "のぞみ17号",
+      "train_type": "nozomi",
       "direction": "down",
       "lat": 34.0982,
       "lng": 131.9933,
@@ -707,30 +586,30 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-101",
-      "train_number": "のぞみ101号",
+      "trip_id": "2-945",
+      "train_number": "こだま945号",
+      "train_type": "kodama",
+      "direction": "down",
+      "lat": 34.0732,
+      "lng": 131.63985,
+      "status": "running",
+      "current_segment": "徳山→新山口",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-15",
+      "train_number": "のぞみ15号",
       "train_type": "nozomi",
       "direction": "down",
-      "lat": 34.1238,
-      "lng": 131.36925,
+      "lat": 34.0627,
+      "lng": 131.1043,
       "status": "running",
-      "current_segment": "新山口→厚狭",
+      "current_segment": "厚狭→新下関",
       "delay_min": 0
     },
     {
-      "trip_id": "11-743",
-      "train_number": "さくら743号",
-      "train_type": "sakura",
-      "direction": "down",
-      "lat": 33.9313,
-      "lng": 130.91285,
-      "status": "running",
-      "current_segment": "新下関→小倉",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "2-933",
-      "train_number": "こだま933号",
+      "trip_id": "2-943",
+      "train_number": "こだま943号",
       "train_type": "kodama",
       "direction": "down",
       "lat": 33.73805,
@@ -740,9 +619,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-681",
-      "train_number": "ひかり681号",
-      "train_type": "hikari",
+      "trip_id": "11-751",
+      "train_number": "さくら751号",
+      "train_type": "sakura",
       "direction": "down",
       "lat": 33.73805,
       "lng": 130.6512,
@@ -751,9 +630,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-634",
-      "train_number": "ひかり634号",
-      "train_type": "hikari",
+      "trip_id": "2-812",
+      "train_number": "こだま812号",
+      "train_type": "kodama",
       "direction": "up",
       "lat": 35.65485,
       "lng": 139.7529,
@@ -762,19 +641,41 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-800",
-      "train_number": "こだま800号",
-      "train_type": "kodama",
+      "trip_id": "6-352",
+      "train_number": "のぞみ352号",
+      "train_type": "nozomi",
+      "direction": "up",
+      "lat": 35.65485,
+      "lng": 139.7529,
+      "status": "running",
+      "current_segment": "品川→東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-10",
+      "train_number": "のぞみ10号",
+      "train_type": "nozomi",
+      "direction": "up",
+      "lat": 35.568,
+      "lng": 139.67775,
+      "status": "running",
+      "current_segment": "新横浜→品川",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-646",
+      "train_number": "ひかり646号",
+      "train_type": "hikari",
       "direction": "up",
       "lat": 35.3811,
       "lng": 139.3847,
       "status": "running",
       "current_segment": "小田原→新横浜",
-      "delay_min": 0
+      "delay_min": 1
     },
     {
-      "trip_id": "6-72",
-      "train_number": "のぞみ72号",
+      "trip_id": "6-12",
+      "train_number": "のぞみ12号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 35.3811,
@@ -784,30 +685,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-922",
-      "train_number": "こだま922号",
+      "trip_id": "2-814",
+      "train_number": "こだま814号",
       "train_type": "kodama",
       "direction": "up",
-      "lat": 35.17525,
-      "lng": 139.11295,
+      "lat": 35.3811,
+      "lng": 139.3847,
       "status": "running",
-      "current_segment": "熱海→小田原",
+      "current_segment": "小田原→新横浜",
       "delay_min": 0
     },
     {
-      "trip_id": "1-636",
-      "train_number": "ひかり636号",
-      "train_type": "hikari",
-      "direction": "up",
-      "lat": 35.17525,
-      "lng": 139.11295,
-      "status": "running",
-      "current_segment": "熱海→小田原",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-236",
-      "train_number": "のぞみ236号",
+      "trip_id": "6-362",
+      "train_number": "のぞみ362号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 35.1092,
@@ -817,9 +707,31 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-74",
-      "train_number": "のぞみ74号",
+      "trip_id": "2-816",
+      "train_number": "こだま816号",
+      "train_type": "kodama",
+      "direction": "up",
+      "lat": 35.13895,
+      "lng": 138.77945,
+      "status": "running",
+      "current_segment": "新富士→三島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-14",
+      "train_number": "のぞみ14号",
       "train_type": "nozomi",
+      "direction": "up",
+      "lat": 35.13895,
+      "lng": 138.77945,
+      "status": "running",
+      "current_segment": "新富士→三島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-704",
+      "train_number": "ひかり704号",
+      "train_type": "hikari",
       "direction": "up",
       "lat": 35.0631,
       "lng": 138.51855,
@@ -828,8 +740,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-238",
-      "train_number": "のぞみ238号",
+      "trip_id": "6-250",
+      "train_number": "のぞみ250号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.86975,
@@ -839,9 +751,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-638",
-      "train_number": "ひかり638号",
-      "train_type": "hikari",
+      "trip_id": "2-818",
+      "train_number": "こだま818号",
+      "train_type": "kodama",
       "direction": "up",
       "lat": 34.86975,
       "lng": 138.2008,
@@ -850,8 +762,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-240",
-      "train_number": "のぞみ240号",
+      "trip_id": "6-368",
+      "train_number": "のぞみ368号",
+      "train_type": "nozomi",
+      "direction": "up",
+      "lat": 34.86975,
+      "lng": 138.2008,
+      "status": "running",
+      "current_segment": "掛川→静岡",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-90",
+      "train_number": "のぞみ90号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.73555,
@@ -861,9 +784,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-640",
-      "train_number": "ひかり640号",
-      "train_type": "hikari",
+      "trip_id": "2-820",
+      "train_number": "こだま820号",
+      "train_type": "kodama",
       "direction": "up",
       "lat": 34.7325,
       "lng": 137.563,
@@ -872,8 +795,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-76",
-      "train_number": "のぞみ76号",
+      "trip_id": "6-374",
+      "train_number": "のぞみ374号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.7325,
@@ -883,8 +806,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-242",
-      "train_number": "のぞみ242号",
+      "trip_id": "1-648",
+      "train_number": "ひかり648号",
+      "train_type": "hikari",
+      "direction": "up",
+      "lat": 34.8564,
+      "lng": 137.2361,
+      "status": "running",
+      "current_segment": "三河安城→豊橋",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-16",
+      "train_number": "のぞみ16号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.8564,
@@ -894,8 +828,30 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-328",
-      "train_number": "のぞみ328号",
+      "trip_id": "2-822",
+      "train_number": "こだま822号",
+      "train_type": "kodama",
+      "direction": "up",
+      "lat": 35.06045,
+      "lng": 136.9812,
+      "status": "running",
+      "current_segment": "名古屋→三河安城",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-706",
+      "train_number": "ひかり706号",
+      "train_type": "hikari",
+      "direction": "up",
+      "lat": 35.06045,
+      "lng": 136.9812,
+      "status": "running",
+      "current_segment": "名古屋→三河安城",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-378",
+      "train_number": "のぞみ378号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 35.24365,
@@ -905,30 +861,41 @@
       "delay_min": 0
     },
     {
-      "trip_id": "1-642",
-      "train_number": "ひかり642号",
+      "trip_id": "6-18",
+      "train_number": "のぞみ18号",
+      "train_type": "nozomi",
+      "direction": "up",
+      "lat": 35.316,
+      "lng": 136.4936,
+      "status": "running",
+      "current_segment": "米原→岐阜羽島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-252",
+      "train_number": "のぞみ252号",
+      "train_type": "nozomi",
+      "direction": "up",
+      "lat": 35.15055,
+      "lng": 136.02495,
+      "status": "running",
+      "current_segment": "京都→米原",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "1-650",
+      "train_number": "ひかり650号",
       "train_type": "hikari",
       "direction": "up",
-      "lat": 35.316,
-      "lng": 136.4936,
+      "lat": 35.15055,
+      "lng": 136.02495,
       "status": "running",
-      "current_segment": "米原→岐阜羽島",
+      "current_segment": "京都→米原",
       "delay_min": 0
     },
     {
-      "trip_id": "6-2",
-      "train_number": "のぞみ2号",
-      "train_type": "nozomi",
-      "direction": "up",
-      "lat": 35.316,
-      "lng": 136.4936,
-      "status": "running",
-      "current_segment": "米原→岐阜羽島",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-244",
-      "train_number": "のぞみ244号",
+      "trip_id": "6-384",
+      "train_number": "のぞみ384号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 35.15055,
@@ -938,8 +905,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-80",
-      "train_number": "のぞみ80号",
+      "trip_id": "6-92",
+      "train_number": "のぞみ92号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 35.15055,
@@ -949,19 +916,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-812",
-      "train_number": "こだま812号",
-      "train_type": "kodama",
-      "direction": "up",
-      "lat": 34.8596,
-      "lng": 135.6295,
-      "status": "running",
-      "current_segment": "新大阪→京都",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-82",
-      "train_number": "のぞみ82号",
+      "trip_id": "6-390",
+      "train_number": "のぞみ390号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.8596,
@@ -971,8 +927,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-4",
-      "train_number": "のぞみ4号",
+      "trip_id": "6-20",
+      "train_number": "のぞみ20号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.8596,
@@ -982,19 +938,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-936",
-      "train_number": "こだま936号",
-      "train_type": "kodama",
-      "direction": "up",
-      "lat": 34.7172,
-      "lng": 135.34795,
-      "status": "running",
-      "current_segment": "新神戸→新大阪",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "6-84",
-      "train_number": "のぞみ84号",
+      "trip_id": "6-22",
+      "train_number": "のぞみ22号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.6767,
@@ -1004,19 +949,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-86",
-      "train_number": "のぞみ86号",
-      "train_type": "nozomi",
-      "direction": "up",
-      "lat": 34.74035,
-      "lng": 134.83475,
-      "status": "running",
-      "current_segment": "姫路→西明石",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "11-740",
-      "train_number": "さくら740号",
+      "trip_id": "11-748",
+      "train_number": "さくら748号",
       "train_type": "sakura",
       "direction": "up",
       "lat": 34.8158,
@@ -1026,8 +960,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-6",
-      "train_number": "のぞみ6号",
+      "trip_id": "1-710",
+      "train_number": "ひかり710号",
+      "train_type": "hikari",
+      "direction": "up",
+      "lat": 34.7348,
+      "lng": 134.19585,
+      "status": "running",
+      "current_segment": "岡山→相生",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-94",
+      "train_number": "のぞみ94号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.7348,
@@ -1037,19 +982,19 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-88",
-      "train_number": "のぞみ88号",
+      "trip_id": "6-146",
+      "train_number": "のぞみ146号",
       "train_type": "nozomi",
       "direction": "up",
-      "lat": 34.7348,
-      "lng": 134.19585,
+      "lat": 34.6343,
+      "lng": 133.82,
       "status": "running",
-      "current_segment": "岡山→相生",
+      "current_segment": "新倉敷→岡山",
       "delay_min": 0
     },
     {
-      "trip_id": "2-940",
-      "train_number": "こだま940号",
+      "trip_id": "2-948",
+      "train_number": "こだま948号",
       "train_type": "kodama",
       "direction": "up",
       "lat": 34.6343,
@@ -1059,8 +1004,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-8",
-      "train_number": "のぞみ8号",
+      "trip_id": "6-24",
+      "train_number": "のぞみ24号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.54405,
@@ -1070,9 +1015,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "10-600",
-      "train_number": "みずほ600号",
-      "train_type": "mizuho",
+      "trip_id": "11-750",
+      "train_number": "さくら750号",
+      "train_type": "sakura",
       "direction": "up",
       "lat": 34.4138,
       "lng": 132.8578,
@@ -1081,9 +1026,31 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-12",
-      "train_number": "のぞみ12号",
+      "trip_id": "2-950",
+      "train_number": "こだま950号",
+      "train_type": "kodama",
+      "direction": "up",
+      "lat": 34.4143,
+      "lng": 132.556,
+      "status": "running",
+      "current_segment": "広島→東広島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-26",
+      "train_number": "のぞみ26号",
       "train_type": "nozomi",
+      "direction": "up",
+      "lat": 34.4143,
+      "lng": 132.556,
+      "status": "running",
+      "current_segment": "広島→東広島",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "10-606",
+      "train_number": "みずほ606号",
+      "train_type": "mizuho",
       "direction": "up",
       "lat": 34.27335,
       "lng": 132.32805,
@@ -1092,20 +1059,9 @@
       "delay_min": 0
     },
     {
-      "trip_id": "2-944",
-      "train_number": "こだま944号",
-      "train_type": "kodama",
-      "direction": "up",
-      "lat": 34.0982,
-      "lng": 131.9933,
-      "status": "running",
-      "current_segment": "徳山→新岩国",
-      "delay_min": 0
-    },
-    {
-      "trip_id": "11-742",
-      "train_number": "さくら742号",
-      "train_type": "sakura",
+      "trip_id": "6-154",
+      "train_number": "のぞみ154号",
+      "train_type": "nozomi",
       "direction": "up",
       "lat": 34.0732,
       "lng": 131.63985,
@@ -1114,8 +1070,8 @@
       "delay_min": 0
     },
     {
-      "trip_id": "6-14",
-      "train_number": "のぞみ14号",
+      "trip_id": "6-28",
+      "train_number": "のぞみ28号",
       "train_type": "nozomi",
       "direction": "up",
       "lat": 34.1238,
@@ -1125,9 +1081,20 @@
       "delay_min": 0
     },
     {
-      "trip_id": "10-602",
-      "train_number": "みずほ602号",
-      "train_type": "mizuho",
+      "trip_id": "11-752",
+      "train_number": "さくら752号",
+      "train_type": "sakura",
+      "direction": "up",
+      "lat": 34.0627,
+      "lng": 131.1043,
+      "status": "running",
+      "current_segment": "新下関→厚狭",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-30",
+      "train_number": "のぞみ30号",
+      "train_type": "nozomi",
       "direction": "up",
       "lat": 33.73805,
       "lng": 130.6512,
@@ -1136,102 +1103,93 @@
       "delay_min": 0
     },
     {
-      "trip_id": "kyushu_311",
-      "train_number": "つばめ311号",
-      "train_type": "tsubame",
+      "trip_id": "6-158",
+      "train_number": "のぞみ158号",
+      "train_type": "nozomi",
+      "direction": "up",
+      "lat": 33.73805,
+      "lng": 130.6512,
+      "status": "running",
+      "current_segment": "博多→小倉",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "kyushu_547",
+      "train_number": "さくら547号",
+      "train_type": "sakura",
       "direction": "down",
-      "lat": 31.61089,
-      "lng": 130.51422,
+      "lat": 31.69625,
+      "lng": 130.42561,
       "status": "running",
       "current_segment": "川内→鹿児島中央"
     },
     {
-      "trip_id": "kyushu_401",
-      "train_number": "さくら401号",
+      "trip_id": "kyushu_549",
+      "train_number": "さくら549号",
       "train_type": "sakura",
       "direction": "down",
-      "lat": 32.10883,
-      "lng": 130.35553,
+      "lat": 32.609,
+      "lng": 130.64058,
       "status": "running",
-      "current_segment": "新水俣→出水"
+      "current_segment": "熊本→新八代"
     },
     {
-      "trip_id": "kyushu_601",
-      "train_number": "みずほ601号",
+      "trip_id": "kyushu_607",
+      "train_number": "みずほ607号",
       "train_type": "mizuho",
       "direction": "down",
-      "lat": 32.62889,
-      "lng": 130.68394,
-      "status": "running",
-      "current_segment": "熊本→鹿児島中央"
-    },
-    {
-      "trip_id": "kyushu_403",
-      "train_number": "さくら403号",
-      "train_type": "sakura",
-      "direction": "down",
-      "lat": 33.03487,
-      "lng": 130.62382,
+      "lat": 33.09051,
+      "lng": 130.60519,
       "status": "running",
       "current_segment": "久留米→熊本"
     },
     {
-      "trip_id": "kyushu_315",
-      "train_number": "つばめ315号",
+      "trip_id": "kyushu_323",
+      "train_number": "つばめ323号",
       "train_type": "tsubame",
       "direction": "down",
-      "lat": 33.3227,
-      "lng": 130.52729,
-      "status": "running",
-      "current_segment": "新鳥栖→久留米"
-    },
-    {
-      "trip_id": "kyushu_541",
-      "train_number": "さくら541号",
-      "train_type": "sakura",
-      "direction": "down",
-      "lat": 33.54773,
-      "lng": 130.43785,
+      "lat": 33.57953,
+      "lng": 130.42501,
       "status": "running",
       "current_segment": "博多→新鳥栖"
     },
     {
-      "trip_id": "kyushu_744",
-      "train_number": "さくら744号",
+      "trip_id": "kyushu_402",
+      "train_number": "さくら402号",
       "train_type": "sakura",
       "direction": "up",
-      "lat": 33.38567,
-      "lng": 130.5033,
+      "lat": 33.42101,
+      "lng": 130.48903,
       "status": "running",
       "current_segment": "新鳥栖→博多"
     },
     {
-      "trip_id": "kyushu_604",
-      "train_number": "みずほ604号",
-      "train_type": "mizuho",
-      "direction": "up",
-      "lat": 32.6144,
-      "lng": 130.68196,
-      "status": "running",
-      "current_segment": "鹿児島中央→熊本"
-    },
-    {
-      "trip_id": "kyushu_310",
-      "train_number": "つばめ310号",
+      "trip_id": "kyushu_316",
+      "train_number": "つばめ316号",
       "train_type": "tsubame",
       "direction": "up",
-      "lat": 32.78313,
-      "lng": 130.70349,
+      "lat": 33.25456,
+      "lng": 130.54512,
       "status": "running",
-      "current_segment": "新八代→熊本"
+      "current_segment": "筑後船小屋→久留米"
     },
     {
-      "trip_id": "kyushu_746",
-      "train_number": "さくら746号",
+      "trip_id": "kyushu_754",
+      "train_number": "さくら754号",
       "train_type": "sakura",
       "direction": "up",
-      "lat": 32.11713,
-      "lng": 130.35946,
+      "lat": 32.93197,
+      "lng": 130.65829,
+      "status": "running",
+      "current_segment": "熊本→久留米"
+    },
+    {
+      "trip_id": "kyushu_404",
+      "train_number": "さくら404号",
+      "train_type": "sakura",
+      "direction": "up",
+      "lat": 32.13256,
+      "lng": 130.36676,
       "status": "running",
       "current_segment": "出水→新水俣"
     }
