@@ -400,6 +400,36 @@ def main():
     except Exception as e:
         print(f"[warn] 九州新幹線の時刻表ベース計算に失敗しました: {e}")
 
+    # 4. 東北新幹線(なすの・やまびこ・はやぶさ/はやて)は、どこトレの調査は
+    #    済んでいるがAPI組み込みは別途対応のため、現時点では常に時刻表ベース
+    try:
+        tohoku_stations_path = DATA_DIR / "stations_tohoku.json"
+        if tohoku_stations_path.exists():
+            tohoku_stations = load_stations(tohoku_stations_path)
+            tohoku_trips = []
+            for fname in ["trips_nasuno.json", "trips_yamabiko.json", "trips_hayabusa.json"]:
+                path = DATA_DIR / fname
+                if path.exists():
+                    tohoku_trips.extend(load_trips(path))
+            tohoku_positions = calculate_positions(tohoku_trips, tohoku_stations)
+            positions.extend(tohoku_positions)
+            print(f"[info] 時刻表ベースで東北新幹線 {len(tohoku_positions)} 本を計算しました")
+    except Exception as e:
+        print(f"[warn] 東北新幹線の時刻表ベース計算に失敗しました: {e}")
+
+    # 5. 上越新幹線(とき・たにがわ)も同様に常に時刻表ベース
+    try:
+        joetsu_stations_path = DATA_DIR / "stations_joetsu.json"
+        joetsu_trips_path = DATA_DIR / "trips_joetsu.json"
+        if joetsu_stations_path.exists() and joetsu_trips_path.exists():
+            joetsu_stations = load_stations(joetsu_stations_path)
+            joetsu_trips = load_trips(joetsu_trips_path)
+            joetsu_positions = calculate_positions(joetsu_trips, joetsu_stations)
+            positions.extend(joetsu_positions)
+            print(f"[info] 時刻表ベースで上越新幹線 {len(joetsu_positions)} 本を計算しました")
+    except Exception as e:
+        print(f"[warn] 上越新幹線の時刻表ベース計算に失敗しました: {e}")
+
     if positions:
         save_positions(positions)
     else:

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>新幹線ライブマップ | 東海道・山陽・九州新幹線</title>
+<title>新幹線ライブマップ | 全国新幹線</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -410,7 +410,7 @@
     <div class="panel-header">
       <div class="eyebrow">Live Train Map</div>
       <h1>新幹線ライブマップ</h1>
-      <div class="sub">東海道・山陽・九州新幹線 運行状況</div>
+      <div class="sub">東海道・山陽・九州・東北・上越新幹線 運行状況</div>
     </div>
 
     <div class="status-row">
@@ -444,6 +444,8 @@
 // ---------------------------------------------------------------------
 const DATA_URLS = {
   stations: "data/stations.json",
+  stationsTohoku: "data/stations_tohoku.json",
+  stationsJoetsu: "data/stations_joetsu.json",
   positions: "data/train_positions.json",
 };
 
@@ -462,7 +464,7 @@ function initMap(){
   map = L.map('map', {
     zoomControl: false,
     attributionControl: true,
-  }).setView([34.9, 135.0], 6);
+  }).setView([37.0, 137.5], 5);
 
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
@@ -480,21 +482,22 @@ function initMap(){
 // ---------------------------------------------------------------------
 // 駅・路線の描画
 // ---------------------------------------------------------------------
-function renderStations(stationsData){
+function renderStations(stationsData, lineColor){
   const stations = stationsData.stations;
-  stationsByName = {};
-  stations.forEach(s => stationsByName[s.name] = s);
+  stations.forEach(s => stationsByName[s.name] = s); // 複数路線ぶん累積させる(リセットしない)
 
   // 路線(直線でつなぐ簡易版。将来は実際の線路形状GeoJSONに差し替え可能)
-  const latlngs = stations.sort((a,b)=>a.order-b.order).map(s => [s.lat, s.lng]);
+  const latlngs = [...stations].sort((a,b)=>a.order-b.order).map(s => [s.lat, s.lng]);
   L.polyline(latlngs, {
-    color: '#3B6BFF',
+    color: lineColor || '#3B6BFF',
     weight: 2,
     opacity: 0.5,
   }).addTo(stationLayer);
 
   stations.forEach(s => {
-    const isMajor = s.stops.includes('nozomi') || s.stops.includes('mizuho');
+    // stops情報がある路線(東海道・山陽・九州)はのぞみ/みずほ停車駅のみ主要駅扱い、
+    // それ以外(東北・上越)は今のところ全駅にラベルを出す
+    const isMajor = s.stops ? (s.stops.includes('nozomi') || s.stops.includes('mizuho')) : true;
     const marker = L.circleMarker([s.lat, s.lng], {
       radius: isMajor ? 4 : 2.5,
       className: 'station-dot' + (isMajor ? ' major' : ''),
@@ -526,11 +529,19 @@ const TRAIN_TYPE_COLORS = {
   mizuho: '#B23BD8',   // 紫系(山陽・九州直通の速達型)
   sakura: '#2FBF71',   // 緑系
   tsubame: '#3BC9DB',  // 水色系
+  hayabusa: '#6C3EE8', // 藍紫系(東北新幹線 最速達)
+  hayate: '#9B7EDE',   // 淡い藍紫系
+  yamabiko: '#E67E22', // 濃橙系
+  nasuno: '#F4D03F',   // 黄系
+  toki: '#16A085',     // 深緑系(上越新幹線)
+  tanigawa: '#85C1E9', // 淡青系
   other: '#8A94A6',    // その他(回送・団体等)
 };
 const TRAIN_TYPE_LABELS = {
   nozomi: 'のぞみ', hikari: 'ひかり', kodama: 'こだま',
-  mizuho: 'みずほ', sakura: 'さくら', tsubame: 'つばめ', other: 'その他',
+  mizuho: 'みずほ', sakura: 'さくら', tsubame: 'つばめ',
+  hayabusa: 'はやぶさ', hayate: 'はやて', yamabiko: 'やまびこ', nasuno: 'なすの',
+  toki: 'とき', tanigawa: 'たにがわ', other: 'その他',
 };
 
 function shinkansenIcon(trainType, status, bearing, isSpecial){
@@ -705,7 +716,7 @@ function updateLastUpdatedLabel(isoString){
 // 凡例
 // ---------------------------------------------------------------------
 function renderLegend(){
-  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'other'];
+  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'hayabusa', 'hayate', 'yamabiko', 'nasuno', 'toki', 'tanigawa', 'other'];
   const el = document.getElementById('legend');
 
   const isMobile = window.innerWidth <= 720;
@@ -782,14 +793,30 @@ function updateClock(){
 // データ取得・更新ループ
 // ---------------------------------------------------------------------
 async function loadStations(){
-  try{
-    const res = await fetch(DATA_URLS.stations);
-    const data = await res.json();
-    renderStations(data);
-  } catch(e){
-    console.error('stations.json の取得に失敗しました', e);
+  stationsByName = {};
+
+  const sources = [
+    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線' },
+    { url: DATA_URLS.stationsTohoku, color: '#7F5AF0', label: '東北新幹線' },
+    { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線' },
+  ];
+
+  let anyFailed = false;
+  for(const src of sources){
+    try{
+      const res = await fetch(src.url);
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      renderStations(data, src.color);
+    } catch(e){
+      console.error(`${src.label} (${src.url}) の取得に失敗しました`, e);
+      anyFailed = true;
+    }
+  }
+
+  if(anyFailed && Object.keys(stationsByName).length === 0){
     document.getElementById('trainList').innerHTML =
-      `<div class="empty-state">stations.json を読み込めませんでした。<br>data/stations.json の配置を確認してください。</div>`;
+      `<div class="empty-state">駅データを読み込めませんでした。<br>dataフォルダの配置を確認してください。</div>`;
   }
 }
 
