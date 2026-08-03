@@ -20,7 +20,15 @@
     { "order": 15, "name": "水沢江刺", "name_en": "Mizusawa-Esashi", "lat": 39.1364, "lng": 141.1319 },
     { "order": 16, "name": "北上",  "name_en": "Kitakami",      "lat": 39.2911, "lng": 141.1128 },
     { "order": 17, "name": "新花巻", "name_en": "Shin-Hanamaki","lat": 39.3903, "lng": 141.1467 },
-    { "order": 18, "name": "盛岡",  "name_en": "Morioka",       "lat": 39.7016, "lng": 141.1364 }
+    { "order": 18, "name": "盛岡",  "name_en": "Morioka",       "lat": 39.7016, "lng": 141.1364 },
+    { "order": 19, "name": "いわて沼宮内", "name_en": "Iwate-Numakunai", "lat": 39.9106, "lng": 141.1875 },
+    { "order": 20, "name": "二戸",  "name_en": "Ninohe",        "lat": 40.2761, "lng": 141.2914 },
+    { "order": 21, "name": "八戸",  "name_en": "Hachinohe",     "lat": 40.5219, "lng": 141.4914 },
+    { "order": 22, "name": "七戸十和田", "name_en": "Shichinohe-Towada", "lat": 40.6892, "lng": 141.1214 },
+    { "order": 23, "name": "新青森", "name_en": "Shin-Aomori",  "lat": 40.8236, "lng": 140.6997 },
+    { "order": 24, "name": "奥津軽いまべつ", "name_en": "Okutsugaru-Imabetsu", "lat": 41.0764, "lng": 140.5325 },
+    { "order": 25, "name": "木古内", "name_en": "Kikonai",      "lat": 41.6772, "lng": 140.4267 },
+    { "order": 26, "name": "新函館北斗", "name_en": "Shin-Hakodate-Hokuto", "lat": 41.9061, "lng": 140.6486 }
   ]
 }
 

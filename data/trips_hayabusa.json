@@ -1,0 +1,3595 @@
+{
+  "line": "tohoku",
+  "train_type": "hayabusa",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-hayabusa/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。",
+  "trips": [
+    {
+      "trip_id": "hayate_91",
+      "train_number": "はやて91号",
+      "train_type": "hayate",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "6:33"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "6:49"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "7:23"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "7:35",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayate_93",
+      "train_number": "はやて93号",
+      "train_type": "hayate",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "6:54"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "7:15"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "7:26"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "7:39"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "7:56"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "8:12"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "8:46"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "8:58",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_95",
+      "train_number": "はやぶさ95号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "仙台",
+          "arr": null,
+          "dep": "6:40"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "6:53"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "7:03"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "7:12"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "7:22"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "7:30"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "7:38"
+        },
+        {
+          "station": "盛岡",
+          "arr": "7:49",
+          "dep": "7:59"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "8:23"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "8:35"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "8:47"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "9:04"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "10:01",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_1",
+      "train_number": "はやぶさ1号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "6:32"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "6:38"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "6:57"
+        },
+        {
+          "station": "仙台",
+          "arr": "8:03",
+          "dep": "8:05"
+        },
+        {
+          "station": "盛岡",
+          "arr": "8:44",
+          "dep": "8:50"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "9:10"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "9:22"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "9:34"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "9:51"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "10:07"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "10:41"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "10:53",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_101",
+      "train_number": "はやぶさ101号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:16"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "7:22"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "7:41"
+        },
+        {
+          "station": "仙台",
+          "arr": "8:49",
+          "dep": "8:50"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "9:03"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "9:12"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "9:25"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "9:35"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "9:43"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "9:51"
+        },
+        {
+          "station": "盛岡",
+          "arr": "10:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_3",
+      "train_number": "はやぶさ3号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:32"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "7:38"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "7:57"
+        },
+        {
+          "station": "仙台",
+          "arr": "9:04",
+          "dep": "9:05"
+        },
+        {
+          "station": "盛岡",
+          "arr": "9:44",
+          "dep": "9:48"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "10:00"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "10:13"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "10:25"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "10:37"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "10:52"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_103",
+      "train_number": "はやぶさ103号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:56"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "8:02"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "8:21"
+        },
+        {
+          "station": "仙台",
+          "arr": "9:30",
+          "dep": "9:35"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "9:48"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "9:57"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "10:11"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "10:21"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "10:31"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "10:39"
+        },
+        {
+          "station": "盛岡",
+          "arr": "10:50",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_5",
+      "train_number": "はやぶさ5号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "8:18"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "8:42"
+        },
+        {
+          "station": "仙台",
+          "arr": "9:48",
+          "dep": "9:50"
+        },
+        {
+          "station": "盛岡",
+          "arr": "10:28",
+          "dep": "10:29"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "11:18"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "12:15",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_7",
+      "train_number": "はやぶさ7号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "8:37"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "8:43"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "9:02"
+        },
+        {
+          "station": "仙台",
+          "arr": "10:15",
+          "dep": "10:17"
+        },
+        {
+          "station": "盛岡",
+          "arr": "10:55",
+          "dep": "10:59"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "11:27"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "11:51"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_9",
+      "train_number": "はやぶさ9号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "9:08"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "9:14"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "9:32"
+        },
+        {
+          "station": "仙台",
+          "arr": "10:39",
+          "dep": "10:41"
+        },
+        {
+          "station": "盛岡",
+          "arr": "11:20",
+          "dep": "11:26"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "11:38"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "11:50"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "12:02"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "12:14"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "12:29"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_11",
+      "train_number": "はやぶさ11号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "9:36"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "9:59"
+        },
+        {
+          "station": "仙台",
+          "arr": "11:06",
+          "dep": "11:07"
+        },
+        {
+          "station": "盛岡",
+          "arr": "11:46",
+          "dep": "11:47"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "12:36"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "13:33",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_13",
+      "train_number": "はやぶさ13号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "10:03"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "10:09"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "10:29"
+        },
+        {
+          "station": "仙台",
+          "arr": "11:39",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_15",
+      "train_number": "はやぶさ15号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "10:18"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "10:24"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "10:43"
+        },
+        {
+          "station": "仙台",
+          "arr": "11:52",
+          "dep": "11:54"
+        },
+        {
+          "station": "盛岡",
+          "arr": "12:32",
+          "dep": "12:37"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "13:06"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "13:29"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_17",
+      "train_number": "はやぶさ17号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "10:45"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "10:51"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "11:10"
+        },
+        {
+          "station": "仙台",
+          "arr": "12:15",
+          "dep": "12:17"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "12:38"
+        },
+        {
+          "station": "盛岡",
+          "arr": "13:01",
+          "dep": "13:05"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "13:34"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "13:59"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "14:15"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "14:49"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "15:01",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_19",
+      "train_number": "はやぶさ19号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "11:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "11:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "11:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "12:51",
+          "dep": "12:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "13:32",
+          "dep": "13:37"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "13:49"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "14:02"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "14:14"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "14:27"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "14:43"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_21",
+      "train_number": "はやぶさ21号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "11:56"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "12:02"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "12:21"
+        },
+        {
+          "station": "仙台",
+          "arr": "13:30",
+          "dep": "13:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "14:11",
+          "dep": "14:15"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "14:43"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "15:07"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_23",
+      "train_number": "はやぶさ23号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "12:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "12:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "12:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "13:51",
+          "dep": "13:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "14:32",
+          "dep": "14:37"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "15:05"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "15:31"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "16:18"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "16:30",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_25",
+      "train_number": "はやぶさ25号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "13:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "13:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "13:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "14:51",
+          "dep": "14:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "15:32",
+          "dep": "15:37"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "15:49"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "16:02"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "16:14"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "16:27"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "16:45"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "17:01"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "17:35"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "17:47",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_27",
+      "train_number": "はやぶさ27号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "14:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "14:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "14:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "15:51",
+          "dep": "15:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "16:33",
+          "dep": "16:37"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "17:05"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "17:32"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "18:29",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_29",
+      "train_number": "はやぶさ29号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "14:44"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "14:50"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "15:09"
+        },
+        {
+          "station": "仙台",
+          "arr": "16:17",
+          "dep": "16:19"
+        },
+        {
+          "station": "盛岡",
+          "arr": "16:58",
+          "dep": "17:02"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "17:30"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "17:54"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_31",
+      "train_number": "はやぶさ31号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "15:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "15:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "15:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "16:51",
+          "dep": "16:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "17:32",
+          "dep": "17:37"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "17:49"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "18:01"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "18:12"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "18:25"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "18:41"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "18:58"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "19:31"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "19:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_33",
+      "train_number": "はやぶさ33号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "16:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "16:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "16:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "17:51",
+          "dep": "17:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "18:33",
+          "dep": "18:37"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "18:58"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "19:09"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "19:22"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "19:37"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_105",
+      "train_number": "はやぶさ105号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "16:56"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "17:02"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "17:21"
+        },
+        {
+          "station": "仙台",
+          "arr": "18:29",
+          "dep": "18:30"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "18:44"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "18:53"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "19:02"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "19:12"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "19:24"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "19:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "19:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_35",
+      "train_number": "はやぶさ35号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "17:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "17:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "18:52",
+          "dep": "18:54"
+        },
+        {
+          "station": "盛岡",
+          "arr": "19:33",
+          "dep": "19:37"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "19:49"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "20:01"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "20:13"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "20:25"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "20:42"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "20:58"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "21:32"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "21:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_107",
+      "train_number": "はやぶさ107号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:56"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "18:02"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "18:21"
+        },
+        {
+          "station": "仙台",
+          "arr": "19:29",
+          "dep": "19:30"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "19:44"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "19:53"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "20:02"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "20:12"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "20:24"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "20:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "20:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_37",
+      "train_number": "はやぶさ37号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "18:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "18:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "19:51",
+          "dep": "19:53"
+        },
+        {
+          "station": "盛岡",
+          "arr": "20:33",
+          "dep": "20:37"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "20:58"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "21:09"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "21:22"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "21:37"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_109",
+      "train_number": "はやぶさ109号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:56"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "19:02"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "19:21"
+        },
+        {
+          "station": "仙台",
+          "arr": "20:28",
+          "dep": "20:30"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "20:43"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "20:52"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "21:01"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "21:11"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "21:23"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "21:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "21:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_39",
+      "train_number": "はやぶさ39号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:20"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "19:26"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "19:45"
+        },
+        {
+          "station": "仙台",
+          "arr": "20:52",
+          "dep": "20:54"
+        },
+        {
+          "station": "盛岡",
+          "arr": "21:33",
+          "dep": "21:38"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "22:06"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "22:32"
+        },
+        {
+          "station": "新函館北斗",
+          "arr": "23:29",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_111",
+      "train_number": "はやぶさ111号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:40"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "19:46"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "20:05"
+        },
+        {
+          "station": "仙台",
+          "arr": "21:13",
+          "dep": "21:14"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "21:27"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "21:36"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "21:45"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "21:55"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "22:03"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "22:11"
+        },
+        {
+          "station": "盛岡",
+          "arr": "22:22",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_41",
+      "train_number": "はやぶさ41号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "20:16"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "20:22"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "20:41"
+        },
+        {
+          "station": "仙台",
+          "arr": "21:47",
+          "dep": "21:48"
+        },
+        {
+          "station": "盛岡",
+          "arr": "22:27",
+          "dep": "22:31"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "22:44"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "22:56"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "23:08"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "23:21"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "23:36"
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_43",
+      "train_number": "はやぶさ43号",
+      "train_type": "hayabusa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "21:36"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "21:59"
+        },
+        {
+          "station": "仙台",
+          "arr": "23:06",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_2",
+      "train_number": "はやぶさ2号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "仙台",
+          "arr": null,
+          "dep": "6:35"
+        },
+        {
+          "station": "大宮",
+          "arr": "7:42",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:07",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_102",
+      "train_number": "はやぶさ102号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "6:10"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "6:22"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "6:29"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "6:38"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "6:48"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "6:57"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "7:06"
+        },
+        {
+          "station": "仙台",
+          "arr": "7:19",
+          "dep": "7:21"
+        },
+        {
+          "station": "大宮",
+          "arr": "8:31",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "8:50",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:56",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_4",
+      "train_number": "はやぶさ4号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "6:18"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "6:42"
+        },
+        {
+          "station": "盛岡",
+          "arr": "7:10",
+          "dep": "7:11"
+        },
+        {
+          "station": "仙台",
+          "arr": "7:51",
+          "dep": "7:53"
+        },
+        {
+          "station": "大宮",
+          "arr": "8:59",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:23",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_104",
+      "train_number": "はやぶさ104号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "7:28"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "7:39"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "7:51"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "8:00"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "8:10"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "8:20"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "8:29"
+        },
+        {
+          "station": "仙台",
+          "arr": "8:42",
+          "dep": "8:44"
+        },
+        {
+          "station": "大宮",
+          "arr": "9:49",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "10:08",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:14",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_6",
+      "train_number": "はやぶさ6号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "7:37"
+        },
+        {
+          "station": "仙台",
+          "arr": "8:16",
+          "dep": "8:17"
+        },
+        {
+          "station": "大宮",
+          "arr": "9:25",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:47",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_8",
+      "train_number": "はやぶさ8号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "6:49"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "7:04"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "7:17"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "7:29"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "7:42"
+        },
+        {
+          "station": "盛岡",
+          "arr": "7:54",
+          "dep": "8:02"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "8:16"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "8:30"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "8:43"
+        },
+        {
+          "station": "仙台",
+          "arr": "8:56",
+          "dep": "8:57"
+        },
+        {
+          "station": "大宮",
+          "arr": "10:08",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "10:27",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:33",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_106",
+      "train_number": "はやぶさ106号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "8:22"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "8:30"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "8:38"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "8:48"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "8:58"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "9:07"
+        },
+        {
+          "station": "仙台",
+          "arr": "9:20",
+          "dep": "9:22"
+        },
+        {
+          "station": "大宮",
+          "arr": "10:31",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "10:50",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:56",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_10",
+      "train_number": "はやぶさ10号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "6:39"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "6:52"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "7:26"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "7:43"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "7:58"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "8:23"
+        },
+        {
+          "station": "盛岡",
+          "arr": "8:43",
+          "dep": "8:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "9:29",
+          "dep": "9:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "10:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "10:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "11:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_108",
+      "train_number": "はやぶさ108号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "9:06"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "9:18"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "9:26"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "9:34"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "9:49"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "9:58"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "10:08"
+        },
+        {
+          "station": "仙台",
+          "arr": "10:21",
+          "dep": "10:22"
+        },
+        {
+          "station": "大宮",
+          "arr": "11:31",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "11:50",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "11:56",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_12",
+      "train_number": "はやぶさ12号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "7:38"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "8:37"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "8:52"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "9:05"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "9:17"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "9:30"
+        },
+        {
+          "station": "盛岡",
+          "arr": "9:41",
+          "dep": "9:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "10:29",
+          "dep": "10:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "11:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "11:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "12:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_14",
+      "train_number": "はやぶさ14号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "9:53"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "10:17"
+        },
+        {
+          "station": "盛岡",
+          "arr": "10:45",
+          "dep": "10:51"
+        },
+        {
+          "station": "仙台",
+          "arr": "11:29",
+          "dep": "11:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "12:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "12:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "13:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_16",
+      "train_number": "はやぶさ16号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "9:35"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "9:48"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "10:22"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "10:39"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "10:54"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "11:07"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "11:18"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "11:31"
+        },
+        {
+          "station": "盛岡",
+          "arr": "11:43",
+          "dep": "11:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "12:29",
+          "dep": "12:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "13:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "13:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "14:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_18",
+      "train_number": "はやぶさ18号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "10:53"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "11:52"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "12:16"
+        },
+        {
+          "station": "盛岡",
+          "arr": "12:45",
+          "dep": "12:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "13:29",
+          "dep": "13:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "14:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "14:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "15:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_20",
+      "train_number": "はやぶさ20号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "12:39"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "12:54"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "13:07"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "13:19"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "13:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "13:44",
+          "dep": "13:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "14:29",
+          "dep": "14:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "15:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "15:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "16:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_22",
+      "train_number": "はやぶさ22号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "13:16"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "13:40"
+        },
+        {
+          "station": "盛岡",
+          "arr": "14:10",
+          "dep": "14:17"
+        },
+        {
+          "station": "仙台",
+          "arr": "14:56",
+          "dep": "14:57"
+        },
+        {
+          "station": "大宮",
+          "arr": "16:07",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "16:26",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "16:32",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_24",
+      "train_number": "はやぶさ24号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "12:48"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "13:01"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "13:35"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "13:52"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "14:16"
+        },
+        {
+          "station": "盛岡",
+          "arr": "14:44",
+          "dep": "14:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "15:29",
+          "dep": "15:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "16:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "16:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_26",
+      "train_number": "はやぶさ26号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "14:17"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "14:42"
+        },
+        {
+          "station": "盛岡",
+          "arr": "15:11",
+          "dep": "15:17"
+        },
+        {
+          "station": "仙台",
+          "arr": "15:56",
+          "dep": "15:57"
+        },
+        {
+          "station": "大宮",
+          "arr": "17:07",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "17:26",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:32",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_28",
+      "train_number": "はやぶさ28号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "13:39"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "14:38"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "14:53"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "15:06"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "15:19"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "15:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "15:44",
+          "dep": "15:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "16:29",
+          "dep": "16:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "17:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "17:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "18:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_30",
+      "train_number": "はやぶさ30号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "15:36"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "16:00"
+        },
+        {
+          "station": "盛岡",
+          "arr": "16:28",
+          "dep": "16:29"
+        },
+        {
+          "station": "仙台",
+          "arr": "17:08",
+          "dep": "17:10"
+        },
+        {
+          "station": "大宮",
+          "arr": "18:19",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "18:38",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "18:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_32",
+      "train_number": "はやぶさ32号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "14:48"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "15:01"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "15:35"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "15:52"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "16:16"
+        },
+        {
+          "station": "盛岡",
+          "arr": "16:44",
+          "dep": "16:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "17:29",
+          "dep": "17:32"
+        },
+        {
+          "station": "大宮",
+          "arr": "18:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "18:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_110",
+      "train_number": "はやぶさ110号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "盛岡",
+          "arr": null,
+          "dep": "17:07"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "17:18"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "17:30"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "17:38"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "17:48"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "17:58"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "18:08"
+        },
+        {
+          "station": "仙台",
+          "arr": "18:20",
+          "dep": "18:22"
+        },
+        {
+          "station": "大宮",
+          "arr": "19:31",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "19:50",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:56",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_34",
+      "train_number": "はやぶさ34号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "16:38"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "16:53"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "17:06"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "17:19"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "17:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "17:44",
+          "dep": "17:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "18:29",
+          "dep": "18:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "19:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "19:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_36",
+      "train_number": "はやぶさ36号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "16:20"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "16:33"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "17:22"
+        },
+        {
+          "station": "盛岡",
+          "arr": "18:10",
+          "dep": "18:16"
+        },
+        {
+          "station": "仙台",
+          "arr": "18:55",
+          "dep": "18:57"
+        },
+        {
+          "station": "大宮",
+          "arr": "20:07",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "20:26",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:32",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_38",
+      "train_number": "はやぶさ38号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "17:44"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "17:59"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "18:12"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "18:24"
+        },
+        {
+          "station": "盛岡",
+          "arr": "18:45",
+          "dep": "18:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "19:29",
+          "dep": "19:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "20:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "20:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "21:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_40",
+      "train_number": "はやぶさ40号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "17:26"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "18:25"
+        },
+        {
+          "station": "盛岡",
+          "arr": "19:13",
+          "dep": "19:14"
+        },
+        {
+          "station": "仙台",
+          "arr": "19:53",
+          "dep": "19:54"
+        },
+        {
+          "station": "大宮",
+          "arr": "21:01",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "21:23",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_42",
+      "train_number": "はやぶさ42号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "18:39"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "18:54"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "19:08"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "19:19"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "19:32"
+        },
+        {
+          "station": "盛岡",
+          "arr": "19:44",
+          "dep": "19:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "20:29",
+          "dep": "20:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "21:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "21:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "22:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_44",
+      "train_number": "はやぶさ44号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "18:40"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "18:53"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "19:27"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "19:44"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "19:59"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "20:13"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "20:24"
+        },
+        {
+          "station": "盛岡",
+          "arr": "20:45",
+          "dep": "20:50"
+        },
+        {
+          "station": "仙台",
+          "arr": "21:30",
+          "dep": "21:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "22:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "22:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "23:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayabusa_96",
+      "train_number": "はやぶさ96号",
+      "train_type": "hayabusa",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "19:41"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "20:40"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "20:55"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "21:08"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "21:20"
+        },
+        {
+          "station": "いわて沼宮内",
+          "arr": null,
+          "dep": "21:33"
+        },
+        {
+          "station": "盛岡",
+          "arr": "21:45",
+          "dep": "21:51"
+        },
+        {
+          "station": "新花巻",
+          "arr": null,
+          "dep": "22:03"
+        },
+        {
+          "station": "北上",
+          "arr": null,
+          "dep": "22:10"
+        },
+        {
+          "station": "水沢江刺",
+          "arr": null,
+          "dep": "22:18"
+        },
+        {
+          "station": "一ノ関",
+          "arr": null,
+          "dep": "22:28"
+        },
+        {
+          "station": "くりこま高原",
+          "arr": null,
+          "dep": "22:38"
+        },
+        {
+          "station": "古川",
+          "arr": null,
+          "dep": "22:48"
+        },
+        {
+          "station": "仙台",
+          "arr": "23:01",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayate_98",
+      "train_number": "はやて98号",
+      "train_type": "hayate",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "20:43"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "20:56"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "21:30"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "21:47"
+        },
+        {
+          "station": "七戸十和田",
+          "arr": null,
+          "dep": "22:02"
+        },
+        {
+          "station": "八戸",
+          "arr": null,
+          "dep": "22:15"
+        },
+        {
+          "station": "二戸",
+          "arr": null,
+          "dep": "22:27"
+        },
+        {
+          "station": "盛岡",
+          "arr": "22:48",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "hayate_100",
+      "train_number": "はやて100号",
+      "train_type": "hayate",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新函館北斗",
+          "arr": null,
+          "dep": "21:57"
+        },
+        {
+          "station": "木古内",
+          "arr": null,
+          "dep": "22:10"
+        },
+        {
+          "station": "奥津軽いまべつ",
+          "arr": null,
+          "dep": "22:44"
+        },
+        {
+          "station": "新青森",
+          "arr": null,
+          "dep": "22:59"
+        }
+      ]
+    }
+  ]
+}
