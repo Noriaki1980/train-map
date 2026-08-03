@@ -1,0 +1,15 @@
+{
+  "line": "tohoku",
+  "line_name": "東北新幹線",
+  "note": "現時点ではなすの停車駅(東京〜郡山)のみ。やまびこ・はやぶさ対応時に北側(福島〜新青森)を追加する。",
+  "stations": [
+    { "order": 1, "name": "東京",   "name_en": "Tokyo",         "lat": 35.6812, "lng": 139.7671 },
+    { "order": 2, "name": "上野",   "name_en": "Ueno",          "lat": 35.7141, "lng": 139.7774 },
+    { "order": 3, "name": "大宮",   "name_en": "Omiya",         "lat": 35.9066, "lng": 139.6236 },
+    { "order": 4, "name": "小山",   "name_en": "Oyama",         "lat": 36.3147, "lng": 139.8006 },
+    { "order": 5, "name": "宇都宮", "name_en": "Utsunomiya",    "lat": 36.5551, "lng": 139.8828 },
+    { "order": 6, "name": "那須塩原", "name_en": "Nasushiobara", "lat": 37.0034, "lng": 140.0333 },
+    { "order": 7, "name": "新白河", "name_en": "Shin-Shirakawa","lat": 37.1256, "lng": 140.2136 },
+    { "order": 8, "name": "郡山",   "name_en": "Koriyama",      "lat": 37.4025, "lng": 140.3831 }
+  ]
+}

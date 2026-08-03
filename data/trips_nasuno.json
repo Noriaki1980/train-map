@@ -1,0 +1,1450 @@
+{
+  "line": "tohoku",
+  "train_type": "nasuno",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-nasuno/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。",
+  "trips": [
+    {
+      "trip_id": "nasuno_251",
+      "train_number": "なすの251号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:00"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "7:06"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "7:25"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "7:41"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "7:54"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "8:08"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_253",
+      "train_number": "なすの253号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "8:26"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "8:32"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "8:51"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "9:07"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "9:19"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "9:36"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "9:46"
+        },
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "9:57"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_255",
+      "train_number": "なすの255号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "9:16"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "9:22"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "9:41"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "10:01"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "10:13"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "10:29"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "10:40"
+        },
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "10:51"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_257",
+      "train_number": "なすの257号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "11:08"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "11:14"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "11:33"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "11:53"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "12:07"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "12:23"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "12:36"
+        },
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "12:48"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_259",
+      "train_number": "なすの259号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "13:12"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "13:18"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "13:37"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "13:53"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "14:07"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "14:23"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "14:36"
+        },
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "14:47"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_261",
+      "train_number": "なすの261号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "15:12"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "15:18"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "15:37"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "15:53"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "16:07"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "16:23"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "16:36"
+        },
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "16:47"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_263",
+      "train_number": "なすの263号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:16"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "17:22"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "17:41"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "17:59"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "18:11"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "18:24"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_265",
+      "train_number": "なすの265号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:36"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "17:42"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "18:01"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "18:18"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "18:32"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "18:50"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "19:02"
+        },
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "19:14"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_267",
+      "train_number": "なすの267号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:08"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "18:14"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "18:33"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "18:50"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "19:05"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "19:19"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_269",
+      "train_number": "なすの269号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:00"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "19:06"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "19:25"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "19:42"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "19:54"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "20:08"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_271",
+      "train_number": "なすの271号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:56"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "20:02"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "20:21"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "20:37"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "20:49"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "21:02"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_273",
+      "train_number": "なすの273号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "20:28"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "20:34"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "20:53"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "21:12"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "21:23"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "21:37"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_275",
+      "train_number": "なすの275号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "21:48"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "21:54"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "22:13"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "22:29"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "22:41"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "22:55"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_277",
+      "train_number": "なすの277号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "22:00"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "22:06"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "22:25"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "22:42"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "22:54"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "23:09"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_279",
+      "train_number": "なすの279号",
+      "train_type": "nasuno",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "22:24"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "22:30"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "22:49"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "23:04"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "23:15"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "23:28"
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_252",
+      "train_number": "なすの252号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "6:22"
+        },
+        {
+          "station": "大宮",
+          "arr": "6:39",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "6:58",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "7:04",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_254",
+      "train_number": "なすの254号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "6:12"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "6:27"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "6:38"
+        },
+        {
+          "station": "大宮",
+          "arr": "6:55",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "7:14",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "7:20",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_256",
+      "train_number": "なすの256号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "6:24"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "6:39"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "6:50"
+        },
+        {
+          "station": "大宮",
+          "arr": "7:07",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "7:26",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "7:32",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_258",
+      "train_number": "なすの258号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "6:13"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "6:26"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "6:36"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "6:51"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "7:02"
+        },
+        {
+          "station": "大宮",
+          "arr": "7:19",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "7:38",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "7:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_260",
+      "train_number": "なすの260号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "6:48"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "7:03"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "7:14"
+        },
+        {
+          "station": "大宮",
+          "arr": "7:31",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "7:50",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "7:56",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_262",
+      "train_number": "なすの262号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "6:55"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "7:10"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "7:21"
+        },
+        {
+          "station": "大宮",
+          "arr": "7:38",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "7:57",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:03",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_264",
+      "train_number": "なすの264号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "7:18"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "7:33"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "7:44"
+        },
+        {
+          "station": "大宮",
+          "arr": "8:01",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "8:20",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:26",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_266",
+      "train_number": "なすの266号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "7:33"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "7:48"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "7:59"
+        },
+        {
+          "station": "大宮",
+          "arr": "8:16",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "8:35",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:41",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_268",
+      "train_number": "なすの268号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "8:18"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "8:33"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "8:47"
+        },
+        {
+          "station": "大宮",
+          "arr": "9:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "9:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_270",
+      "train_number": "なすの270号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "9:53"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "10:12"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "10:26"
+        },
+        {
+          "station": "大宮",
+          "arr": "10:43",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "11:02",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "11:08",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_272",
+      "train_number": "なすの272号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "10:37"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "10:50"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "11:03"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "11:21"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "11:34"
+        },
+        {
+          "station": "大宮",
+          "arr": "11:51",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "12:10",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "12:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_274",
+      "train_number": "なすの274号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "11:37"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "11:50"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "12:03"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "12:21"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "12:33"
+        },
+        {
+          "station": "大宮",
+          "arr": "12:51",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "13:10",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "13:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_276",
+      "train_number": "なすの276号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "13:37"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "13:50"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "14:03"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "14:21"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "14:33"
+        },
+        {
+          "station": "大宮",
+          "arr": "14:51",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "15:10",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "15:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_278",
+      "train_number": "なすの278号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "15:37"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "15:50"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "16:03"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "16:21"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "16:33"
+        },
+        {
+          "station": "大宮",
+          "arr": "16:51",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "17:10",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_280",
+      "train_number": "なすの280号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "郡山",
+          "arr": null,
+          "dep": "17:37"
+        },
+        {
+          "station": "新白河",
+          "arr": null,
+          "dep": "17:53"
+        },
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "18:03"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "18:21"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "18:33"
+        },
+        {
+          "station": "大宮",
+          "arr": "18:51",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "19:10",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "nasuno_282",
+      "train_number": "なすの282号",
+      "train_type": "nasuno",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "那須塩原",
+          "arr": null,
+          "dep": "19:03"
+        },
+        {
+          "station": "宇都宮",
+          "arr": null,
+          "dep": "19:22"
+        },
+        {
+          "station": "小山",
+          "arr": null,
+          "dep": "19:37"
+        },
+        {
+          "station": "大宮",
+          "arr": "19:55",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "20:14",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:20",
+          "dep": null
+        }
+      ]
+    }
+  ]
+}
