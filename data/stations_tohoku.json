@@ -1,7 +1,7 @@
 {
   "line": "tohoku",
   "line_name": "東北新幹線",
-  "note": "現時点ではなすの停車駅(東京〜郡山)のみ。やまびこ・はやぶさ対応時に北側(福島〜新青森)を追加する。",
+  "note": "なすの(東京〜郡山)+やまびこ(郡山〜盛岡)の停車駅。はやぶさ対応時に盛岡〜新青森を追加する。",
   "stations": [
     { "order": 1, "name": "東京",   "name_en": "Tokyo",         "lat": 35.6812, "lng": 139.7671 },
     { "order": 2, "name": "上野",   "name_en": "Ueno",          "lat": 35.7141, "lng": 139.7774 },
@@ -10,6 +10,17 @@
     { "order": 5, "name": "宇都宮", "name_en": "Utsunomiya",    "lat": 36.5551, "lng": 139.8828 },
     { "order": 6, "name": "那須塩原", "name_en": "Nasushiobara", "lat": 37.0034, "lng": 140.0333 },
     { "order": 7, "name": "新白河", "name_en": "Shin-Shirakawa","lat": 37.1256, "lng": 140.2136 },
-    { "order": 8, "name": "郡山",   "name_en": "Koriyama",      "lat": 37.4025, "lng": 140.3831 }
+    { "order": 8, "name": "郡山",   "name_en": "Koriyama",      "lat": 37.4025, "lng": 140.3831 },
+    { "order": 9, "name": "福島",   "name_en": "Fukushima",     "lat": 37.7608, "lng": 140.4747 },
+    { "order": 10, "name": "白石蔵王", "name_en": "Shiroishi-Zao", "lat": 38.0122, "lng": 140.6186 },
+    { "order": 11, "name": "仙台",  "name_en": "Sendai",        "lat": 38.2602, "lng": 140.8827 },
+    { "order": 12, "name": "古川",  "name_en": "Furukawa",      "lat": 38.5794, "lng": 140.9591 },
+    { "order": 13, "name": "くりこま高原", "name_en": "Kurikoma-Kogen", "lat": 38.7325, "lng": 141.0264 },
+    { "order": 14, "name": "一ノ関", "name_en": "Ichinoseki",   "lat": 38.9308, "lng": 141.1189 },
+    { "order": 15, "name": "水沢江刺", "name_en": "Mizusawa-Esashi", "lat": 39.1364, "lng": 141.1319 },
+    { "order": 16, "name": "北上",  "name_en": "Kitakami",      "lat": 39.2911, "lng": 141.1128 },
+    { "order": 17, "name": "新花巻", "name_en": "Shin-Hanamaki","lat": 39.3903, "lng": 141.1467 },
+    { "order": 18, "name": "盛岡",  "name_en": "Morioka",       "lat": 39.7016, "lng": 141.1364 }
   ]
 }
+
