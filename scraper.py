@@ -345,10 +345,10 @@ def fetch_hokkaido_positions():
     北海道新幹線の列車位置を取得する。
 
     注意: このAPIの `pos`/`senku` フィールド(区間内の詳細位置)は
-    現時点で解読できていない。そのため、列車が存在することが分かった
-    場合は、区間の中間点(奥津軽いまべつ〜新函館北斗の中間)に簡易的に
-    配置している。正確な駅間位置ではなく、あくまで「今この路線のどこかに
-    列車がいる」ことを示す近似表示。
+    現時点で解読できていない。奥津軽いまべつ〜新函館北斗間は津軽海峡・
+    青函トンネルを挟むため、両端の単純な中間点で近似すると海上に
+    プロットされてしまう。そのため、区間の中間に実在する木古内駅の
+    座標を暫定的に使う(正確な駅間位置ではなく近似表示)。
     """
     if requests is None:
         raise RuntimeError("requests がインストールされていません")
@@ -358,9 +358,7 @@ def fetch_hokkaido_positions():
     raw = resp.json()
 
     positions = []
-    a = HOKKAIDO_STATIONS["002"]  # 奥津軽いまべつ
-    b = HOKKAIDO_STATIONS["034"]  # 新函館北斗
-    mid_lat, mid_lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
+    kikonai = HOKKAIDO_STATIONS["018"]  # 木古内 (中間の実在駅を近似位置として使う)
 
     for t in raw.get("trains", []):
         positions.append({
@@ -369,10 +367,10 @@ def fetch_hokkaido_positions():
             "train_type": "hayabusa",
             "is_special": False,
             "direction": "unknown",
-            "lat": round(mid_lat, 5),
-            "lng": round(mid_lng, 5),
+            "lat": kikonai["lat"],
+            "lng": kikonai["lng"],
             "status": "running",
-            "current_segment": "奥津軽いまべつ〜新函館北斗(区間内位置は未解読のため近似)",
+            "current_segment": "奥津軽いまべつ〜新函館北斗(区間内位置は未解読のため木古内駅で近似)",
             "delay_min": t.get("chien", 0) or 0,
         })
     return positions
@@ -412,6 +410,69 @@ def _interpolate(lat1, lng1, lat2, lng2, ratio):
     return lat1 + (lat2 - lat1) * ratio, lng1 + (lng2 - lng1) * ratio
 
 
+def _build_order_index(stations):
+    """order順にソートした駅名リストを返す。"""
+    return sorted(stations.keys(), key=lambda n: stations[n]["order"])
+
+
+def _route_via_points(stations, order_list, from_name, to_name):
+    """
+    from_name〜to_name間で、実際に線路上を通る駅(通過駅も含む)の
+    緯度経度情報を順番に並べて返す。stations の order フィールドに基づく。
+    """
+    from_order = stations[from_name]["order"]
+    to_order = stations[to_name]["order"]
+    if from_order <= to_order:
+        names = [n for n in order_list if from_order <= stations[n]["order"] <= to_order]
+    else:
+        names = [n for n in order_list if to_order <= stations[n]["order"] <= from_order]
+        names = list(reversed(names))
+    if not names:
+        names = [from_name, to_name]
+    return [stations[n] for n in names]
+
+
+def _haversine_km(lat1, lng1, lat2, lng2):
+    R = 6371.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lng2 - lng1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(a))
+
+
+def _interpolate_along_route(via_points, ratio):
+    """
+    via_points(通過駅も含む緯度経度のリスト)に沿って、駅間の実距離を基準に
+    ratio(0〜1)の地点の座標を求める。通過駅がある区間でも路線の折れ線に
+    沿って動くようにするための処理。
+    """
+    if len(via_points) < 2:
+        p = via_points[0]
+        return p["lat"], p["lng"]
+
+    dists = [
+        _haversine_km(via_points[i]["lat"], via_points[i]["lng"],
+                      via_points[i + 1]["lat"], via_points[i + 1]["lng"])
+        for i in range(len(via_points) - 1)
+    ]
+    total = sum(dists)
+    if total == 0:
+        return via_points[0]["lat"], via_points[0]["lng"]
+
+    target = total * max(0.0, min(1.0, ratio))
+    cum = 0.0
+    for i, d in enumerate(dists):
+        if cum + d >= target or i == len(dists) - 1:
+            local_ratio = (target - cum) / d if d > 0 else 0
+            return _interpolate(
+                via_points[i]["lat"], via_points[i]["lng"],
+                via_points[i + 1]["lat"], via_points[i + 1]["lng"], local_ratio
+            )
+        cum += d
+    return via_points[-1]["lat"], via_points[-1]["lng"]
+
+
 def calculate_positions(trips, stations, now=None):
     """
     現在時刻(now)における各列車の位置を計算する。
@@ -426,6 +487,7 @@ def calculate_positions(trips, stations, now=None):
     now = now or datetime.now(JST)
     base_date = now.date()
     positions = []
+    order_list = _build_order_index(stations)
 
     for trip in trips:
         stops = trip["stops"]
@@ -458,9 +520,11 @@ def calculate_positions(trips, stations, now=None):
                 elapsed = (now - seg_start).total_seconds()
                 ratio = elapsed / total if total > 0 else 0
 
-                lat, lng = _interpolate(
-                    st_from["lat"], st_from["lng"], st_to["lat"], st_to["lng"], ratio
+                # 通過駅も経由地として使い、路線の折れ線に沿って移動させる
+                via_points = _route_via_points(
+                    stations, order_list, parsed[i]["station"], parsed[i + 1]["station"]
                 )
+                lat, lng = _interpolate_along_route(via_points, ratio)
 
                 # 停車中かどうか判定 (発車時刻に達していない= 出発駅で停車中)
                 status = "stopped" if ratio <= 0.02 else "running"
