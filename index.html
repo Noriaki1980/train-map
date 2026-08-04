@@ -446,6 +446,8 @@ const DATA_URLS = {
   stations: "data/stations.json",
   stationsTohoku: "data/stations_tohoku.json",
   stationsJoetsu: "data/stations_joetsu.json",
+  stationsAkita: "data/stations_akita.json",
+  stationsYamagata: "data/stations_yamagata.json",
   positions: "data/train_positions.json",
 };
 
@@ -537,13 +539,15 @@ const TRAIN_TYPE_COLORS = {
   nasuno: '#F4D03F',   // 黄系
   toki: '#16A085',     // 深緑系(上越新幹線)
   tanigawa: '#85C1E9', // 淡青系
+  komachi: '#D4145A',  // 濃ピンク系(秋田新幹線)
+  tsubasa: '#8E44AD',  // 紫系(山形新幹線)
   other: '#8A94A6',    // その他(回送・団体等)
 };
 const TRAIN_TYPE_LABELS = {
   nozomi: 'のぞみ', hikari: 'ひかり', kodama: 'こだま',
   mizuho: 'みずほ', sakura: 'さくら', tsubame: 'つばめ',
   hayabusa: 'はやぶさ', hayate: 'はやて', yamabiko: 'やまびこ', nasuno: 'なすの',
-  toki: 'とき', tanigawa: 'たにがわ', other: 'その他',
+  toki: 'とき', tanigawa: 'たにがわ', komachi: 'こまち', tsubasa: 'つばさ', other: 'その他',
 };
 
 function shinkansenIcon(trainType, status, bearing, isSpecial){
@@ -718,7 +722,7 @@ function updateLastUpdatedLabel(isoString){
 // 凡例
 // ---------------------------------------------------------------------
 function renderLegend(){
-  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'hayabusa', 'hayate', 'yamabiko', 'nasuno', 'toki', 'tanigawa', 'other'];
+  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'hayabusa', 'hayate', 'yamabiko', 'nasuno', 'toki', 'tanigawa', 'komachi', 'tsubasa', 'other'];
   const el = document.getElementById('legend');
 
   const isMobile = window.innerWidth <= 720;
@@ -801,6 +805,8 @@ async function loadStations(){
     { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線' },
     { url: DATA_URLS.stationsTohoku, color: '#7F5AF0', label: '東北新幹線' },
     { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線' },
+    { url: DATA_URLS.stationsAkita, color: '#D4145A', label: '秋田新幹線' },
+    { url: DATA_URLS.stationsYamagata, color: '#8E44AD', label: '山形新幹線' },
   ];
 
   let anyFailed = false;

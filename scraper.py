@@ -235,6 +235,150 @@ def parse_train_positions(raw, stations, jr_id_map):
 
 
 # ---------------------------------------------------------------------------
+# 1.5 どこトレ (JR東日本 秋田・山形新幹線) リアルタイムAPI
+# ---------------------------------------------------------------------------
+
+DOKOTRAIN_STATUS_URL = "https://doko-train.jp/json/trainstatus/{line_id}.json"
+
+DOKOTRAIN_LINES = {
+    "komachi": {"line_id": "110A", "stations_file": "stations_akita.json", "label": "こまち"},
+    "tsubasa": {"line_id": "902Y", "stations_file": "stations_yamagata.json", "label": "つばさ"},
+}
+
+
+def load_id_stations(path):
+    """doko-train用: 駅ID(文字列) -> {name, lat, lng} の辞書を返す。"""
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    return {s["id"]: s for s in data["stations"]}
+
+
+def fetch_dokotrain_status(line_id):
+    if requests is None:
+        raise RuntimeError("requests がインストールされていません")
+    url = DOKOTRAIN_STATUS_URL.format(line_id=line_id)
+    resp = requests.get(url, headers=API_HEADERS, timeout=10)
+    if resp.status_code != 200:
+        raise RuntimeError(f"HTTPエラー: status={resp.status_code}")
+    return resp.json()
+
+
+def parse_dokotrain_positions(raw, stations_by_id, train_type, train_label):
+    """
+    どこトレのtrainstatus APIレスポンスをtrain_positions.json形式に変換する。
+
+    CUR_STATION が "0" 以外 → その駅に停車中
+    CUR_STATION が "0"      → PRE_STATION(直前駅)〜POS_STATION(次駅)の間を走行中
+                                (区間内の正確な割合は分からないため中間点(50%)で近似)
+    """
+    positions = []
+    train_status = raw.get("LINE_STATUS", {}).get("TRAIN_STATUS", {})
+
+    for key, t in train_status.items():
+        cur = t.get("CUR_STATION", "0")
+        pre = t.get("PRE_STATION")
+        pos = t.get("POS_STATION")
+        bound = t.get("BOUND", "")
+        delay = t.get("LATENCY", 0) or 0
+        name = t.get("TRAIN_NNAME") or train_label
+        no = t.get("TRAIN_NNO", "")
+
+        lat = lng = None
+        status = None
+        segment = None
+
+        if cur and cur != "0" and cur in stations_by_id:
+            st = stations_by_id[cur]
+            lat, lng = st["lat"], st["lng"]
+            status = "stopped"
+            segment = st["name"]
+        elif pre in stations_by_id and pos in stations_by_id:
+            a, b = stations_by_id[pre], stations_by_id[pos]
+            lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
+            status = "running"
+            segment = f"{a['name']}→{b['name']}"
+
+        if lat is None:
+            continue  # 駅IDが未知で位置を特定できない場合はスキップ
+
+        positions.append({
+            "trip_id": f"{train_type}_{key}",
+            "train_number": f"{name}{no}号",
+            "train_type": train_type,
+            "is_special": False,
+            "direction": "up" if bound == "1" else "down",
+            "lat": round(lat, 5),
+            "lng": round(lng, 5),
+            "status": status,
+            "current_segment": segment,
+            "delay_min": delay,
+        })
+
+    return positions
+
+
+def fetch_dokotrain_line(key):
+    """akita/yamagataいずれかの1路線分をまとめて取得・変換する。"""
+    conf = DOKOTRAIN_LINES[key]
+    stations_path = DATA_DIR / conf["stations_file"]
+    stations_by_id = load_id_stations(stations_path)
+    raw = fetch_dokotrain_status(conf["line_id"])
+    return parse_dokotrain_positions(raw, stations_by_id, key, conf["label"])
+
+
+# ---------------------------------------------------------------------------
+# 1.6 北海道新幹線 リアルタイムAPI
+# ---------------------------------------------------------------------------
+
+HOKKAIDO_LOCATION_URL = "https://www3.jrhokkaido.co.jp/trainlocation/json/location/now/location_15_now.json"
+
+# 北海道新幹線区間の駅 (奥津軽いまべつ・木古内・新函館北斗の3駅のみ、2026年時点)
+HOKKAIDO_STATIONS = {
+    "002": {"name": "奥津軽いまべつ", "lat": 41.0764, "lng": 140.5325},
+    "018": {"name": "木古内",       "lat": 41.6772, "lng": 140.4267},
+    "034": {"name": "新函館北斗",   "lat": 41.9061, "lng": 140.6486},
+}
+
+
+def fetch_hokkaido_positions():
+    """
+    北海道新幹線の列車位置を取得する。
+
+    注意: このAPIの `pos`/`senku` フィールド(区間内の詳細位置)は
+    現時点で解読できていない。そのため、列車が存在することが分かった
+    場合は、区間の中間点(奥津軽いまべつ〜新函館北斗の中間)に簡易的に
+    配置している。正確な駅間位置ではなく、あくまで「今この路線のどこかに
+    列車がいる」ことを示す近似表示。
+    """
+    if requests is None:
+        raise RuntimeError("requests がインストールされていません")
+    resp = requests.get(HOKKAIDO_LOCATION_URL, headers=API_HEADERS, timeout=10)
+    if resp.status_code != 200:
+        raise RuntimeError(f"HTTPエラー: status={resp.status_code}")
+    raw = resp.json()
+
+    positions = []
+    a = HOKKAIDO_STATIONS["002"]  # 奥津軽いまべつ
+    b = HOKKAIDO_STATIONS["034"]  # 新函館北斗
+    mid_lat, mid_lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
+
+    for t in raw.get("trains", []):
+        positions.append({
+            "trip_id": f"hokkaido_{t.get('cbango', '?')}",
+            "train_number": f"はやぶさ{t.get('cbango', '?')}",
+            "train_type": "hayabusa",
+            "is_special": False,
+            "direction": "unknown",
+            "lat": round(mid_lat, 5),
+            "lng": round(mid_lng, 5),
+            "status": "running",
+            "current_segment": "奥津軽いまべつ〜新函館北斗(区間内位置は未解読のため近似)",
+            "delay_min": t.get("chien", 0) or 0,
+        })
+    return positions
+
+
+# ---------------------------------------------------------------------------
 # 2. 駅データ読み込み
 # ---------------------------------------------------------------------------
 
@@ -429,6 +573,25 @@ def main():
             print(f"[info] 時刻表ベースで上越新幹線 {len(joetsu_positions)} 本を計算しました")
     except Exception as e:
         print(f"[warn] 上越新幹線の時刻表ベース計算に失敗しました: {e}")
+
+    # 6. どこトレ(秋田新幹線こまち・山形新幹線つばさ)はリアルタイムAPIが
+    #    使えるので、時刻表ではなくこちらを優先する(ベストエフォート、
+    #    失敗しても他の路線の表示には影響させない)
+    for key in ("komachi", "tsubasa"):
+        try:
+            line_positions = fetch_dokotrain_line(key)
+            positions.extend(line_positions)
+            print(f"[info] どこトレAPIから{DOKOTRAIN_LINES[key]['label']} {len(line_positions)} 本を取得しました")
+        except Exception as e:
+            print(f"[warn] どこトレAPI({key})の取得に失敗しました: {e}")
+
+    # 7. 北海道新幹線もリアルタイムAPIを試す(区間内の詳細位置は未解読の近似)
+    try:
+        hokkaido_positions = fetch_hokkaido_positions()
+        positions.extend(hokkaido_positions)
+        print(f"[info] 北海道新幹線APIから {len(hokkaido_positions)} 本を取得しました")
+    except Exception as e:
+        print(f"[warn] 北海道新幹線APIの取得に失敗しました: {e}")
 
     if positions:
         save_positions(positions)
