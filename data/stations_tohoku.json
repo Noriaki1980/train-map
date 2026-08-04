@@ -3,32 +3,213 @@
   "line_name": "東北新幹線",
   "note": "なすの(東京〜郡山)+やまびこ(郡山〜盛岡)の停車駅。はやぶさ対応時に盛岡〜新青森を追加する。",
   "stations": [
-    { "order": 1, "name": "東京",   "name_en": "Tokyo",         "lat": 35.6812, "lng": 139.7671 },
-    { "order": 2, "name": "上野",   "name_en": "Ueno",          "lat": 35.7141, "lng": 139.7774 },
-    { "order": 3, "name": "大宮",   "name_en": "Omiya",         "lat": 35.9066, "lng": 139.6236 },
-    { "order": 4, "name": "小山",   "name_en": "Oyama",         "lat": 36.3147, "lng": 139.8006 },
-    { "order": 5, "name": "宇都宮", "name_en": "Utsunomiya",    "lat": 36.5551, "lng": 139.8828 },
-    { "order": 6, "name": "那須塩原", "name_en": "Nasushiobara", "lat": 37.0034, "lng": 140.0333 },
-    { "order": 7, "name": "新白河", "name_en": "Shin-Shirakawa","lat": 37.1256, "lng": 140.2136 },
-    { "order": 8, "name": "郡山",   "name_en": "Koriyama",      "lat": 37.4025, "lng": 140.3831 },
-    { "order": 9, "name": "福島",   "name_en": "Fukushima",     "lat": 37.7608, "lng": 140.4747 },
-    { "order": 10, "name": "白石蔵王", "name_en": "Shiroishi-Zao", "lat": 38.0122, "lng": 140.6186 },
-    { "order": 11, "name": "仙台",  "name_en": "Sendai",        "lat": 38.2602, "lng": 140.8827 },
-    { "order": 12, "name": "古川",  "name_en": "Furukawa",      "lat": 38.5794, "lng": 140.9591 },
-    { "order": 13, "name": "くりこま高原", "name_en": "Kurikoma-Kogen", "lat": 38.7325, "lng": 141.0264 },
-    { "order": 14, "name": "一ノ関", "name_en": "Ichinoseki",   "lat": 38.9308, "lng": 141.1189 },
-    { "order": 15, "name": "水沢江刺", "name_en": "Mizusawa-Esashi", "lat": 39.1364, "lng": 141.1319 },
-    { "order": 16, "name": "北上",  "name_en": "Kitakami",      "lat": 39.2911, "lng": 141.1128 },
-    { "order": 17, "name": "新花巻", "name_en": "Shin-Hanamaki","lat": 39.3903, "lng": 141.1467 },
-    { "order": 18, "name": "盛岡",  "name_en": "Morioka",       "lat": 39.7016, "lng": 141.1364 },
-    { "order": 19, "name": "いわて沼宮内", "name_en": "Iwate-Numakunai", "lat": 39.9106, "lng": 141.1875 },
-    { "order": 20, "name": "二戸",  "name_en": "Ninohe",        "lat": 40.2761, "lng": 141.2914 },
-    { "order": 21, "name": "八戸",  "name_en": "Hachinohe",     "lat": 40.5219, "lng": 141.4914 },
-    { "order": 22, "name": "七戸十和田", "name_en": "Shichinohe-Towada", "lat": 40.6892, "lng": 141.1214 },
-    { "order": 23, "name": "新青森", "name_en": "Shin-Aomori",  "lat": 40.8236, "lng": 140.6997 },
-    { "order": 24, "name": "奥津軽いまべつ", "name_en": "Okutsugaru-Imabetsu", "lat": 41.0764, "lng": 140.5325 },
-    { "order": 25, "name": "木古内", "name_en": "Kikonai",      "lat": 41.6772, "lng": 140.4267 },
-    { "order": 26, "name": "新函館北斗", "name_en": "Shin-Hakodate-Hokuto", "lat": 41.9061, "lng": 140.6486 }
+    {
+      "order": 1,
+      "name": "東京",
+      "name_en": "Tokyo",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "major": true
+    },
+    {
+      "order": 2,
+      "name": "上野",
+      "name_en": "Ueno",
+      "lat": 35.7141,
+      "lng": 139.7774,
+      "major": false
+    },
+    {
+      "order": 3,
+      "name": "大宮",
+      "name_en": "Omiya",
+      "lat": 35.9066,
+      "lng": 139.6236,
+      "major": true
+    },
+    {
+      "order": 4,
+      "name": "小山",
+      "name_en": "Oyama",
+      "lat": 36.3147,
+      "lng": 139.8006,
+      "major": false
+    },
+    {
+      "order": 5,
+      "name": "宇都宮",
+      "name_en": "Utsunomiya",
+      "lat": 36.5551,
+      "lng": 139.8828,
+      "major": true
+    },
+    {
+      "order": 6,
+      "name": "那須塩原",
+      "name_en": "Nasushiobara",
+      "lat": 37.0034,
+      "lng": 140.0333,
+      "major": true
+    },
+    {
+      "order": 7,
+      "name": "新白河",
+      "name_en": "Shin-Shirakawa",
+      "lat": 37.1256,
+      "lng": 140.2136,
+      "major": false
+    },
+    {
+      "order": 8,
+      "name": "郡山",
+      "name_en": "Koriyama",
+      "lat": 37.4025,
+      "lng": 140.3831,
+      "major": true
+    },
+    {
+      "order": 9,
+      "name": "福島",
+      "name_en": "Fukushima",
+      "lat": 37.7608,
+      "lng": 140.4747,
+      "major": true
+    },
+    {
+      "order": 10,
+      "name": "白石蔵王",
+      "name_en": "Shiroishi-Zao",
+      "lat": 38.0122,
+      "lng": 140.6186,
+      "major": false
+    },
+    {
+      "order": 11,
+      "name": "仙台",
+      "name_en": "Sendai",
+      "lat": 38.2602,
+      "lng": 140.8827,
+      "major": true
+    },
+    {
+      "order": 12,
+      "name": "古川",
+      "name_en": "Furukawa",
+      "lat": 38.5794,
+      "lng": 140.9591,
+      "major": false
+    },
+    {
+      "order": 13,
+      "name": "くりこま高原",
+      "name_en": "Kurikoma-Kogen",
+      "lat": 38.7325,
+      "lng": 141.0264,
+      "major": false
+    },
+    {
+      "order": 14,
+      "name": "一ノ関",
+      "name_en": "Ichinoseki",
+      "lat": 38.9308,
+      "lng": 141.1189,
+      "major": false
+    },
+    {
+      "order": 15,
+      "name": "水沢江刺",
+      "name_en": "Mizusawa-Esashi",
+      "lat": 39.1364,
+      "lng": 141.1319,
+      "major": false
+    },
+    {
+      "order": 16,
+      "name": "北上",
+      "name_en": "Kitakami",
+      "lat": 39.2911,
+      "lng": 141.1128,
+      "major": false
+    },
+    {
+      "order": 17,
+      "name": "新花巻",
+      "name_en": "Shin-Hanamaki",
+      "lat": 39.3903,
+      "lng": 141.1467,
+      "major": false
+    },
+    {
+      "order": 18,
+      "name": "盛岡",
+      "name_en": "Morioka",
+      "lat": 39.7016,
+      "lng": 141.1364,
+      "major": true
+    },
+    {
+      "order": 19,
+      "name": "いわて沼宮内",
+      "name_en": "Iwate-Numakunai",
+      "lat": 39.9106,
+      "lng": 141.1875,
+      "major": false
+    },
+    {
+      "order": 20,
+      "name": "二戸",
+      "name_en": "Ninohe",
+      "lat": 40.2761,
+      "lng": 141.2914,
+      "major": false
+    },
+    {
+      "order": 21,
+      "name": "八戸",
+      "name_en": "Hachinohe",
+      "lat": 40.5219,
+      "lng": 141.4914,
+      "major": true
+    },
+    {
+      "order": 22,
+      "name": "七戸十和田",
+      "name_en": "Shichinohe-Towada",
+      "lat": 40.6892,
+      "lng": 141.1214,
+      "major": false
+    },
+    {
+      "order": 23,
+      "name": "新青森",
+      "name_en": "Shin-Aomori",
+      "lat": 40.8236,
+      "lng": 140.6997,
+      "major": true
+    },
+    {
+      "order": 24,
+      "name": "奥津軽いまべつ",
+      "name_en": "Okutsugaru-Imabetsu",
+      "lat": 41.0764,
+      "lng": 140.5325,
+      "major": false
+    },
+    {
+      "order": 25,
+      "name": "木古内",
+      "name_en": "Kikonai",
+      "lat": 41.6772,
+      "lng": 140.4267,
+      "major": false
+    },
+    {
+      "order": 26,
+      "name": "新函館北斗",
+      "name_en": "Shin-Hakodate-Hokuto",
+      "lat": 41.9061,
+      "lng": 140.6486,
+      "major": true
+    }
   ]
 }
-

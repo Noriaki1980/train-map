@@ -2,17 +2,101 @@
   "line": "joetsu",
   "line_name": "上越新幹線",
   "stations": [
-    { "order": 1, "name": "東京",     "name_en": "Tokyo",           "lat": 35.6812, "lng": 139.7671 },
-    { "order": 2, "name": "上野",     "name_en": "Ueno",            "lat": 35.7141, "lng": 139.7774 },
-    { "order": 3, "name": "大宮",     "name_en": "Omiya",           "lat": 35.9066, "lng": 139.6236 },
-    { "order": 4, "name": "熊谷",     "name_en": "Kumagaya",        "lat": 36.1470, "lng": 139.3888 },
-    { "order": 5, "name": "本庄早稲田", "name_en": "Honjo-Waseda",   "lat": 36.2394, "lng": 139.1897 },
-    { "order": 6, "name": "高崎",     "name_en": "Takasaki",        "lat": 36.3222, "lng": 139.0128 },
-    { "order": 7, "name": "上毛高原",  "name_en": "Jomo-Kogen",      "lat": 36.7761, "lng": 138.9975 },
-    { "order": 8, "name": "越後湯沢",  "name_en": "Echigo-Yuzawa",   "lat": 36.9294, "lng": 138.8078 },
-    { "order": 9, "name": "浦佐",     "name_en": "Urasa",           "lat": 37.1872, "lng": 138.9433 },
-    { "order": 10, "name": "長岡",    "name_en": "Nagaoka",         "lat": 37.4467, "lng": 138.8514 },
-    { "order": 11, "name": "燕三条",  "name_en": "Tsubame-Sanjo",   "lat": 37.6706, "lng": 138.9528 },
-    { "order": 12, "name": "新潟",    "name_en": "Niigata",         "lat": 37.9161, "lng": 139.0364 }
+    {
+      "order": 1,
+      "name": "東京",
+      "name_en": "Tokyo",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "major": true
+    },
+    {
+      "order": 2,
+      "name": "上野",
+      "name_en": "Ueno",
+      "lat": 35.7141,
+      "lng": 139.7774,
+      "major": false
+    },
+    {
+      "order": 3,
+      "name": "大宮",
+      "name_en": "Omiya",
+      "lat": 35.9066,
+      "lng": 139.6236,
+      "major": true
+    },
+    {
+      "order": 4,
+      "name": "熊谷",
+      "name_en": "Kumagaya",
+      "lat": 36.147,
+      "lng": 139.3888,
+      "major": false
+    },
+    {
+      "order": 5,
+      "name": "本庄早稲田",
+      "name_en": "Honjo-Waseda",
+      "lat": 36.2394,
+      "lng": 139.1897,
+      "major": false
+    },
+    {
+      "order": 6,
+      "name": "高崎",
+      "name_en": "Takasaki",
+      "lat": 36.3222,
+      "lng": 139.0128,
+      "major": true
+    },
+    {
+      "order": 7,
+      "name": "上毛高原",
+      "name_en": "Jomo-Kogen",
+      "lat": 36.7761,
+      "lng": 138.9975,
+      "major": false
+    },
+    {
+      "order": 8,
+      "name": "越後湯沢",
+      "name_en": "Echigo-Yuzawa",
+      "lat": 36.9294,
+      "lng": 138.8078,
+      "major": true
+    },
+    {
+      "order": 9,
+      "name": "浦佐",
+      "name_en": "Urasa",
+      "lat": 37.1872,
+      "lng": 138.9433,
+      "major": false
+    },
+    {
+      "order": 10,
+      "name": "長岡",
+      "name_en": "Nagaoka",
+      "lat": 37.4467,
+      "lng": 138.8514,
+      "major": true
+    },
+    {
+      "order": 11,
+      "name": "燕三条",
+      "name_en": "Tsubame-Sanjo",
+      "lat": 37.6706,
+      "lng": 138.9528,
+      "major": false
+    },
+    {
+      "order": 12,
+      "name": "新潟",
+      "name_en": "Niigata",
+      "lat": 37.9161,
+      "lng": 139.0364,
+      "major": true
+    }
   ]
 }

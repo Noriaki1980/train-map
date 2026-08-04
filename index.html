@@ -496,8 +496,10 @@ function renderStations(stationsData, lineColor){
 
   stations.forEach(s => {
     // stops情報がある路線(東海道・山陽・九州)はのぞみ/みずほ停車駅のみ主要駅扱い、
-    // それ以外(東北・上越)は今のところ全駅にラベルを出す
-    const isMajor = s.stops ? (s.stops.includes('nozomi') || s.stops.includes('mizuho')) : true;
+    // major フラグがある路線(東北・上越)はそれに従う
+    const isMajor = s.stops
+      ? (s.stops.includes('nozomi') || s.stops.includes('mizuho'))
+      : !!s.major;
     const marker = L.circleMarker([s.lat, s.lng], {
       radius: isMajor ? 4 : 2.5,
       className: 'station-dot' + (isMajor ? ' major' : ''),
