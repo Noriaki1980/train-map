@@ -448,6 +448,7 @@ const DATA_URLS = {
   stationsJoetsu: "data/stations_joetsu.json",
   stationsAkita: "data/stations_akita.json",
   stationsYamagata: "data/stations_yamagata.json",
+  trackTokyoKyoto: "data/track_tokyo_kyoto.json",
   positions: "data/train_positions.json",
 };
 
@@ -521,6 +522,17 @@ function renderStations(stationsData, lineColor){
     }
     marker.bindPopup(`<b>${s.name}</b> / ${s.name_en}`);
   });
+}
+
+function renderDetailedTrack(trackData, lineColor){
+  // 実際の線路形状に沿った詳細ポリライン(東京〜京都間のみ)。
+  // 直線ポリラインの上に重ねて描画することで、その区間だけ見た目をカーブに近づける。
+  // 列車の位置計算には使用していない(位置は引き続き駅データベース)。
+  L.polyline(trackData.coordinates, {
+    color: lineColor || '#3B6BFF',
+    weight: 2.5,
+    opacity: 0.85,
+  }).addTo(stationLayer);
 }
 
 // ---------------------------------------------------------------------
@@ -825,6 +837,17 @@ async function loadStations(){
   if(anyFailed && Object.keys(stationsByName).length === 0){
     document.getElementById('trainList').innerHTML =
       `<div class="empty-state">駅データを読み込めませんでした。<br>dataフォルダの配置を確認してください。</div>`;
+  }
+
+  // 東京〜京都間だけ、実際の線路形状に沿った詳細な線を重ねて描画(任意・失敗しても他に影響なし)
+  try{
+    const res = await fetch(DATA_URLS.trackTokyoKyoto);
+    if(res.ok){
+      const trackData = await res.json();
+      renderDetailedTrack(trackData, '#3B6BFF');
+    }
+  } catch(e){
+    console.error('東京〜京都間の詳細線路データの取得に失敗しました', e);
   }
 }
 
