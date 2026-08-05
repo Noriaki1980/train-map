@@ -215,7 +215,13 @@ def parse_train_positions(raw, stations, jr_id_map):
             if from_name not in stations or to_name not in stations:
                 continue
             a, b = stations[from_name], stations[to_name]
-            lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
+            lat = lng = None
+            if _DETAILED_TRACK:
+                result = _interpolate_on_detailed_track(_DETAILED_TRACK, from_name, to_name, 0.5)
+                if result:
+                    lat, lng = result
+            if lat is None:
+                lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
 
             for t in entry.get("trains", []):
                 positions.append({
@@ -473,6 +479,60 @@ def _interpolate_along_route(via_points, ratio):
     return via_points[-1]["lat"], via_points[-1]["lng"]
 
 
+def _load_detailed_track():
+    """
+    東京〜京都間の実際の線路形状データを読み込む。
+    無ければNoneを返し、呼び出し側は通常の駅間補間にフォールバックする。
+    """
+    track_path = DATA_DIR / "track_tokyo_kyoto.json"
+    meta_path = DATA_DIR / "track_tokyo_kyoto_meta.json"
+    if not (track_path.exists() and meta_path.exists()):
+        return None
+    with open(track_path, encoding="utf-8") as f:
+        track = json.load(f)["coordinates"]  # [[lat,lng], ...]
+    with open(meta_path, encoding="utf-8") as f:
+        station_arc = json.load(f)["station_arc"]
+
+    cum = [0.0]
+    for i in range(1, len(track)):
+        cum.append(cum[i - 1] + _haversine_km(track[i - 1][0], track[i - 1][1], track[i][0], track[i][1]))
+
+    return {"track": track, "cum": cum, "station_arc": station_arc}
+
+
+_DETAILED_TRACK = _load_detailed_track()
+
+
+def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
+    """
+    detailed(_load_detailed_trackの戻り値)を使い、from_name〜to_name間を
+    実際の線路カーブに沿って ratio(0〜1) の地点まで進んだ座標を返す。
+    どちらかの駅がこの詳細データの対象外、または区間の実距離がほぼ0
+    (データの起点が2駅分をまとめて指しているなど)の場合はNoneを返す。
+    """
+    arc = detailed["station_arc"]
+    if from_name not in arc or to_name not in arc:
+        return None
+
+    from_km = arc[from_name]["arc_km"]
+    to_km = arc[to_name]["arc_km"]
+    if abs(to_km - from_km) < 0.5:  # 区間の実距離がほぼ0 = データが駅を区別できていない
+        return None
+
+    lo, hi = (from_km, to_km) if from_km <= to_km else (to_km, from_km)
+    target_km = lo + (hi - lo) * ratio if from_km <= to_km else hi - (hi - lo) * ratio
+
+    cum = detailed["cum"]
+    track = detailed["track"]
+    # target_kmに対応するtrack上の区間を探す
+    for i in range(len(cum) - 1):
+        if cum[i] <= target_km <= cum[i + 1]:
+            seg_len = cum[i + 1] - cum[i]
+            local_ratio = (target_km - cum[i]) / seg_len if seg_len > 0 else 0
+            return _interpolate(track[i][0], track[i][1], track[i + 1][0], track[i + 1][1], local_ratio)
+    return (track[-1][0], track[-1][1]) if target_km >= cum[-1] else (track[0][0], track[0][1])
+
+
 def calculate_positions(trips, stations, now=None):
     """
     現在時刻(now)における各列車の位置を計算する。
@@ -520,11 +580,21 @@ def calculate_positions(trips, stations, now=None):
                 elapsed = (now - seg_start).total_seconds()
                 ratio = elapsed / total if total > 0 else 0
 
-                # 通過駅も経由地として使い、路線の折れ線に沿って移動させる
-                via_points = _route_via_points(
-                    stations, order_list, parsed[i]["station"], parsed[i + 1]["station"]
-                )
-                lat, lng = _interpolate_along_route(via_points, ratio)
+                # まず実際の線路形状(東京〜京都間)があればそれを使う
+                lat = lng = None
+                if _DETAILED_TRACK:
+                    result = _interpolate_on_detailed_track(
+                        _DETAILED_TRACK, parsed[i]["station"], parsed[i + 1]["station"], ratio
+                    )
+                    if result:
+                        lat, lng = result
+
+                if lat is None:
+                    # 通過駅も経由地として使い、路線の折れ線に沿って移動させる(フォールバック)
+                    via_points = _route_via_points(
+                        stations, order_list, parsed[i]["station"], parsed[i + 1]["station"]
+                    )
+                    lat, lng = _interpolate_along_route(via_points, ratio)
 
                 # 停車中かどうか判定 (発車時刻に達していない= 出発駅で停車中)
                 status = "stopped" if ratio <= 0.02 else "running"
