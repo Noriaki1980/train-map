@@ -500,7 +500,11 @@ def _load_detailed_track():
     return {"track": track, "cum": cum, "station_arc": station_arc}
 
 
-_DETAILED_TRACK = _load_detailed_track()
+try:
+    _DETAILED_TRACK = _load_detailed_track()
+except Exception as _e:
+    print(f"[warn] 詳細線路データの読み込みに失敗しました(通常の駅間補間にフォールバックします): {_e}")
+    _DETAILED_TRACK = None
 
 
 def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
