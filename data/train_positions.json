@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-13T05:10:35.746590+09:00",
-  "count": 29,
+  "updated_at": "2026-08-13T05:59:47.763237+09:00",
+  "count": 32,
   "trains": [
     {
       "trip_id": "6-1",
@@ -48,6 +48,18 @@
       "lng": 139.7671,
       "status": "stopped",
       "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-99",
+      "train_number": "のぞみ99号",
+      "train_type": "nozomi",
+      "is_special": false,
+      "direction": "down",
+      "lat": 35.6285,
+      "lng": 139.7387,
+      "status": "stopped",
+      "current_segment": "品川",
       "delay_min": 0
     },
     {
@@ -267,6 +279,18 @@
       "delay_min": 0
     },
     {
+      "trip_id": "2-930",
+      "train_number": "こだま930号",
+      "train_type": "kodama",
+      "is_special": false,
+      "direction": "up",
+      "lat": 34.6663,
+      "lng": 133.9189,
+      "status": "stopped",
+      "current_segment": "岡山",
+      "delay_min": 0
+    },
+    {
       "trip_id": "2-932",
       "train_number": "こだま932号",
       "train_type": "kodama",
@@ -348,6 +372,18 @@
       "lng": 130.4207,
       "status": "stopped",
       "current_segment": "博多",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "tsubasa_122M:2221308370-2241601010",
+      "train_number": "つばさ122号",
+      "train_type": "tsubasa",
+      "is_special": false,
+      "direction": "up",
+      "lat": 38.55415,
+      "lng": 140.36765,
+      "status": "running",
+      "current_segment": "袖崎→村山",
       "delay_min": 0
     }
   ]
