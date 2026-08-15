@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T05:34:30.295232+09:00",
+  "updated_at": "2026-08-16T05:52:27.579651+09:00",
   "count": 30,
   "trains": [
     {
@@ -356,10 +356,10 @@
       "train_type": "tsubasa",
       "is_special": false,
       "direction": "up",
-      "lat": 38.7614,
-      "lng": 140.3006,
-      "status": "stopped",
-      "current_segment": "新庄",
+      "lat": 38.6647,
+      "lng": 140.3415,
+      "status": "running",
+      "current_segment": "芦沢→北大石田",
       "delay_min": 0
     }
   ]
