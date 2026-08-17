@@ -505,7 +505,7 @@ def _load_detailed_tracks():
     リストに含めない(1区間の失敗が他区間に影響しないようにする)。
     """
     specs = [
-        ("track_tokyo_kyoto.json", "track_tokyo_kyoto_meta.json"),
+        ("track_tokaido.json", "track_tokaido_meta.json"),
         ("track_sanyo.json", "track_sanyo_meta.json"),
     ]
     tracks = []

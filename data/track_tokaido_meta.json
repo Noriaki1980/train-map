@@ -1,0 +1,89 @@
+{
+  "station_arc": {
+    "東京": {
+      "index": 1,
+      "arc_km": 0.19,
+      "nearest_dist_km": 0.094
+    },
+    "品川": {
+      "index": 79,
+      "arc_km": 7.42,
+      "nearest_dist_km": 0.103
+    },
+    "新横浜": {
+      "index": 307,
+      "arc_km": 26.23,
+      "nearest_dist_km": 0.071
+    },
+    "小田原": {
+      "index": 839,
+      "arc_km": 77.55,
+      "nearest_dist_km": 0.072
+    },
+    "熱海": {
+      "index": 1098,
+      "arc_km": 96.8,
+      "nearest_dist_km": 0.532
+    },
+    "三島": {
+      "index": 1261,
+      "arc_km": 112.26,
+      "nearest_dist_km": 0.492
+    },
+    "新富士": {
+      "index": 1505,
+      "arc_km": 136.52,
+      "nearest_dist_km": 1.698
+    },
+    "静岡": {
+      "index": 1885,
+      "arc_km": 168.03,
+      "nearest_dist_km": 0.034
+    },
+    "掛川": {
+      "index": 2456,
+      "arc_km": 212.03,
+      "nearest_dist_km": 0.035
+    },
+    "浜松": {
+      "index": 2827,
+      "arc_km": 239.56,
+      "nearest_dist_km": 0.097
+    },
+    "豊橋": {
+      "index": 3233,
+      "arc_km": 274.31,
+      "nearest_dist_km": 0.85
+    },
+    "三河安城": {
+      "index": 3925,
+      "arc_km": 310.5,
+      "nearest_dist_km": 0.239
+    },
+    "名古屋": {
+      "index": 4363,
+      "arc_km": 342.42,
+      "nearest_dist_km": 0.084
+    },
+    "岐阜羽島": {
+      "index": 4666,
+      "arc_km": 371.04,
+      "nearest_dist_km": 0.757
+    },
+    "米原": {
+      "index": 5061,
+      "arc_km": 412.74,
+      "nearest_dist_km": 0.134
+    },
+    "京都": {
+      "index": 5816,
+      "arc_km": 480.99,
+      "nearest_dist_km": 0.218
+    },
+    "新大阪": {
+      "index": 6231,
+      "arc_km": 519.59,
+      "nearest_dist_km": 0.215
+    }
+  }
+}

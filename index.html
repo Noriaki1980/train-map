@@ -448,7 +448,7 @@ const DATA_URLS = {
   stationsJoetsu: "data/stations_joetsu.json",
   stationsAkita: "data/stations_akita.json",
   stationsYamagata: "data/stations_yamagata.json",
-  trackTokyoKyoto: "data/track_tokyo_kyoto.json",
+  trackTokaido: "data/track_tokaido.json",
   trackSanyo: "data/track_sanyo.json",
   positions: "data/train_positions.json",
 };
@@ -834,7 +834,7 @@ async function loadStations(){
   stationsByName = {};
 
   const sources = [
-    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線', skipOrderRanges: [[1, 15], [18, 35]] },
+    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線', skipOrderRanges: [[1, 17], [18, 35]] },
     { url: DATA_URLS.stationsTohoku, color: '#7F5AF0', label: '東北新幹線' },
     { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線' },
     { url: DATA_URLS.stationsAkita, color: '#D4145A', label: '秋田新幹線' },
@@ -861,7 +861,7 @@ async function loadStations(){
 
   // 実際の線路形状に沿った詳細な線を重ねて描画する区間(任意・失敗しても他に影響なし)
   const detailedTracks = [
-    { url: DATA_URLS.trackTokyoKyoto, color: '#3B6BFF', label: '東京〜京都' },
+    { url: DATA_URLS.trackTokaido, color: '#3B6BFF', label: '東海道新幹線' },
     { url: DATA_URLS.trackSanyo, color: '#3B6BFF', label: '山陽新幹線' },
   ];
   for(const t of detailedTracks){
