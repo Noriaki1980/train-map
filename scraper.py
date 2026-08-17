@@ -216,10 +216,9 @@ def parse_train_positions(raw, stations, jr_id_map):
                 continue
             a, b = stations[from_name], stations[to_name]
             lat = lng = None
-            if _DETAILED_TRACK:
-                result = _interpolate_on_detailed_track(_DETAILED_TRACK, from_name, to_name, 0.5)
-                if result:
-                    lat, lng = result
+            result = _interpolate_on_any_detailed_track(from_name, to_name, 0.5)
+            if result:
+                lat, lng = result
             if lat is None:
                 lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
 
@@ -361,7 +360,10 @@ def fetch_hokkaido_positions():
     resp = requests.get(HOKKAIDO_LOCATION_URL, headers=API_HEADERS, timeout=10)
     if resp.status_code != 200:
         raise RuntimeError(f"HTTPエラー: status={resp.status_code}")
-    raw = resp.json()
+    # このAPIはレスポンス先頭にUTF-8 BOMが付いているため、そのままだと
+    # resp.json()がデコードエラーになる。utf-8-sigで明示的にデコードする。
+    text = resp.content.decode("utf-8-sig")
+    raw = json.loads(text)
 
     positions = []
     kikonai = HOKKAIDO_STATIONS["018"]  # 木古内 (中間の実在駅を近似位置として使う)
@@ -479,13 +481,9 @@ def _interpolate_along_route(via_points, ratio):
     return via_points[-1]["lat"], via_points[-1]["lng"]
 
 
-def _load_detailed_track():
-    """
-    東京〜京都間の実際の線路形状データを読み込む。
-    無ければNoneを返し、呼び出し側は通常の駅間補間にフォールバックする。
-    """
-    track_path = DATA_DIR / "track_tokyo_kyoto.json"
-    meta_path = DATA_DIR / "track_tokyo_kyoto_meta.json"
+def _load_one_detailed_track(track_filename, meta_filename):
+    track_path = DATA_DIR / track_filename
+    meta_path = DATA_DIR / meta_filename
     if not (track_path.exists() and meta_path.exists()):
         return None
     with open(track_path, encoding="utf-8") as f:
@@ -500,16 +498,37 @@ def _load_detailed_track():
     return {"track": track, "cum": cum, "station_arc": station_arc}
 
 
+def _load_detailed_tracks():
+    """
+    実際の線路形状データ(区間ごとに複数)を読み込む。
+    各要素は _load_one_detailed_track() の戻り値。読み込めなかった区間は
+    リストに含めない(1区間の失敗が他区間に影響しないようにする)。
+    """
+    specs = [
+        ("track_tokyo_kyoto.json", "track_tokyo_kyoto_meta.json"),
+        ("track_sanyo.json", "track_sanyo_meta.json"),
+    ]
+    tracks = []
+    for track_file, meta_file in specs:
+        try:
+            t = _load_one_detailed_track(track_file, meta_file)
+            if t:
+                tracks.append(t)
+        except Exception as e:
+            print(f"[warn] 詳細線路データ({track_file})の読み込みに失敗しました: {e}")
+    return tracks
+
+
 try:
-    _DETAILED_TRACK = _load_detailed_track()
+    _DETAILED_TRACKS = _load_detailed_tracks()
 except Exception as _e:
     print(f"[warn] 詳細線路データの読み込みに失敗しました(通常の駅間補間にフォールバックします): {_e}")
-    _DETAILED_TRACK = None
+    _DETAILED_TRACKS = []
 
 
 def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
     """
-    detailed(_load_detailed_trackの戻り値)を使い、from_name〜to_name間を
+    detailed(_load_one_detailed_trackの戻り値)を使い、from_name〜to_name間を
     実際の線路カーブに沿って ratio(0〜1) の地点まで進んだ座標を返す。
     どちらかの駅がこの詳細データの対象外、または区間の実距離がほぼ0
     (データの起点が2駅分をまとめて指しているなど)の場合はNoneを返す。
@@ -535,6 +554,15 @@ def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
             local_ratio = (target_km - cum[i]) / seg_len if seg_len > 0 else 0
             return _interpolate(track[i][0], track[i][1], track[i + 1][0], track[i + 1][1], local_ratio)
     return (track[-1][0], track[-1][1]) if target_km >= cum[-1] else (track[0][0], track[0][1])
+
+
+def _interpolate_on_any_detailed_track(from_name, to_name, ratio):
+    """登録済みの詳細トラックを順に試し、最初に見つかった結果を返す。無ければNone。"""
+    for detailed in _DETAILED_TRACKS:
+        result = _interpolate_on_detailed_track(detailed, from_name, to_name, ratio)
+        if result:
+            return result
+    return None
 
 
 def calculate_positions(trips, stations, now=None):
@@ -584,14 +612,13 @@ def calculate_positions(trips, stations, now=None):
                 elapsed = (now - seg_start).total_seconds()
                 ratio = elapsed / total if total > 0 else 0
 
-                # まず実際の線路形状(東京〜京都間)があればそれを使う
+                # まず実際の線路形状(東京〜京都・山陽など)があればそれを使う
                 lat = lng = None
-                if _DETAILED_TRACK:
-                    result = _interpolate_on_detailed_track(
-                        _DETAILED_TRACK, parsed[i]["station"], parsed[i + 1]["station"], ratio
-                    )
-                    if result:
-                        lat, lng = result
+                result = _interpolate_on_any_detailed_track(
+                    parsed[i]["station"], parsed[i + 1]["station"], ratio
+                )
+                if result:
+                    lat, lng = result
 
                 if lat is None:
                     # 通過駅も経由地として使い、路線の折れ線に沿って移動させる(フォールバック)

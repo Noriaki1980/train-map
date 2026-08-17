@@ -486,20 +486,21 @@ function initMap(){
 // ---------------------------------------------------------------------
 // 駅・路線の描画
 // ---------------------------------------------------------------------
-function renderStations(stationsData, lineColor, skipOrderRange){
+function renderStations(stationsData, lineColor, skipOrderRanges){
   const stations = stationsData.stations;
   stations.forEach(s => stationsByName[s.name] = s); // 複数路線ぶん累積させる(リセットしない)
 
-  // 路線(直線でつなぐ簡易版)。skipOrderRangeで指定した区間は、
+  // 路線(直線でつなぐ簡易版)。skipOrderRangesで指定した区間(複数可)は、
   // 実際の線路形状の詳細ポリライン(renderDetailedTrack)を別途重ねて描画するため、
-  // ここでは直線を描かない(二重描画を避ける)。
+  // ここでは直線を描かない(二重描画を避ける)。範囲同士の継ぎ目(例: 京都〜新大阪)は
+  // どちらの詳細データにも含まれないため、直線のまま残す。
   const sorted = [...stations].sort((a,b)=>a.order-b.order);
-  const [skipFrom, skipTo] = skipOrderRange || [];
+  const ranges = skipOrderRanges || [];
+  const isSkipped = (order) => ranges.some(([from, to]) => order >= from && order <= to);
   const latlngs = [];
   let currentSegment = [];
   sorted.forEach(s => {
-    const skipped = skipOrderRange && s.order >= skipFrom && s.order <= skipTo;
-    if(skipped){
+    if(isSkipped(s.order)){
       if(currentSegment.length > 1) latlngs.push(currentSegment);
       currentSegment = [];
     } else {
@@ -833,7 +834,7 @@ async function loadStations(){
   stationsByName = {};
 
   const sources = [
-    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線', skipOrderRange: [1, 35] },
+    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線', skipOrderRanges: [[1, 15], [18, 35]] },
     { url: DATA_URLS.stationsTohoku, color: '#7F5AF0', label: '東北新幹線' },
     { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線' },
     { url: DATA_URLS.stationsAkita, color: '#D4145A', label: '秋田新幹線' },
@@ -846,7 +847,7 @@ async function loadStations(){
       const res = await fetch(src.url);
       if(!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      renderStations(data, src.color, src.skipOrderRange);
+      renderStations(data, src.color, src.skipOrderRanges);
     } catch(e){
       console.error(`${src.label} (${src.url}) の取得に失敗しました`, e);
       anyFailed = true;

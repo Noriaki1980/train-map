@@ -1,0 +1,99 @@
+{
+  "station_arc": {
+    "新大阪": {
+      "index": 11,
+      "arc_km": 1.09,
+      "nearest_dist_km": 0.215
+    },
+    "新神戸": {
+      "index": 370,
+      "arc_km": 34.21,
+      "nearest_dist_km": 0.536
+    },
+    "西明石": {
+      "index": 517,
+      "arc_km": 54.73,
+      "nearest_dist_km": 1.499
+    },
+    "姫路": {
+      "index": 744,
+      "arc_km": 86.98,
+      "nearest_dist_km": 0.236
+    },
+    "相生": {
+      "index": 895,
+      "arc_km": 107.39,
+      "nearest_dist_km": 1.681
+    },
+    "岡山": {
+      "index": 1420,
+      "arc_km": 162.07,
+      "nearest_dist_km": 0.041
+    },
+    "新倉敷": {
+      "index": 1570,
+      "arc_km": 182.19,
+      "nearest_dist_km": 0.299
+    },
+    "福山": {
+      "index": 1857,
+      "arc_km": 218.82,
+      "nearest_dist_km": 0.396
+    },
+    "新尾道": {
+      "index": 1994,
+      "arc_km": 237.08,
+      "nearest_dist_km": 1.866
+    },
+    "三原": {
+      "index": 2038,
+      "arc_km": 246.95,
+      "nearest_dist_km": 0.457
+    },
+    "東広島": {
+      "index": 2495,
+      "arc_km": 295.7,
+      "nearest_dist_km": 8.287
+    },
+    "広島": {
+      "index": 2683,
+      "arc_km": 307.94,
+      "nearest_dist_km": 0.072
+    },
+    "新岩国": {
+      "index": 2979,
+      "arc_km": 352.3,
+      "nearest_dist_km": 3.351
+    },
+    "徳山": {
+      "index": 3256,
+      "arc_km": 389.77,
+      "nearest_dist_km": 0.049
+    },
+    "新山口": {
+      "index": 3579,
+      "arc_km": 423.8,
+      "nearest_dist_km": 0.946
+    },
+    "厚狭": {
+      "index": 3689,
+      "arc_km": 441.77,
+      "nearest_dist_km": 11.582
+    },
+    "新下関": {
+      "index": 3997,
+      "arc_km": 482.22,
+      "nearest_dist_km": 0.839
+    },
+    "小倉": {
+      "index": 4065,
+      "arc_km": 499.73,
+      "nearest_dist_km": 0.203
+    },
+    "博多": {
+      "index": 4471,
+      "arc_km": 555.52,
+      "nearest_dist_km": 0.142
+    }
+  }
+}
