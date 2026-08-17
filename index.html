@@ -649,7 +649,8 @@ function renderTrains(positionsData){
     const [fromName, toName] = (t.current_segment || '').split('→');
     const from = stationsByName[fromName];
     const to = stationsByName[toName];
-    const bearing = (from && to) ? bearingBetween(from, to) : 0;
+    // 実際の線路カーブに沿った進行方向(サーバー側で計算済み)があれば優先して使う
+    const bearing = (typeof t.bearing === 'number') ? t.bearing : ((from && to) ? bearingBetween(from, to) : 0);
 
     const icon = shinkansenIcon(t.train_type || 'other', t.status, bearing, !!t.is_special);
 

@@ -216,9 +216,10 @@ def parse_train_positions(raw, stations, jr_id_map):
                 continue
             a, b = stations[from_name], stations[to_name]
             lat = lng = None
+            bearing = None
             result = _interpolate_on_any_detailed_track(from_name, to_name, 0.5)
             if result:
-                lat, lng = result
+                lat, lng, bearing = result
             if lat is None:
                 lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
 
@@ -231,6 +232,7 @@ def parse_train_positions(raw, stations, jr_id_map):
                     "direction": "up" if bound_id == "1" else "down",
                     "lat": round(lat, 5),
                     "lng": round(lng, 5),
+                    "bearing": round(bearing, 1) if bearing is not None else None,
                     "status": "running",
                     "current_segment": f"{from_name}→{to_name}",
                     "delay_min": t.get("delay", 0),
@@ -526,10 +528,20 @@ except Exception as _e:
     _DETAILED_TRACKS = []
 
 
+def _bearing_deg(lat1, lng1, lat2, lng2):
+    """2点間の方位角(度、北=0、東=90)を返す。"""
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    dlmb = math.radians(lng2 - lng1)
+    y = math.sin(dlmb) * math.cos(phi2)
+    x = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(dlmb)
+    return (math.degrees(math.atan2(y, x)) + 360) % 360
+
+
 def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
     """
     detailed(_load_one_detailed_trackの戻り値)を使い、from_name〜to_name間を
-    実際の線路カーブに沿って ratio(0〜1) の地点まで進んだ座標を返す。
+    実際の線路カーブに沿って ratio(0〜1) の地点まで進んだ座標と、その地点での
+    進行方向(bearing、度)を返す。(lat, lng, bearing) のタプル。
     どちらかの駅がこの詳細データの対象外、または区間の実距離がほぼ0
     (データの起点が2駅分をまとめて指しているなど)の場合はNoneを返す。
     """
@@ -543,7 +555,8 @@ def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
         return None
 
     lo, hi = (from_km, to_km) if from_km <= to_km else (to_km, from_km)
-    target_km = lo + (hi - lo) * ratio if from_km <= to_km else hi - (hi - lo) * ratio
+    forward = from_km <= to_km
+    target_km = lo + (hi - lo) * ratio if forward else hi - (hi - lo) * ratio
 
     cum = detailed["cum"]
     track = detailed["track"]
@@ -552,8 +565,16 @@ def _interpolate_on_detailed_track(detailed, from_name, to_name, ratio):
         if cum[i] <= target_km <= cum[i + 1]:
             seg_len = cum[i + 1] - cum[i]
             local_ratio = (target_km - cum[i]) / seg_len if seg_len > 0 else 0
-            return _interpolate(track[i][0], track[i][1], track[i + 1][0], track[i + 1][1], local_ratio)
-    return (track[-1][0], track[-1][1]) if target_km >= cum[-1] else (track[0][0], track[0][1])
+            lat, lng = _interpolate(track[i][0], track[i][1], track[i + 1][0], track[i + 1][1], local_ratio)
+            bearing = _bearing_deg(track[i][0], track[i][1], track[i + 1][0], track[i + 1][1])
+            if not forward:
+                bearing = (bearing + 180) % 360  # 上り方向は逆向き
+            return lat, lng, bearing
+    lat, lng = (track[-1][0], track[-1][1]) if target_km >= cum[-1] else (track[0][0], track[0][1])
+    bearing = _bearing_deg(track[-2][0], track[-2][1], track[-1][0], track[-1][1])
+    if not forward:
+        bearing = (bearing + 180) % 360
+    return lat, lng, bearing
 
 
 def _interpolate_on_any_detailed_track(from_name, to_name, ratio):
@@ -614,11 +635,12 @@ def calculate_positions(trips, stations, now=None):
 
                 # まず実際の線路形状(東京〜京都・山陽など)があればそれを使う
                 lat = lng = None
+                bearing = None
                 result = _interpolate_on_any_detailed_track(
                     parsed[i]["station"], parsed[i + 1]["station"], ratio
                 )
                 if result:
-                    lat, lng = result
+                    lat, lng, bearing = result
 
                 if lat is None:
                     # 通過駅も経由地として使い、路線の折れ線に沿って移動させる(フォールバック)
@@ -639,6 +661,7 @@ def calculate_positions(trips, stations, now=None):
                     "direction": trip["direction"],
                     "lat": round(lat, 5),
                     "lng": round(lng, 5),
+                    "bearing": round(bearing, 1) if bearing is not None else None,
                     "status": status,
                     "current_segment": f"{parsed[i]['station']}→{parsed[i+1]['station']}",
                 })
