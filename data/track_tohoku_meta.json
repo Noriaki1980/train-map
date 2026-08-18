@@ -1,0 +1,119 @@
+{
+  "station_arc": {
+    "東京": {
+      "index": 1,
+      "arc_km": 0.19,
+      "nearest_dist_km": 0.094
+    },
+    "上野": {
+      "index": 41,
+      "arc_km": 4.04,
+      "nearest_dist_km": 0.061
+    },
+    "大宮": {
+      "index": 536,
+      "arc_km": 31.52,
+      "nearest_dist_km": 0.079
+    },
+    "小山": {
+      "index": 868,
+      "arc_km": 80.34,
+      "nearest_dist_km": 0.541
+    },
+    "宇都宮": {
+      "index": 1021,
+      "arc_km": 108.54,
+      "nearest_dist_km": 1.267
+    },
+    "那須塩原": {
+      "index": 1570,
+      "arc_km": 160.06,
+      "nearest_dist_km": 4.038
+    },
+    "新白河": {
+      "index": 1662,
+      "arc_km": 180.71,
+      "nearest_dist_km": 1.653
+    },
+    "郡山": {
+      "index": 2007,
+      "arc_km": 214.67,
+      "nearest_dist_km": 0.573
+    },
+    "福島": {
+      "index": 2336,
+      "arc_km": 256.41,
+      "nearest_dist_km": 1.416
+    },
+    "白石蔵王": {
+      "index": 2507,
+      "arc_km": 287.73,
+      "nearest_dist_km": 2.104
+    },
+    "仙台": {
+      "index": 3105,
+      "arc_km": 325.9,
+      "nearest_dist_km": 0.092
+    },
+    "古川": {
+      "index": 3799,
+      "arc_km": 365.22,
+      "nearest_dist_km": 0.933
+    },
+    "くりこま高原": {
+      "index": 4052,
+      "arc_km": 382.9,
+      "nearest_dist_km": 2.862
+    },
+    "一ノ関": {
+      "index": 4281,
+      "arc_km": 406.69,
+      "nearest_dist_km": 1.809
+    },
+    "水沢江刺": {
+      "index": 4472,
+      "arc_km": 432.23,
+      "nearest_dist_km": 4.982
+    },
+    "北上": {
+      "index": 4571,
+      "arc_km": 449.86,
+      "nearest_dist_km": 1.188
+    },
+    "新花巻": {
+      "index": 4621,
+      "arc_km": 461.49,
+      "nearest_dist_km": 1.778
+    },
+    "盛岡": {
+      "index": 4851,
+      "arc_km": 497.41,
+      "nearest_dist_km": 0.193
+    },
+    "いわて沼宮内": {
+      "index": 4953,
+      "arc_km": 522.22,
+      "nearest_dist_km": 2.198
+    },
+    "二戸": {
+      "index": 5077,
+      "arc_km": 564.71,
+      "nearest_dist_km": 0.117
+    },
+    "八戸": {
+      "index": 5153,
+      "arc_km": 596.35,
+      "nearest_dist_km": 3.964
+    },
+    "七戸十和田": {
+      "index": 5246,
+      "arc_km": 631.1,
+      "nearest_dist_km": 4.246
+    },
+    "新青森": {
+      "index": 5385,
+      "arc_km": 675.07,
+      "nearest_dist_km": 0.513
+    }
+  }
+}

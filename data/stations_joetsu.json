@@ -38,8 +38,8 @@
       "order": 5,
       "name": "本庄早稲田",
       "name_en": "Honjo-Waseda",
-      "lat": 36.2394,
-      "lng": 139.1897,
+      "lat": 36.22052,
+      "lng": 139.17598,
       "major": false
     },
     {
@@ -54,8 +54,8 @@
       "order": 7,
       "name": "上毛高原",
       "name_en": "Jomo-Kogen",
-      "lat": 36.7761,
-      "lng": 138.9975,
+      "lat": 36.77434,
+      "lng": 138.96369,
       "major": false
     },
     {
@@ -70,8 +70,8 @@
       "order": 9,
       "name": "浦佐",
       "name_en": "Urasa",
-      "lat": 37.1872,
-      "lng": 138.9433,
+      "lat": 37.18585,
+      "lng": 138.92376,
       "major": false
     },
     {
@@ -94,8 +94,8 @@
       "order": 12,
       "name": "新潟",
       "name_en": "Niigata",
-      "lat": 37.9161,
-      "lng": 139.0364,
+      "lat": 37.90668,
+      "lng": 139.04657,
       "major": true
     }
   ]

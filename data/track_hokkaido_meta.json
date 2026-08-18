@@ -1,0 +1,24 @@
+{
+  "station_arc": {
+    "新青森": {
+      "index": 0,
+      "arc_km": 0.0,
+      "nearest_dist_km": 0.633
+    },
+    "奥津軽いまべつ": {
+      "index": 160,
+      "arc_km": 31.1,
+      "nearest_dist_km": 1.936
+    },
+    "木古内": {
+      "index": 636,
+      "arc_km": 113.1,
+      "nearest_dist_km": 0.4
+    },
+    "新函館北斗": {
+      "index": 877,
+      "arc_km": 149.07,
+      "nearest_dist_km": 0.172
+    }
+  }
+}

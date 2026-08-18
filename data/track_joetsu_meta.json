@@ -1,0 +1,54 @@
+{
+  "station_arc": {
+    "大宮": {
+      "index": 2776,
+      "arc_km": 270.44,
+      "nearest_dist_km": 0.079
+    },
+    "熊谷": {
+      "index": 2332,
+      "arc_km": 233.51,
+      "nearest_dist_km": 0.736
+    },
+    "本庄早稲田": {
+      "index": 2139,
+      "arc_km": 212.34,
+      "nearest_dist_km": 2.433
+    },
+    "高崎": {
+      "index": 1816,
+      "arc_km": 193.27,
+      "nearest_dist_km": 0.072
+    },
+    "上毛高原": {
+      "index": 1185,
+      "arc_km": 142.15,
+      "nearest_dist_km": 3.018
+    },
+    "越後湯沢": {
+      "index": 859,
+      "arc_km": 119.53,
+      "nearest_dist_km": 0.51
+    },
+    "浦佐": {
+      "index": 555,
+      "arc_km": 87.26,
+      "nearest_dist_km": 1.737
+    },
+    "長岡": {
+      "index": 321,
+      "arc_km": 56.53,
+      "nearest_dist_km": 0.186
+    },
+    "燕三条": {
+      "index": 182,
+      "arc_km": 30.1,
+      "nearest_dist_km": 0.238
+    },
+    "新潟": {
+      "index": 12,
+      "arc_km": 2.12,
+      "nearest_dist_km": 1.376
+    }
+  }
+}

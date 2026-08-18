@@ -1,0 +1,64 @@
+{
+  "station_arc": {
+    "博多": {
+      "index": 0,
+      "arc_km": 0.0,
+      "nearest_dist_km": 0.142
+    },
+    "新鳥栖": {
+      "index": 217,
+      "arc_km": 26.91,
+      "nearest_dist_km": 1.577
+    },
+    "久留米": {
+      "index": 269,
+      "arc_km": 32.78,
+      "nearest_dist_km": 2.491
+    },
+    "筑後船小屋": {
+      "index": 370,
+      "arc_km": 44.81,
+      "nearest_dist_km": 5.773
+    },
+    "新大牟田": {
+      "index": 445,
+      "arc_km": 62.73,
+      "nearest_dist_km": 2.075
+    },
+    "新玉名": {
+      "index": 462,
+      "arc_km": 76.71,
+      "nearest_dist_km": 0.731
+    },
+    "熊本": {
+      "index": 505,
+      "arc_km": 97.82,
+      "nearest_dist_km": 1.363
+    },
+    "新八代": {
+      "index": 635,
+      "arc_km": 131.07,
+      "nearest_dist_km": 3.223
+    },
+    "新水俣": {
+      "index": 769,
+      "arc_km": 175.64,
+      "nearest_dist_km": 1.514
+    },
+    "出水": {
+      "index": 853,
+      "arc_km": 189.06,
+      "nearest_dist_km": 1.245
+    },
+    "川内": {
+      "index": 966,
+      "arc_km": 221.99,
+      "nearest_dist_km": 0.796
+    },
+    "鹿児島中央": {
+      "index": 1087,
+      "arc_km": 257.53,
+      "nearest_dist_km": 0.168
+    }
+  }
+}

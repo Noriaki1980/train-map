@@ -422,8 +422,8 @@
       "name": "新鳥栖",
       "name_en": "Shin-Tosu",
       "sub_line": "kyushu",
-      "lat": 33.3733,
-      "lng": 130.5083,
+      "lat": 33.366778,
+      "lng": 130.49322,
       "stops": [
         "tsubame",
         "sakura"
@@ -434,8 +434,8 @@
       "name": "久留米",
       "name_en": "Kurume",
       "sub_line": "kyushu",
-      "lat": 33.3192,
-      "lng": 130.5286,
+      "lat": 33.315214,
+      "lng": 130.50222,
       "stops": [
         "tsubame",
         "sakura"
@@ -446,8 +446,8 @@
       "name": "筑後船小屋",
       "name_en": "Chikugo-Funagoya",
       "sub_line": "kyushu",
-      "lat": 33.2006,
-      "lng": 130.5589,
+      "lat": 33.207385,
+      "lng": 130.497379,
       "stops": [
         "tsubame"
       ]
@@ -457,8 +457,8 @@
       "name": "新大牟田",
       "name_en": "Shin-Omuta",
       "sub_line": "kyushu",
-      "lat": 33.0439,
-      "lng": 130.4728,
+      "lat": 33.047758,
+      "lng": 130.494576,
       "stops": [
         "tsubame"
       ]
@@ -479,8 +479,8 @@
       "name": "熊本",
       "name_en": "Kumamoto",
       "sub_line": "kyushu",
-      "lat": 32.7898,
-      "lng": 130.7059,
+      "lat": 32.795136,
+      "lng": 130.692769,
       "stops": [
         "tsubame",
         "sakura",
@@ -492,8 +492,8 @@
       "name": "新八代",
       "name_en": "Shin-Yatsushiro",
       "sub_line": "kyushu",
-      "lat": 32.5058,
-      "lng": 130.6033,
+      "lat": 32.51199,
+      "lng": 130.63688,
       "stops": [
         "tsubame",
         "sakura"
@@ -504,8 +504,8 @@
       "name": "新水俣",
       "name_en": "Shin-Minamata",
       "sub_line": "kyushu",
-      "lat": 32.2075,
-      "lng": 130.4022,
+      "lat": 32.1958,
+      "lng": 130.41042,
       "stops": [
         "tsubame",
         "sakura"
@@ -516,8 +516,8 @@
       "name": "出水",
       "name_en": "Izumi",
       "sub_line": "kyushu",
-      "lat": 32.0872,
-      "lng": 130.3453,
+      "lat": 32.09133,
+      "lng": 130.35758,
       "stops": [
         "tsubame",
         "sakura"

@@ -450,6 +450,10 @@ const DATA_URLS = {
   stationsYamagata: "data/stations_yamagata.json",
   trackTokaido: "data/track_tokaido.json",
   trackSanyo: "data/track_sanyo.json",
+  trackKyushu: "data/track_kyushu.json",
+  trackTohoku: "data/track_tohoku.json",
+  trackJoetsu: "data/track_joetsu.json",
+  trackHokkaido: "data/track_hokkaido.json",
   positions: "data/train_positions.json",
 };
 
@@ -835,9 +839,9 @@ async function loadStations(){
   stationsByName = {};
 
   const sources = [
-    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線', skipOrderRanges: [[1, 17], [18, 35]] },
-    { url: DATA_URLS.stationsTohoku, color: '#7F5AF0', label: '東北新幹線' },
-    { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線' },
+    { url: DATA_URLS.stations, color: '#3B6BFF', label: '東海道・山陽・九州新幹線', skipOrderRanges: [[1, 46]] },
+    { url: DATA_URLS.stationsTohoku, color: '#7F5AF0', label: '東北新幹線', skipOrderRanges: [[1, 26]] },
+    { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線', skipOrderRanges: [[1, 12]] },
     { url: DATA_URLS.stationsAkita, color: '#D4145A', label: '秋田新幹線' },
     { url: DATA_URLS.stationsYamagata, color: '#8E44AD', label: '山形新幹線' },
   ];
@@ -864,6 +868,10 @@ async function loadStations(){
   const detailedTracks = [
     { url: DATA_URLS.trackTokaido, color: '#3B6BFF', label: '東海道新幹線' },
     { url: DATA_URLS.trackSanyo, color: '#3B6BFF', label: '山陽新幹線' },
+    { url: DATA_URLS.trackKyushu, color: '#3B6BFF', label: '九州新幹線' },
+    { url: DATA_URLS.trackTohoku, color: '#7F5AF0', label: '東北新幹線' },
+    { url: DATA_URLS.trackJoetsu, color: '#2CB1BC', label: '上越新幹線' },
+    { url: DATA_URLS.trackHokkaido, color: '#7F5AF0', label: '北海道新幹線' },
   ];
   for(const t of detailedTracks){
     try{

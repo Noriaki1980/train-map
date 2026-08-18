@@ -509,6 +509,10 @@ def _load_detailed_tracks():
     specs = [
         ("track_tokaido.json", "track_tokaido_meta.json"),
         ("track_sanyo.json", "track_sanyo_meta.json"),
+        ("track_kyushu.json", "track_kyushu_meta.json"),
+        ("track_tohoku.json", "track_tohoku_meta.json"),
+        ("track_joetsu.json", "track_joetsu_meta.json"),
+        ("track_hokkaido.json", "track_hokkaido_meta.json"),
     ]
     tracks = []
     for track_file, meta_file in specs:

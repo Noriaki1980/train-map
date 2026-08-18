@@ -39,24 +39,24 @@
       "order": 5,
       "name": "宇都宮",
       "name_en": "Utsunomiya",
-      "lat": 36.5551,
-      "lng": 139.8828,
+      "lat": 36.55218,
+      "lng": 139.89651,
       "major": true
     },
     {
       "order": 6,
       "name": "那須塩原",
       "name_en": "Nasushiobara",
-      "lat": 37.0034,
-      "lng": 140.0333,
+      "lat": 36.98354,
+      "lng": 140.07137,
       "major": true
     },
     {
       "order": 7,
       "name": "新白河",
       "name_en": "Shin-Shirakawa",
-      "lat": 37.1256,
-      "lng": 140.2136,
+      "lat": 37.13709,
+      "lng": 140.20177,
       "major": false
     },
     {
@@ -71,16 +71,16 @@
       "order": 9,
       "name": "福島",
       "name_en": "Fukushima",
-      "lat": 37.7608,
-      "lng": 140.4747,
+      "lat": 37.76103,
+      "lng": 140.4586,
       "major": true
     },
     {
       "order": 10,
       "name": "白石蔵王",
       "name_en": "Shiroishi-Zao",
-      "lat": 38.0122,
-      "lng": 140.6186,
+      "lat": 38.00262,
+      "lng": 140.63931,
       "major": false
     },
     {
@@ -103,40 +103,40 @@
       "order": 13,
       "name": "くりこま高原",
       "name_en": "Kurikoma-Kogen",
-      "lat": 38.7325,
-      "lng": 141.0264,
+      "lat": 38.72152,
+      "lng": 141.05624,
       "major": false
     },
     {
       "order": 14,
       "name": "一ノ関",
       "name_en": "Ichinoseki",
-      "lat": 38.9308,
-      "lng": 141.1189,
+      "lat": 38.92493,
+      "lng": 141.13841,
       "major": false
     },
     {
       "order": 15,
       "name": "水沢江刺",
       "name_en": "Mizusawa-Esashi",
-      "lat": 39.1364,
-      "lng": 141.1319,
+      "lat": 39.14753,
+      "lng": 141.18786,
       "major": false
     },
     {
       "order": 16,
       "name": "北上",
       "name_en": "Kitakami",
-      "lat": 39.2911,
-      "lng": 141.1128,
+      "lat": 39.28698,
+      "lng": 141.12554,
       "major": false
     },
     {
       "order": 17,
       "name": "新花巻",
       "name_en": "Shin-Hanamaki",
-      "lat": 39.3903,
-      "lng": 141.1467,
+      "lat": 39.38622,
+      "lng": 141.16671,
       "major": false
     },
     {
@@ -151,8 +151,8 @@
       "order": 19,
       "name": "いわて沼宮内",
       "name_en": "Iwate-Numakunai",
-      "lat": 39.9106,
-      "lng": 141.1875,
+      "lat": 39.90624,
+      "lng": 141.21264,
       "major": false
     },
     {
@@ -167,16 +167,16 @@
       "order": 21,
       "name": "八戸",
       "name_en": "Hachinohe",
-      "lat": 40.5219,
-      "lng": 141.4914,
+      "lat": 40.528897,
+      "lng": 141.445415,
       "major": true
     },
     {
       "order": 22,
       "name": "七戸十和田",
       "name_en": "Shichinohe-Towada",
-      "lat": 40.6892,
-      "lng": 141.1214,
+      "lat": 40.723999,
+      "lng": 141.142134,
       "major": false
     },
     {
@@ -191,8 +191,8 @@
       "order": 24,
       "name": "奥津軽いまべつ",
       "name_en": "Okutsugaru-Imabetsu",
-      "lat": 41.0764,
-      "lng": 140.5325,
+      "lat": 41.08332,
+      "lng": 140.55369,
       "major": false
     },
     {
