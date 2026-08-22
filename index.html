@@ -448,6 +448,7 @@ const DATA_URLS = {
   stationsJoetsu: "data/stations_joetsu.json",
   stationsAkita: "data/stations_akita.json",
   stationsYamagata: "data/stations_yamagata.json",
+  stationsNishikyushu: "data/stations_nishikyushu.json",
   trackTokaido: "data/track_tokaido.json",
   trackSanyo: "data/track_sanyo.json",
   trackKyushu: "data/track_kyushu.json",
@@ -457,6 +458,7 @@ const DATA_URLS = {
   trackTazawako: "data/track_tazawako.json",
   trackAkitaOmagari: "data/track_akita_omagari.json",
   trackYamagata: "data/track_yamagata.json",
+  trackNishikyushu: "data/track_nishikyushu.json",
   positions: "data/train_positions.json",
 };
 
@@ -580,13 +582,14 @@ const TRAIN_TYPE_COLORS = {
   tanigawa: '#85C1E9', // 淡青系
   komachi: '#D4145A',  // 濃ピンク系(秋田新幹線)
   tsubasa: '#8E44AD',  // 紫系(山形新幹線)
+  kamome: '#00A99D',   // 青緑系(西九州新幹線)
   other: '#8A94A6',    // その他(回送・団体等)
 };
 const TRAIN_TYPE_LABELS = {
   nozomi: 'のぞみ', hikari: 'ひかり', kodama: 'こだま',
   mizuho: 'みずほ', sakura: 'さくら', tsubame: 'つばめ',
   hayabusa: 'はやぶさ', hayate: 'はやて', yamabiko: 'やまびこ', nasuno: 'なすの',
-  toki: 'とき', tanigawa: 'たにがわ', komachi: 'こまち', tsubasa: 'つばさ', other: 'その他',
+  toki: 'とき', tanigawa: 'たにがわ', komachi: 'こまち', tsubasa: 'つばさ', kamome: 'かもめ', other: 'その他',
 };
 
 function shinkansenIcon(trainType, status, bearing, isSpecial){
@@ -762,7 +765,7 @@ function updateLastUpdatedLabel(isoString){
 // 凡例
 // ---------------------------------------------------------------------
 function renderLegend(){
-  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'hayabusa', 'hayate', 'yamabiko', 'nasuno', 'toki', 'tanigawa', 'komachi', 'tsubasa', 'other'];
+  const order = ['nozomi', 'hikari', 'kodama', 'mizuho', 'sakura', 'tsubame', 'hayabusa', 'hayate', 'yamabiko', 'nasuno', 'toki', 'tanigawa', 'komachi', 'tsubasa', 'kamome', 'other'];
   const el = document.getElementById('legend');
 
   const isMobile = window.innerWidth <= 720;
@@ -847,6 +850,7 @@ async function loadStations(){
     { url: DATA_URLS.stationsJoetsu, color: '#2CB1BC', label: '上越新幹線', skipOrderRanges: [[1, 12]] },
     { url: DATA_URLS.stationsAkita, color: '#D4145A', label: '秋田新幹線', skipOrderRanges: [[1, 26]] },
     { url: DATA_URLS.stationsYamagata, color: '#8E44AD', label: '山形新幹線', skipOrderRanges: [[1, 35]] },
+    { url: DATA_URLS.stationsNishikyushu, color: '#00A99D', label: '西九州新幹線', skipOrderRanges: [[1, 5]] },
   ];
 
   let anyFailed = false;
@@ -878,6 +882,7 @@ async function loadStations(){
     { url: DATA_URLS.trackTazawako, color: '#D4145A', label: '秋田新幹線(盛岡〜大曲)' },
     { url: DATA_URLS.trackAkitaOmagari, color: '#D4145A', label: '秋田新幹線(大曲〜秋田)' },
     { url: DATA_URLS.trackYamagata, color: '#8E44AD', label: '山形新幹線' },
+    { url: DATA_URLS.trackNishikyushu, color: '#00A99D', label: '西九州新幹線' },
   ];
   for(const t of detailedTracks){
     try{

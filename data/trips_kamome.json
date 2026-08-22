@@ -1,0 +1,1637 @@
+{
+  "line": "nishikyushu",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-nishikyushu/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。リレーかもめ(在来線特急)部分は対象外。",
+  "trips": [
+    {
+      "trip_id": "kamome_101",
+      "train_number": "かもめ101号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "6:20"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "6:27"
+        },
+        {
+          "station": "長崎",
+          "arr": "6:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_1",
+      "train_number": "かもめ1号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "7:03"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "7:10"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "7:19"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "7:25"
+        },
+        {
+          "station": "長崎",
+          "arr": "7:33",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_3",
+      "train_number": "かもめ3号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "7:42"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "7:49"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "7:58"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "8:04"
+        },
+        {
+          "station": "長崎",
+          "arr": "8:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_103",
+      "train_number": "かもめ103号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "8:18"
+        },
+        {
+          "station": "長崎",
+          "arr": "8:26",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_5",
+      "train_number": "かもめ5号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "8:28"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "8:35"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "8:44"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "8:50"
+        },
+        {
+          "station": "長崎",
+          "arr": "8:59",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_9",
+      "train_number": "かもめ9号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "9:23"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "9:30"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "9:39"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "9:45"
+        },
+        {
+          "station": "長崎",
+          "arr": "9:54",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_13",
+      "train_number": "かもめ13号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "10:01"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "10:08"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "10:17"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "10:23"
+        },
+        {
+          "station": "長崎",
+          "arr": "10:32",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_17",
+      "train_number": "かもめ17号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "11:03"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "11:19"
+        },
+        {
+          "station": "長崎",
+          "arr": "11:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_21",
+      "train_number": "かもめ21号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "11:58"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "12:05"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "12:14"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "12:21"
+        },
+        {
+          "station": "長崎",
+          "arr": "12:29",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_25",
+      "train_number": "かもめ25号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "12:56"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "13:08"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "13:15"
+        },
+        {
+          "station": "長崎",
+          "arr": "13:24",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_29",
+      "train_number": "かもめ29号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "13:58"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "14:04"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "14:13"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "14:20"
+        },
+        {
+          "station": "長崎",
+          "arr": "14:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_33",
+      "train_number": "かもめ33号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "14:57"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "15:09"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "15:16"
+        },
+        {
+          "station": "長崎",
+          "arr": "15:24",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_37",
+      "train_number": "かもめ37号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "15:57"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "16:04"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "16:13"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "16:20"
+        },
+        {
+          "station": "長崎",
+          "arr": "16:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_41",
+      "train_number": "かもめ41号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "16:58"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "17:14"
+        },
+        {
+          "station": "長崎",
+          "arr": "17:22",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_43",
+      "train_number": "かもめ43号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "17:22"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "17:29"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "17:38"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "17:44"
+        },
+        {
+          "station": "長崎",
+          "arr": "17:53",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_47",
+      "train_number": "かもめ47号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "18:01"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "18:17"
+        },
+        {
+          "station": "長崎",
+          "arr": "18:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_49",
+      "train_number": "かもめ49号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "18:38"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "18:45"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "18:54"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "19:01"
+        },
+        {
+          "station": "長崎",
+          "arr": "19:09",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_51",
+      "train_number": "かもめ51号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "19:04"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "19:20"
+        },
+        {
+          "station": "長崎",
+          "arr": "19:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_53",
+      "train_number": "かもめ53号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "19:27"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "19:33"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "19:42"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "19:49"
+        },
+        {
+          "station": "長崎",
+          "arr": "19:57",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_55",
+      "train_number": "かもめ55号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "20:05"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "20:21"
+        },
+        {
+          "station": "長崎",
+          "arr": "20:29",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_57",
+      "train_number": "かもめ57号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "20:31"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "20:37"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "20:46"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "20:53"
+        },
+        {
+          "station": "長崎",
+          "arr": "21:01",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_59",
+      "train_number": "かもめ59号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "21:06"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "21:19"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "21:25"
+        },
+        {
+          "station": "長崎",
+          "arr": "21:34",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_63",
+      "train_number": "かもめ63号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "22:04"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "22:11"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "22:20"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "22:26"
+        },
+        {
+          "station": "長崎",
+          "arr": "22:35",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_67",
+      "train_number": "かもめ67号",
+      "train_type": "kamome",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "武雄温泉",
+          "arr": null,
+          "dep": "23:17"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "23:29"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "23:36"
+        },
+        {
+          "station": "長崎",
+          "arr": "23:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_2",
+      "train_number": "かもめ2号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "6:17"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "6:26"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "6:33"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "6:42"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "6:48",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_4",
+      "train_number": "かもめ4号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "6:58"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "7:07"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "7:14"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "7:23"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "7:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_8",
+      "train_number": "かもめ8号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "7:46"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "7:55"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "8:02"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "8:11"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "8:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_12",
+      "train_number": "かもめ12号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "8:44"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "8:53"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "9:08",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_14",
+      "train_number": "かもめ14号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "9:08"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "9:18"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "9:25"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "9:33"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "9:39",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_18",
+      "train_number": "かもめ18号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "9:50"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "9:59"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "10:13",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_22",
+      "train_number": "かもめ22号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "10:44"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "10:54"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "11:00"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "11:09"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "11:15",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_26",
+      "train_number": "かもめ26号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "11:45"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "11:55"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "12:01"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "12:13",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_30",
+      "train_number": "かもめ30号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "12:42"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "12:51"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "12:58"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "13:07"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "13:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_34",
+      "train_number": "かもめ34号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "13:45"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "13:55"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "14:01"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "14:13",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_38",
+      "train_number": "かもめ38号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "14:43"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "14:52"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "14:59"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "15:07"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "15:13",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_42",
+      "train_number": "かもめ42号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "15:42"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "15:51"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "15:58"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "16:06"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "16:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_46",
+      "train_number": "かもめ46号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "16:42"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "16:52"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "16:58"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "17:10",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_48",
+      "train_number": "かもめ48号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "17:13"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "17:23"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "17:30"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "17:38"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "17:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_50",
+      "train_number": "かもめ50号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "17:44"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "17:54"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "18:00"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "18:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_52",
+      "train_number": "かもめ52号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "18:19"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "18:28"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "18:35"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "18:44"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "18:50",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_54",
+      "train_number": "かもめ54号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "18:47"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "18:57"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "19:03"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "19:15",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_56",
+      "train_number": "かもめ56号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "19:22"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "19:31"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "19:38"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "19:47"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "19:52",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_58",
+      "train_number": "かもめ58号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "19:48"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "19:58"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "20:04"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "20:16",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_60",
+      "train_number": "かもめ60号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "20:20"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "20:30"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "20:36"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "20:45"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "20:51",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_64",
+      "train_number": "かもめ64号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "21:18"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "21:27"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "21:34"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "21:45",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_66",
+      "train_number": "かもめ66号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "22:10"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "22:19"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "22:26"
+        },
+        {
+          "station": "嬉野温泉",
+          "arr": null,
+          "dep": "22:34"
+        },
+        {
+          "station": "武雄温泉",
+          "arr": "22:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "kamome_102",
+      "train_number": "かもめ102号",
+      "train_type": "kamome",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長崎",
+          "arr": null,
+          "dep": "23:30"
+        },
+        {
+          "station": "諫早",
+          "arr": null,
+          "dep": "23:40"
+        },
+        {
+          "station": "新大村",
+          "arr": null,
+          "dep": "23:46"
+        }
+      ]
+    }
+  ]
+}

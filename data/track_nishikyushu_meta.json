@@ -1,0 +1,29 @@
+{
+  "station_arc": {
+    "武雄温泉": {
+      "index": 297,
+      "arc_km": 65.85,
+      "nearest_dist_km": 0.491
+    },
+    "嬉野温泉": {
+      "index": 262,
+      "arc_km": 56.55,
+      "nearest_dist_km": 0.478
+    },
+    "新大村": {
+      "index": 144,
+      "arc_km": 32.58,
+      "nearest_dist_km": 0.877
+    },
+    "諫早": {
+      "index": 80,
+      "arc_km": 20.74,
+      "nearest_dist_km": 0.876
+    },
+    "長崎": {
+      "index": 0,
+      "arc_km": 0.0,
+      "nearest_dist_km": 0.123
+    }
+  }
+}

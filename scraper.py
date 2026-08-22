@@ -520,6 +520,7 @@ def _load_detailed_tracks():
         ("track_tazawako.json", "track_tazawako_meta.json"),
         ("track_akita_omagari.json", "track_akita_omagari_meta.json"),
         ("track_yamagata.json", "track_yamagata_meta.json"),
+        ("track_nishikyushu.json", "track_nishikyushu_meta.json"),
     ]
     tracks = []
     for track_file, meta_file in specs:
@@ -772,6 +773,19 @@ def main():
             print(f"[info] 時刻表ベースで上越新幹線 {len(joetsu_positions)} 本を計算しました")
     except Exception as e:
         print(f"[warn] 上越新幹線の時刻表ベース計算に失敗しました: {e}")
+
+    # 西九州新幹線(かもめ)もリアルタイムAPIが無いため常に時刻表ベース
+    try:
+        nk_stations_path = DATA_DIR / "stations_nishikyushu.json"
+        nk_trips_path = DATA_DIR / "trips_kamome.json"
+        if nk_stations_path.exists() and nk_trips_path.exists():
+            nk_stations = load_stations(nk_stations_path)
+            nk_trips = load_trips(nk_trips_path)
+            nk_positions = calculate_positions(nk_trips, nk_stations)
+            positions.extend(nk_positions)
+            print(f"[info] 時刻表ベースで西九州新幹線 {len(nk_positions)} 本を計算しました")
+    except Exception as e:
+        print(f"[warn] 西九州新幹線の時刻表ベース計算に失敗しました: {e}")
 
     # 6. どこトレ(秋田新幹線こまち・山形新幹線つばさ)はリアルタイムAPIが
     #    使えるので、時刻表ではなくこちらを優先する(ベストエフォート、

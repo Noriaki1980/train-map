@@ -1,0 +1,41 @@
+{
+  "line": "nishikyushu",
+  "line_name": "西九州新幹線",
+  "stations": [
+    {
+      "order": 1,
+      "name": "武雄温泉",
+      "name_en": "Takeo-Onsen",
+      "lat": 33.19451,
+      "lng": 130.019977
+    },
+    {
+      "order": 2,
+      "name": "嬉野温泉",
+      "name_en": "Ureshino-Onsen",
+      "lat": 33.118234,
+      "lng": 129.99702
+    },
+    {
+      "order": 3,
+      "name": "新大村",
+      "name_en": "Shin-Omura",
+      "lat": 32.921799,
+      "lng": 129.961084
+    },
+    {
+      "order": 4,
+      "name": "諫早",
+      "name_en": "Isahaya",
+      "lat": 32.846879,
+      "lng": 130.041287
+    },
+    {
+      "order": 5,
+      "name": "長崎",
+      "name_en": "Nagasaki",
+      "lat": 32.7503,
+      "lng": 129.8686
+    }
+  ]
+}
