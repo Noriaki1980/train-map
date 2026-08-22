@@ -1,0 +1,94 @@
+{
+  "station_arc": {
+    "大曲": {
+      "index": 0,
+      "arc_km": 0.0,
+      "nearest_dist_km": 1.401
+    },
+    "北大曲": {
+      "index": 28,
+      "arc_km": 1.98,
+      "nearest_dist_km": 0.123
+    },
+    "羽後四ツ屋": {
+      "index": 45,
+      "arc_km": 4.79,
+      "nearest_dist_km": 0.794
+    },
+    "鑓見内": {
+      "index": 61,
+      "arc_km": 7.83,
+      "nearest_dist_km": 1.143
+    },
+    "羽後長野": {
+      "index": 86,
+      "arc_km": 10.88,
+      "nearest_dist_km": 0.757
+    },
+    "鶯野": {
+      "index": 106,
+      "arc_km": 14.02,
+      "nearest_dist_km": 0.931
+    },
+    "角館": {
+      "index": 128,
+      "arc_km": 16.85,
+      "nearest_dist_km": 0.769
+    },
+    "生田": {
+      "index": 156,
+      "arc_km": 21.08,
+      "nearest_dist_km": 0.707
+    },
+    "神代": {
+      "index": 218,
+      "arc_km": 26.71,
+      "nearest_dist_km": 1.181
+    },
+    "刺巻": {
+      "index": 302,
+      "arc_km": 31.41,
+      "nearest_dist_km": 0.344
+    },
+    "田沢湖": {
+      "index": 371,
+      "arc_km": 36.7,
+      "nearest_dist_km": 0.274
+    },
+    "赤渕": {
+      "index": 487,
+      "arc_km": 41.03,
+      "nearest_dist_km": 1.284
+    },
+    "春木場": {
+      "index": 538,
+      "arc_km": 46.63,
+      "nearest_dist_km": 2.703
+    },
+    "雫石": {
+      "index": 702,
+      "arc_km": 54.13,
+      "nearest_dist_km": 1.579
+    },
+    "小岩井": {
+      "index": 759,
+      "arc_km": 58.33,
+      "nearest_dist_km": 0.89
+    },
+    "大釜": {
+      "index": 838,
+      "arc_km": 64.68,
+      "nearest_dist_km": 1.03
+    },
+    "前潟": {
+      "index": 888,
+      "arc_km": 69.34,
+      "nearest_dist_km": 1.284
+    },
+    "盛岡": {
+      "index": 961,
+      "arc_km": 75.34,
+      "nearest_dist_km": 0.193
+    }
+  }
+}

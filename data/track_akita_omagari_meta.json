@@ -1,0 +1,49 @@
+{
+  "station_arc": {
+    "大曲": {
+      "index": 0,
+      "arc_km": 0.0,
+      "nearest_dist_km": 0.0
+    },
+    "神宮寺": {
+      "index": 61,
+      "arc_km": 5.75,
+      "nearest_dist_km": 0.702
+    },
+    "刈和野": {
+      "index": 107,
+      "arc_km": 10.77,
+      "nearest_dist_km": 1.268
+    },
+    "峰吉川": {
+      "index": 166,
+      "arc_km": 17.19,
+      "nearest_dist_km": 1.159
+    },
+    "羽後境": {
+      "index": 220,
+      "arc_km": 20.42,
+      "nearest_dist_km": 2.974
+    },
+    "大張野": {
+      "index": 406,
+      "arc_km": 37.58,
+      "nearest_dist_km": 3.687
+    },
+    "和田": {
+      "index": 427,
+      "arc_km": 40.34,
+      "nearest_dist_km": 0.409
+    },
+    "四ツ小屋": {
+      "index": 507,
+      "arc_km": 48.0,
+      "nearest_dist_km": 0.675
+    },
+    "秋田": {
+      "index": 564,
+      "arc_km": 54.23,
+      "nearest_dist_km": 2.229
+    }
+  }
+}

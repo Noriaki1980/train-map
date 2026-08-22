@@ -1,0 +1,179 @@
+{
+  "station_arc": {
+    "福島": {
+      "index": 50,
+      "arc_km": 3.38,
+      "nearest_dist_km": 1.376
+    },
+    "笹木野": {
+      "index": 109,
+      "arc_km": 7.68,
+      "nearest_dist_km": 1.78
+    },
+    "庭坂": {
+      "index": 285,
+      "arc_km": 16.32,
+      "nearest_dist_km": 0.851
+    },
+    "板谷": {
+      "index": 368,
+      "arc_km": 22.91,
+      "nearest_dist_km": 2.308
+    },
+    "峠": {
+      "index": 446,
+      "arc_km": 27.57,
+      "nearest_dist_km": 3.483
+    },
+    "大沢": {
+      "index": 624,
+      "arc_km": 37.71,
+      "nearest_dist_km": 3.813
+    },
+    "関根": {
+      "index": 707,
+      "arc_km": 46.93,
+      "nearest_dist_km": 3.061
+    },
+    "米沢": {
+      "index": 716,
+      "arc_km": 49.94,
+      "nearest_dist_km": 0.667
+    },
+    "置賜": {
+      "index": 754,
+      "arc_km": 54.54,
+      "nearest_dist_km": 0.36
+    },
+    "高畠": {
+      "index": 791,
+      "arc_km": 58.63,
+      "nearest_dist_km": 1.463
+    },
+    "赤湯": {
+      "index": 814,
+      "arc_km": 62.0,
+      "nearest_dist_km": 3.627
+    },
+    "中川": {
+      "index": 953,
+      "arc_km": 72.39,
+      "nearest_dist_km": 3.471
+    },
+    "羽前中山": {
+      "index": 1003,
+      "arc_km": 76.33,
+      "nearest_dist_km": 3.0
+    },
+    "かみのやま温泉": {
+      "index": 1098,
+      "arc_km": 86.17,
+      "nearest_dist_km": 0.672
+    },
+    "茂吉記念館前": {
+      "index": 1146,
+      "arc_km": 90.87,
+      "nearest_dist_km": 0.024
+    },
+    "蔵王": {
+      "index": 1210,
+      "arc_km": 95.51,
+      "nearest_dist_km": 1.378
+    },
+    "山形": {
+      "index": 1266,
+      "arc_km": 101.63,
+      "nearest_dist_km": 1.667
+    },
+    "北山形": {
+      "index": 1288,
+      "arc_km": 103.11,
+      "nearest_dist_km": 1.331
+    },
+    "羽前千歳": {
+      "index": 1321,
+      "arc_km": 105.63,
+      "nearest_dist_km": 0.933
+    },
+    "南出羽": {
+      "index": 1344,
+      "arc_km": 107.35,
+      "nearest_dist_km": 1.24
+    },
+    "漆山": {
+      "index": 1356,
+      "arc_km": 109.3,
+      "nearest_dist_km": 1.224
+    },
+    "高擶": {
+      "index": 1375,
+      "arc_km": 111.71,
+      "nearest_dist_km": 0.677
+    },
+    "天童南": {
+      "index": 1398,
+      "arc_km": 113.47,
+      "nearest_dist_km": 0.255
+    },
+    "天童": {
+      "index": 1410,
+      "arc_km": 115.48,
+      "nearest_dist_km": 0.316
+    },
+    "乱川": {
+      "index": 1435,
+      "arc_km": 119.26,
+      "nearest_dist_km": 0.335
+    },
+    "神町": {
+      "index": 1459,
+      "arc_km": 123.1,
+      "nearest_dist_km": 0.864
+    },
+    "さくらんぼ東根": {
+      "index": 1477,
+      "arc_km": 126.66,
+      "nearest_dist_km": 1.439
+    },
+    "東根": {
+      "index": 1498,
+      "arc_km": 130.98,
+      "nearest_dist_km": 1.339
+    },
+    "村山": {
+      "index": 1528,
+      "arc_km": 134.23,
+      "nearest_dist_km": 1.922
+    },
+    "袖崎": {
+      "index": 1566,
+      "arc_km": 139.45,
+      "nearest_dist_km": 1.923
+    },
+    "大石田": {
+      "index": 1594,
+      "arc_km": 143.18,
+      "nearest_dist_km": 0.579
+    },
+    "北大石田": {
+      "index": 1650,
+      "arc_km": 148.02,
+      "nearest_dist_km": 1.301
+    },
+    "芦沢": {
+      "index": 1804,
+      "arc_km": 154.09,
+      "nearest_dist_km": 0.209
+    },
+    "舟形": {
+      "index": 1865,
+      "arc_km": 159.55,
+      "nearest_dist_km": 0.067
+    },
+    "新庄": {
+      "index": 1903,
+      "arc_km": 164.14,
+      "nearest_dist_km": 0.496
+    }
+  }
+}

@@ -301,7 +301,11 @@ def parse_dokotrain_positions(raw, stations_by_id, train_type, train_label):
             segment = st["name"]
         elif pre in stations_by_id and pos in stations_by_id:
             a, b = stations_by_id[pre], stations_by_id[pos]
-            lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
+            result = _interpolate_on_any_detailed_track(a["name"], b["name"], 0.5)
+            if result:
+                lat, lng, _bearing = result
+            else:
+                lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
             status = "running"
             segment = f"{a['name']}→{b['name']}"
 
@@ -513,6 +517,9 @@ def _load_detailed_tracks():
         ("track_tohoku.json", "track_tohoku_meta.json"),
         ("track_joetsu.json", "track_joetsu_meta.json"),
         ("track_hokkaido.json", "track_hokkaido_meta.json"),
+        ("track_tazawako.json", "track_tazawako_meta.json"),
+        ("track_akita_omagari.json", "track_akita_omagari_meta.json"),
+        ("track_yamagata.json", "track_yamagata_meta.json"),
     ]
     tracks = []
     for track_file, meta_file in specs:
