@@ -16,6 +16,7 @@ GitHub Actionsで数分おきに fetch_train_positions() → parse → 保存、
 
 import json
 import math
+import re
 from datetime import datetime, time
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -351,15 +352,18 @@ HOKKAIDO_STATIONS = {
 }
 
 
+HOKKAIDO_POS_RE = re.compile(r"P(\d)([UD])")
+
+
 def fetch_hokkaido_positions():
     """
     北海道新幹線の列車位置を取得する。
 
-    注意: このAPIの `pos`/`senku` フィールド(区間内の詳細位置)は
-    現時点で解読できていない。奥津軽いまべつ〜新函館北斗間は津軽海峡・
-    青函トンネルを挟むため、両端の単純な中間点で近似すると海上に
-    プロットされてしまう。そのため、区間の中間に実在する木古内駅の
-    座標を暫定的に使う(正確な駅間位置ではなく近似表示)。
+    `pos` フィールド(例: "R12P7U")は、実測で解読した結果、以下の構造と判明:
+      - "P"に続く数字(0〜9): 奥津軽いまべつ(0)〜新函館北斗(9)間の固定スケールでの
+        おおまかな位置(列車の向きに関係ない地理的な進捗)
+      - 末尾のU/D: 進行方向(U=新函館北斗方面/下り、D=東京方面/上り)
+    ※ 数字が1つ(0〜9の10段階)なので、駅間の正確な位置ではなく粗い近似。
     """
     if requests is None:
         raise RuntimeError("requests がインストールされていません")
@@ -372,19 +376,38 @@ def fetch_hokkaido_positions():
     raw = json.loads(text)
 
     positions = []
-    kikonai = HOKKAIDO_STATIONS["018"]  # 木古内 (中間の実在駅を近似位置として使う)
+    kikonai = HOKKAIDO_STATIONS["018"]  # 解読失敗時の暫定フォールバック(木古内)
 
     for t in raw.get("trains", []):
+        pos_str = t.get("pos", "") or ""
+        m = HOKKAIDO_POS_RE.search(pos_str)
+
+        lat = lng = None
+        direction = "unknown"
+        segment_note = "奥津軽いまべつ〜新函館北斗(区間内位置は詳細不明のため木古内駅で近似)"
+
+        if m:
+            digit, ud = int(m.group(1)), m.group(2)
+            ratio = digit / 9
+            direction = "down" if ud == "U" else "up"
+            result = _interpolate_on_any_detailed_track("奥津軽いまべつ", "新函館北斗", ratio)
+            if result:
+                lat, lng, _bearing = result
+                segment_note = f"奥津軽いまべつ〜新函館北斗(進捗 {digit}/9、{'下り' if ud=='U' else '上り'})"
+
+        if lat is None:
+            lat, lng = kikonai["lat"], kikonai["lng"]
+
         positions.append({
             "trip_id": f"hokkaido_{t.get('cbango', '?')}",
             "train_number": f"はやぶさ{t.get('cbango', '?')}",
             "train_type": "hayabusa",
             "is_special": False,
-            "direction": "unknown",
-            "lat": kikonai["lat"],
-            "lng": kikonai["lng"],
+            "direction": direction,
+            "lat": round(lat, 5),
+            "lng": round(lng, 5),
             "status": "running",
-            "current_segment": "奥津軽いまべつ〜新函館北斗(区間内位置は未解読のため木古内駅で近似)",
+            "current_segment": segment_note,
             "delay_min": t.get("chien", 0) or 0,
         })
     return positions
