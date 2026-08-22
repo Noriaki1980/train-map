@@ -34,7 +34,21 @@ jobs:
           git add data/train_positions.json
           if git diff --cached --quiet; then
             echo "変更なし。コミットをスキップします。"
-          else
-            git commit -m "chore: update train positions [skip ci]"
-            git push
+            exit 0
           fi
+          git commit -m "chore: update train positions [skip ci]"
+
+          # 同時実行によるpush競合(fetch first)に備えて、
+          # 失敗したら最新を取り込んで最大5回までリトライする
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "push成功(${i}回目)"
+              exit 0
+            fi
+            echo "push失敗(${i}回目)。最新を取り込んでリトライします..."
+            git pull --rebase origin main
+            sleep $((RANDOM % 5 + 1))
+          done
+
+          echo "5回試しても push できませんでした"
+          exit 1
