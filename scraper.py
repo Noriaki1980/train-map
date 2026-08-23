@@ -414,6 +414,90 @@ def fetch_hokkaido_positions():
 
 
 # ---------------------------------------------------------------------------
+# 1.7 日本の祝日判定 / 曜日区分(平日・土曜・休日)
+# ---------------------------------------------------------------------------
+
+def _shunbun_day(year):
+    """春分の日(近似計算式、2000〜2099年の範囲で有効)。"""
+    return int(20.8431 + 0.242194 * (year - 1980) - (year - 1980) // 4)
+
+
+def _shubun_day(year):
+    """秋分の日(近似計算式、2000〜2099年の範囲で有効)。"""
+    return int(23.2488 + 0.242194 * (year - 1980) - (year - 1980) // 4)
+
+
+def _nth_monday(year, month, n):
+    """year年month月の第n月曜日を返す。"""
+    d = datetime(year, month, 1)
+    offset = (7 - d.weekday()) % 7  # 0=月曜まで進める日数
+    first_monday = 1 + offset
+    return first_monday + (n - 1) * 7
+
+
+def japanese_holidays(year):
+    """
+    year年の日本の祝日一覧(date型のset)を返す。
+    振替休日(祝日が日曜と重なった場合の翌月曜)も含む簡易実装。
+    国民の休日(祝日に挟まれた平日)は考慮していない。
+    """
+    from datetime import date
+
+    holidays = set()
+
+    def add(month, day):
+        holidays.add(date(year, month, day))
+
+    add(1, 1)  # 元日
+    add(1, _nth_monday(year, 1, 2))  # 成人の日
+    add(2, 11)  # 建国記念の日
+    add(2, 23)  # 天皇誕生日
+    add(3, _shunbun_day(year))  # 春分の日
+    add(4, 29)  # 昭和の日
+    add(5, 3)   # 憲法記念日
+    add(5, 4)   # みどりの日
+    add(5, 5)   # こどもの日
+    add(7, _nth_monday(year, 7, 3))  # 海の日
+    add(8, 11)  # 山の日
+    add(9, _nth_monday(year, 9, 3))  # 敬老の日
+    add(9, _shubun_day(year))  # 秋分の日
+    add(10, _nth_monday(year, 10, 2))  # スポーツの日
+    add(11, 3)   # 文化の日
+    add(11, 23)  # 勤労感謝の日
+
+    # 振替休日: 祝日が日曜の場合、直後の平日(祝日でない日)を休日にする
+    substitutes = set()
+    for h in holidays:
+        if h.weekday() == 6:  # 日曜
+            d = h
+            while True:
+                d = date.fromordinal(d.toordinal() + 1)
+                if d not in holidays and d not in substitutes:
+                    substitutes.add(d)
+                    break
+    holidays |= substitutes
+
+    return holidays
+
+
+def get_service_day_type(dt=None):
+    """
+    dt(JSTのdatetime)から、時刻表上の曜日区分を返す。
+    "weekday" | "saturday" | "sunday_holiday" のいずれか。
+    """
+    dt = dt or datetime.now(JST)
+    d = dt.date()
+    if d in japanese_holidays(d.year):
+        return "sunday_holiday"
+    weekday = dt.weekday()  # 0=月曜 … 5=土曜, 6=日曜
+    if weekday == 5:
+        return "saturday"
+    if weekday == 6:
+        return "sunday_holiday"
+    return "weekday"
+
+
+# ---------------------------------------------------------------------------
 # 2. 駅データ読み込み
 # ---------------------------------------------------------------------------
 
@@ -636,8 +720,15 @@ def calculate_positions(trips, stations, now=None):
     base_date = now.date()
     positions = []
     order_list = _build_order_index(stations)
+    today_type = get_service_day_type(now)
 
     for trip in trips:
+        # この列車が今日運行する日かどうかを判定
+        # service_daysが無い(未設定の)場合は、安全側で毎日運行とみなす
+        service_days = trip.get("service_days")
+        if service_days and today_type not in service_days:
+            continue
+
         stops = trip["stops"]
         # 各stopの発着時刻をdatetimeに変換 (Noneはスキップ用にそのまま保持)
         parsed = []
