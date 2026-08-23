@@ -1,10 +1,10 @@
 {
   "line": "joetsu",
-  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-joetsu/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成。定期列車のみ。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化)。ガーラ湯沢方面は対象外。下り時刻表はPDF抽出の都合で4ページ目(一部の深夜便)が欠けている可能性がある。PDF抽出時に一部駅のデータが欠落・不整合だった場合は、安全のためその駅のデータ点を削除し前後駅間で補間している。",
+  "source_note": "新幹線研究センター(とき単独ページ・たにがわ単独ページ)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成。定期列車のみ。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化)。ガーラ湯沢方面への季節延長運転は対象外。",
   "trips": [
     {
-      "trip_id": "toki_491",
-      "train_number": "とき491号",
+      "trip_id": "toki_481",
+      "train_number": "とき481号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
@@ -31,8 +31,8 @@
       ]
     },
     {
-      "trip_id": "toki_481",
-      "train_number": "とき481号",
+      "trip_id": "toki_301",
+      "train_number": "とき301号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
@@ -69,47 +69,9 @@
       ]
     },
     {
-      "trip_id": "toki_301",
-      "train_number": "とき301号",
+      "trip_id": "toki_303",
+      "train_number": "とき303号",
       "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "越後湯沢",
-          "arr": "7:22",
-          "dep": "7:23"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "7:35"
-        },
-        {
-          "station": "長岡",
-          "arr": "7:47",
-          "dep": "7:48"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "7:58"
-        },
-        {
-          "station": "新潟",
-          "arr": "8:10",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "tanigawa_401",
-      "train_number": "たにがわ401号",
-      "train_type": "tanigawa",
       "direction": "down",
       "service_days": [
         "weekday",
@@ -139,14 +101,34 @@
         },
         {
           "station": "越後湯沢",
-          "arr": "8:02",
+          "arr": "7:22",
+          "dep": "7:23"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "7:35"
+        },
+        {
+          "station": "長岡",
+          "arr": "7:47",
+          "dep": "7:48"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "7:58"
+        },
+        {
+          "station": "新潟",
+          "arr": "8:10",
           "dep": null
         }
       ]
     },
     {
-      "trip_id": "toki_303",
-      "train_number": "とき303号",
+      "trip_id": "toki_305",
+      "train_number": "とき305号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
@@ -158,37 +140,17 @@
         {
           "station": "東京",
           "arr": null,
-          "dep": "6:36"
+          "dep": "7:04"
         },
         {
           "station": "上野",
           "arr": null,
-          "dep": "6:42"
+          "dep": "7:10"
         },
         {
           "station": "大宮",
           "arr": null,
-          "dep": "7:01"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "7:13"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "7:26"
-        },
-        {
-          "station": "高崎",
-          "arr": "7:34",
-          "dep": "7:35"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "7:50"
+          "dep": "7:29"
         },
         {
           "station": "越後湯沢",
@@ -218,105 +180,9 @@
       ]
     },
     {
-      "trip_id": "tanigawa_471",
-      "train_number": "たにがわ471号",
-      "train_type": "tanigawa",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "7:04"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "7:10"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "7:29"
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_305",
-      "train_number": "とき305号",
+      "trip_id": "toki_307",
+      "train_number": "とき307号",
       "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "7:36"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "7:42"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "8:01"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "8:14"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "8:23"
-        },
-        {
-          "station": "高崎",
-          "arr": "8:32",
-          "dep": null
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "9:05",
-          "dep": "9:06"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "9:17"
-        },
-        {
-          "station": "長岡",
-          "arr": "9:28",
-          "dep": "9:29"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "9:39"
-        },
-        {
-          "station": "新潟",
-          "arr": "9:51",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "tanigawa_403",
-      "train_number": "たにがわ403号",
-      "train_type": "tanigawa",
       "direction": "down",
       "service_days": [
         "weekday",
@@ -351,75 +217,27 @@
         },
         {
           "station": "越後湯沢",
-          "arr": "9:33",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_307",
-      "train_number": "とき307号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
+          "arr": "9:05",
+          "dep": "9:06"
+        },
         {
-          "station": "東京",
+          "station": "浦佐",
           "arr": null,
-          "dep": "8:03"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "8:09"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "8:29"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "8:41"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "8:51"
-        },
-        {
-          "station": "高崎",
-          "arr": "9:00",
-          "dep": "9:04"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "9:21"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "9:39",
-          "dep": "9:40"
+          "dep": "9:17"
         },
         {
           "station": "長岡",
-          "arr": "9:58",
-          "dep": "9:59"
+          "arr": "9:28",
+          "dep": "9:29"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "10:09"
+          "dep": "9:39"
         },
         {
           "station": "新潟",
-          "arr": "10:21",
+          "arr": "9:51",
           "dep": null
         }
       ]
@@ -462,27 +280,22 @@
         },
         {
           "station": "越後湯沢",
-          "arr": "10:20",
-          "dep": "10:21"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "10:32"
+          "arr": "9:39",
+          "dep": "9:40"
         },
         {
           "station": "長岡",
-          "arr": "10:44",
-          "dep": "10:45"
+          "arr": "9:58",
+          "dep": "9:59"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "10:54"
+          "dep": "10:09"
         },
         {
           "station": "新潟",
-          "arr": "11:06",
+          "arr": "10:21",
           "dep": null
         }
       ]
@@ -534,8 +347,28 @@
           "dep": "10:09"
         },
         {
+          "station": "越後湯沢",
+          "arr": "10:20",
+          "dep": "10:21"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "10:32"
+        },
+        {
+          "station": "長岡",
+          "arr": "10:44",
+          "dep": "10:45"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "10:54"
+        },
+        {
           "station": "新潟",
-          "arr": "10:41",
+          "arr": "11:06",
           "dep": null
         }
       ]
@@ -562,23 +395,8 @@
           "dep": "9:34"
         },
         {
-          "station": "越後湯沢",
-          "arr": "10:47",
-          "dep": "10:48"
-        },
-        {
-          "station": "長岡",
-          "arr": "11:06",
-          "dep": "11:07"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "11:17"
-        },
-        {
           "station": "新潟",
-          "arr": "11:29",
+          "arr": "10:41",
           "dep": null
         }
       ]
@@ -621,6 +439,64 @@
         },
         {
           "station": "越後湯沢",
+          "arr": "10:47",
+          "dep": "10:48"
+        },
+        {
+          "station": "長岡",
+          "arr": "11:06",
+          "dep": "11:07"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "11:17"
+        },
+        {
+          "station": "新潟",
+          "arr": "11:29",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_317",
+      "train_number": "とき317号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "10:15"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "10:21"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "10:40"
+        },
+        {
+          "station": "高崎",
+          "arr": "11:03",
+          "dep": "11:04"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "11:19"
+        },
+        {
+          "station": "越後湯沢",
           "arr": "11:31",
           "dep": "11:32"
         },
@@ -647,8 +523,8 @@
       ]
     },
     {
-      "trip_id": "toki_317",
-      "train_number": "とき317号",
+      "trip_id": "toki_319",
+      "train_number": "とき319号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
@@ -700,8 +576,8 @@
       ]
     },
     {
-      "trip_id": "toki_319",
-      "train_number": "とき319号",
+      "trip_id": "toki_321",
+      "train_number": "とき321号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
@@ -763,8 +639,8 @@
       ]
     },
     {
-      "trip_id": "toki_321",
-      "train_number": "とき321号",
+      "trip_id": "toki_323",
+      "train_number": "とき323号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
@@ -792,69 +668,6 @@
           "station": "高崎",
           "arr": "13:27",
           "dep": "13:28"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "13:44"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "13:56",
-          "dep": "13:57"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "14:08"
-        },
-        {
-          "station": "長岡",
-          "arr": "14:19",
-          "dep": "14:20"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "14:30"
-        },
-        {
-          "station": "新潟",
-          "arr": "14:42",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_323",
-      "train_number": "とき323号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "13:40"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "13:46"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "14:05"
-        },
-        {
-          "station": "高崎",
-          "arr": "14:27",
-          "dep": "14:28"
         },
         {
           "station": "上毛高原",
@@ -902,22 +715,22 @@
         {
           "station": "東京",
           "arr": null,
-          "dep": "14:40"
+          "dep": "13:40"
         },
         {
           "station": "上野",
           "arr": null,
-          "dep": "14:46"
+          "dep": "13:46"
         },
         {
           "station": "大宮",
           "arr": null,
-          "dep": "15:05"
+          "dep": "14:05"
         },
         {
           "station": "高崎",
-          "arr": "15:27",
-          "dep": "15:28"
+          "arr": "14:27",
+          "dep": "14:28"
         },
         {
           "station": "上毛高原",
@@ -965,22 +778,22 @@
         {
           "station": "東京",
           "arr": null,
-          "dep": "15:40"
+          "dep": "14:40"
         },
         {
           "station": "上野",
           "arr": null,
-          "dep": "15:46"
+          "dep": "14:46"
         },
         {
           "station": "大宮",
           "arr": null,
-          "dep": "16:05"
+          "dep": "15:05"
         },
         {
           "station": "高崎",
-          "arr": "16:27",
-          "dep": "16:28"
+          "arr": "15:27",
+          "dep": "15:28"
         },
         {
           "station": "上毛高原",
@@ -1028,17 +841,17 @@
         {
           "station": "東京",
           "arr": null,
-          "dep": "16:16"
+          "dep": "15:40"
         },
         {
           "station": "上野",
           "arr": null,
-          "dep": "16:22"
+          "dep": "15:46"
         },
         {
           "station": "大宮",
           "arr": null,
-          "dep": "16:41"
+          "dep": "16:05"
         },
         {
           "station": "熊谷",
@@ -1086,17 +899,17 @@
         {
           "station": "東京",
           "arr": null,
-          "dep": "16:40"
+          "dep": "16:16"
         },
         {
           "station": "上野",
           "arr": null,
-          "dep": "16:46"
+          "dep": "16:22"
         },
         {
           "station": "大宮",
           "arr": null,
-          "dep": "17:05"
+          "dep": "16:41"
         },
         {
           "station": "高崎",
@@ -1149,17 +962,17 @@
         {
           "station": "東京",
           "arr": null,
-          "dep": "17:08"
+          "dep": "16:40"
         },
         {
           "station": "上野",
           "arr": null,
-          "dep": "17:14"
+          "dep": "16:46"
         },
         {
           "station": "大宮",
           "arr": null,
-          "dep": "17:33"
+          "dep": "17:05"
         },
         {
           "station": "高崎",
@@ -1174,6 +987,2076 @@
         {
           "station": "新潟",
           "arr": "18:57",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_335",
+      "train_number": "とき335号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:08"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "17:14"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "17:33"
+        },
+        {
+          "station": "高崎",
+          "arr": "18:20",
+          "dep": "18:21"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "18:45",
+          "dep": "18:46"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "18:57"
+        },
+        {
+          "station": "長岡",
+          "arr": "19:08",
+          "dep": "19:09"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "19:19"
+        },
+        {
+          "station": "新潟",
+          "arr": "19:31",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_337",
+      "train_number": "とき337号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "17:32"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "17:38"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "17:57"
+        },
+        {
+          "station": "高崎",
+          "arr": "19:00",
+          "dep": "19:01"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "19:25",
+          "dep": "19:26"
+        },
+        {
+          "station": "長岡",
+          "arr": "19:44",
+          "dep": "19:45"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "19:55"
+        },
+        {
+          "station": "新潟",
+          "arr": "20:07",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_339",
+      "train_number": "とき339号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:12"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "18:18"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "18:37"
+        },
+        {
+          "station": "高崎",
+          "arr": "19:48",
+          "dep": "19:49"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "20:13",
+          "dep": "20:14"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "20:25"
+        },
+        {
+          "station": "長岡",
+          "arr": "20:36",
+          "dep": "20:37"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "20:47"
+        },
+        {
+          "station": "新潟",
+          "arr": "20:59",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_341",
+      "train_number": "とき341号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "18:52"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "18:58"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "19:17"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "19:29"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "19:39"
+        },
+        {
+          "station": "高崎",
+          "arr": "20:31",
+          "dep": "20:32"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "20:55",
+          "dep": "20:56"
+        },
+        {
+          "station": "長岡",
+          "arr": "21:14",
+          "dep": "21:15"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "21:24"
+        },
+        {
+          "station": "新潟",
+          "arr": "21:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_343",
+      "train_number": "とき343号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "19:36"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "19:42"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "20:01"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "20:15"
+        },
+        {
+          "station": "高崎",
+          "arr": "21:20",
+          "dep": "21:21"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "21:45",
+          "dep": "21:46"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "21:57"
+        },
+        {
+          "station": "長岡",
+          "arr": "22:08",
+          "dep": "22:09"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "22:19"
+        },
+        {
+          "station": "新潟",
+          "arr": "22:31",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_345",
+      "train_number": "とき345号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "20:24"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "20:30"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "20:49"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "21:01"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "21:11"
+        },
+        {
+          "station": "高崎",
+          "arr": "21:47",
+          "dep": "21:50"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "22:06"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "22:18",
+          "dep": "22:19"
+        },
+        {
+          "station": "長岡",
+          "arr": "22:37",
+          "dep": "22:38"
+        },
+        {
+          "station": "新潟",
+          "arr": "22:55",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_347",
+      "train_number": "とき347号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "20:52"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "20:58"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "21:17"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "21:29"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "21:39"
+        },
+        {
+          "station": "高崎",
+          "arr": "22:11",
+          "dep": "22:12"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "22:27"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "22:39",
+          "dep": "22:40"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "22:51"
+        },
+        {
+          "station": "長岡",
+          "arr": "23:02",
+          "dep": "23:03"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "23:13"
+        },
+        {
+          "station": "新潟",
+          "arr": "23:25",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_300",
+      "train_number": "とき300号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "6:12"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "6:24"
+        },
+        {
+          "station": "長岡",
+          "arr": "6:33",
+          "dep": "6:34"
+        },
+        {
+          "station": "高崎",
+          "arr": "7:12",
+          "dep": "7:13"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "7:31"
+        },
+        {
+          "station": "大宮",
+          "arr": "7:45",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "8:05",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:11",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_302",
+      "train_number": "とき302号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "6:40"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "6:52"
+        },
+        {
+          "station": "長岡",
+          "arr": "7:01",
+          "dep": "7:02"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "7:13"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "7:24",
+          "dep": "7:25"
+        },
+        {
+          "station": "高崎",
+          "arr": "7:48",
+          "dep": "7:49"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "7:57"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "8:06"
+        },
+        {
+          "station": "大宮",
+          "arr": "8:19",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "8:38",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "8:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_304",
+      "train_number": "とき304号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "7:02"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "7:14"
+        },
+        {
+          "station": "長岡",
+          "arr": "7:23",
+          "dep": "7:24"
+        },
+        {
+          "station": "高崎",
+          "arr": "8:03",
+          "dep": "8:04"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "8:13"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "8:22"
+        },
+        {
+          "station": "大宮",
+          "arr": "8:35",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "8:54",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:00",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_306",
+      "train_number": "とき306号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "7:24"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "7:36"
+        },
+        {
+          "station": "長岡",
+          "arr": "7:45",
+          "dep": "7:46"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "7:59"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "8:10",
+          "dep": "8:11"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "8:23"
+        },
+        {
+          "station": "高崎",
+          "arr": "8:38",
+          "dep": "8:39"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "8:53"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "9:03"
+        },
+        {
+          "station": "大宮",
+          "arr": "9:15",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "9:34",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "9:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_308",
+      "train_number": "とき308号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "7:56"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "8:08"
+        },
+        {
+          "station": "長岡",
+          "arr": "8:18",
+          "dep": "8:19"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "8:31"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "8:42",
+          "dep": "8:43"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "8:56"
+        },
+        {
+          "station": "高崎",
+          "arr": "9:11",
+          "dep": "9:12"
+        },
+        {
+          "station": "大宮",
+          "arr": "9:38",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "9:57",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:03",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_310",
+      "train_number": "とき310号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "8:33"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "8:45"
+        },
+        {
+          "station": "長岡",
+          "arr": "8:54",
+          "dep": "8:55"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "9:13",
+          "dep": "9:14"
+        },
+        {
+          "station": "高崎",
+          "arr": "9:37",
+          "dep": "9:38"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "9:52"
+        },
+        {
+          "station": "大宮",
+          "arr": "10:04",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "10:23",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:29",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_312",
+      "train_number": "とき312号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "9:13"
+        },
+        {
+          "station": "大宮",
+          "arr": "10:20",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "10:44",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_314",
+      "train_number": "とき314号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "9:30"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "9:42"
+        },
+        {
+          "station": "長岡",
+          "arr": "9:51",
+          "dep": "9:52"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "10:04"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "10:14",
+          "dep": "10:15"
+        },
+        {
+          "station": "高崎",
+          "arr": "10:38",
+          "dep": "10:39"
+        },
+        {
+          "station": "大宮",
+          "arr": "11:01",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "11:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "11:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_316",
+      "train_number": "とき316号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "10:28"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "10:40"
+        },
+        {
+          "station": "長岡",
+          "arr": "10:48",
+          "dep": "10:49"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "11:01"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "11:12",
+          "dep": "11:13"
+        },
+        {
+          "station": "高崎",
+          "arr": "11:36",
+          "dep": "11:37"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "11:50"
+        },
+        {
+          "station": "大宮",
+          "arr": "12:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "12:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "12:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_318",
+      "train_number": "とき318号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "11:25"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "11:37"
+        },
+        {
+          "station": "長岡",
+          "arr": "11:46",
+          "dep": "11:47"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "11:59"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "12:10",
+          "dep": "12:11"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "12:23"
+        },
+        {
+          "station": "高崎",
+          "arr": "12:39",
+          "dep": "12:40"
+        },
+        {
+          "station": "大宮",
+          "arr": "13:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "13:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "13:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_320",
+      "train_number": "とき320号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "12:27"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "12:39"
+        },
+        {
+          "station": "長岡",
+          "arr": "12:48",
+          "dep": "12:49"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "13:01"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "13:12",
+          "dep": "13:13"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "13:25"
+        },
+        {
+          "station": "高崎",
+          "arr": "13:40",
+          "dep": "13:41"
+        },
+        {
+          "station": "大宮",
+          "arr": "14:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "14:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "14:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_322",
+      "train_number": "とき322号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "13:23"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "13:35"
+        },
+        {
+          "station": "長岡",
+          "arr": "13:44",
+          "dep": "13:45"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "13:58"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "14:10",
+          "dep": "14:11"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "14:24"
+        },
+        {
+          "station": "高崎",
+          "arr": "14:40",
+          "dep": "14:41"
+        },
+        {
+          "station": "大宮",
+          "arr": "15:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "15:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "15:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_324",
+      "train_number": "とき324号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "14:27"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "14:39"
+        },
+        {
+          "station": "長岡",
+          "arr": "14:48",
+          "dep": "14:49"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "15:01"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "15:11",
+          "dep": "15:12"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "15:25"
+        },
+        {
+          "station": "高崎",
+          "arr": "15:40",
+          "dep": "15:41"
+        },
+        {
+          "station": "大宮",
+          "arr": "16:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "16:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "16:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_326",
+      "train_number": "とき326号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "15:17"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "15:29"
+        },
+        {
+          "station": "長岡",
+          "arr": "15:38",
+          "dep": "15:39"
+        },
+        {
+          "station": "大宮",
+          "arr": "16:35",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "16:54",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:00",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_328",
+      "train_number": "とき328号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "15:38"
+        },
+        {
+          "station": "長岡",
+          "arr": "15:54",
+          "dep": "15:55"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "16:07"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "16:17",
+          "dep": "16:18"
+        },
+        {
+          "station": "高崎",
+          "arr": "16:41",
+          "dep": "16:42"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "16:53"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "17:02"
+        },
+        {
+          "station": "大宮",
+          "arr": "17:15",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "17:34",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "17:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_330",
+      "train_number": "とき330号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "16:30"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "16:42"
+        },
+        {
+          "station": "長岡",
+          "arr": "16:51",
+          "dep": "16:52"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "17:04"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "17:15",
+          "dep": "17:16"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "17:28"
+        },
+        {
+          "station": "高崎",
+          "arr": "17:43",
+          "dep": "17:44"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "17:53"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "18:02"
+        },
+        {
+          "station": "大宮",
+          "arr": "18:15",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "18:34",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "18:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_332",
+      "train_number": "とき332号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "17:04"
+        },
+        {
+          "station": "長岡",
+          "arr": "17:20",
+          "dep": "17:21"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "17:40",
+          "dep": "17:41"
+        },
+        {
+          "station": "高崎",
+          "arr": "18:03",
+          "dep": "18:04"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "18:13"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "18:22"
+        },
+        {
+          "station": "大宮",
+          "arr": "18:35",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "18:54",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:00",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_334",
+      "train_number": "とき334号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "17:26"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "17:38"
+        },
+        {
+          "station": "長岡",
+          "arr": "17:47",
+          "dep": "17:48"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "18:00"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "18:11",
+          "dep": "18:12"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "18:24"
+        },
+        {
+          "station": "高崎",
+          "arr": "18:39",
+          "dep": "18:40"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "18:49"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "18:58"
+        },
+        {
+          "station": "大宮",
+          "arr": "19:11",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "19:30",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:36",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_336",
+      "train_number": "とき336号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "17:50"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "18:02"
+        },
+        {
+          "station": "長岡",
+          "arr": "18:11",
+          "dep": "18:12"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "18:31",
+          "dep": "18:32"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "18:44"
+        },
+        {
+          "station": "高崎",
+          "arr": "18:59",
+          "dep": "19:00"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "19:14"
+        },
+        {
+          "station": "大宮",
+          "arr": "19:27",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "19:46",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "19:52",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_338",
+      "train_number": "とき338号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "18:18"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "18:30"
+        },
+        {
+          "station": "長岡",
+          "arr": "18:40",
+          "dep": "18:41"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "18:53"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "19:04",
+          "dep": "19:05"
+        },
+        {
+          "station": "大宮",
+          "arr": "19:47",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "20:06",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:12",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_340",
+      "train_number": "とき340号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "18:58"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "19:10"
+        },
+        {
+          "station": "長岡",
+          "arr": "19:19",
+          "dep": "19:20"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "19:39",
+          "dep": "19:40"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "19:52"
+        },
+        {
+          "station": "高崎",
+          "arr": "20:08",
+          "dep": "20:09"
+        },
+        {
+          "station": "大宮",
+          "arr": "20:31",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "20:50",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "20:56",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_342",
+      "train_number": "とき342号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "19:42"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "19:54"
+        },
+        {
+          "station": "長岡",
+          "arr": "20:03",
+          "dep": "20:04"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "20:16"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "20:27",
+          "dep": "20:28"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "20:40"
+        },
+        {
+          "station": "高崎",
+          "arr": "20:55",
+          "dep": "20:56"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "21:05"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "21:14"
+        },
+        {
+          "station": "大宮",
+          "arr": "21:27",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "21:46",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "21:52",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_344",
+      "train_number": "とき344号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "20:31"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "20:43"
+        },
+        {
+          "station": "長岡",
+          "arr": "20:52",
+          "dep": "20:53"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "21:05"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "21:16",
+          "dep": "21:17"
+        },
+        {
+          "station": "高崎",
+          "arr": "21:40",
+          "dep": "21:41"
+        },
+        {
+          "station": "大宮",
+          "arr": "22:03",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "22:22",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "22:28",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_346",
+      "train_number": "とき346号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "21:40"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "21:52"
+        },
+        {
+          "station": "長岡",
+          "arr": "22:00",
+          "dep": "22:01"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "22:13"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "22:24",
+          "dep": "22:25"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "22:37"
+        },
+        {
+          "station": "高崎",
+          "arr": "22:52",
+          "dep": "22:53"
+        },
+        {
+          "station": "大宮",
+          "arr": "23:14",
+          "dep": null
+        },
+        {
+          "station": "上野",
+          "arr": "23:34",
+          "dep": null
+        },
+        {
+          "station": "東京",
+          "arr": "23:40",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_480",
+      "train_number": "とき480号",
+      "train_type": "toki",
+      "direction": "up",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "新潟",
+          "arr": null,
+          "dep": "22:23"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "22:35"
+        },
+        {
+          "station": "長岡",
+          "arr": "22:44",
+          "dep": "22:45"
+        },
+        {
+          "station": "浦佐",
+          "arr": null,
+          "dep": "22:57"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "23:08",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "tanigawa_401",
+      "train_number": "たにがわ401号",
+      "train_type": "tanigawa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "6:36"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "6:42"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "7:01"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "7:13"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "7:26"
+        },
+        {
+          "station": "高崎",
+          "arr": "7:34",
+          "dep": "7:35"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "7:50"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "8:02",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "tanigawa_471",
+      "train_number": "たにがわ471号",
+      "train_type": "tanigawa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "7:36"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "7:42"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "8:01"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "8:14"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "8:23"
+        },
+        {
+          "station": "高崎",
+          "arr": "8:32",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "tanigawa_403",
+      "train_number": "たにがわ403号",
+      "train_type": "tanigawa",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "東京",
+          "arr": null,
+          "dep": "8:03"
+        },
+        {
+          "station": "上野",
+          "arr": null,
+          "dep": "8:09"
+        },
+        {
+          "station": "大宮",
+          "arr": null,
+          "dep": "8:29"
+        },
+        {
+          "station": "熊谷",
+          "arr": null,
+          "dep": "8:41"
+        },
+        {
+          "station": "本庄早稲田",
+          "arr": null,
+          "dep": "8:51"
+        },
+        {
+          "station": "高崎",
+          "arr": "9:00",
+          "dep": "9:04"
+        },
+        {
+          "station": "上毛高原",
+          "arr": null,
+          "dep": "9:21"
+        },
+        {
+          "station": "越後湯沢",
+          "arr": "9:33",
           "dep": null
         }
       ]
@@ -1232,64 +3115,6 @@
       ]
     },
     {
-      "trip_id": "toki_335",
-      "train_number": "とき335号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "17:32"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "17:38"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "17:57"
-        },
-        {
-          "station": "高崎",
-          "arr": "18:20",
-          "dep": "18:21"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "18:45",
-          "dep": "18:46"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "18:57"
-        },
-        {
-          "station": "長岡",
-          "arr": "19:08",
-          "dep": "19:09"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "19:19"
-        },
-        {
-          "station": "新潟",
-          "arr": "19:31",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_407",
       "train_number": "たにがわ407号",
       "train_type": "tanigawa",
@@ -1338,59 +3163,6 @@
         {
           "station": "越後湯沢",
           "arr": "19:21",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_337",
-      "train_number": "とき337号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "18:12"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "18:18"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "18:37"
-        },
-        {
-          "station": "高崎",
-          "arr": "19:00",
-          "dep": "19:01"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "19:25",
-          "dep": "19:26"
-        },
-        {
-          "station": "長岡",
-          "arr": "19:44",
-          "dep": "19:45"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "19:55"
-        },
-        {
-          "station": "新潟",
-          "arr": "20:07",
           "dep": null
         }
       ]
@@ -1502,74 +3274,6 @@
       ]
     },
     {
-      "trip_id": "toki_339",
-      "train_number": "とき339号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "18:52"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "18:58"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "19:17"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "19:29"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "19:39"
-        },
-        {
-          "station": "高崎",
-          "arr": "19:48",
-          "dep": "19:49"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "20:13",
-          "dep": "20:14"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "20:25"
-        },
-        {
-          "station": "長岡",
-          "arr": "20:36",
-          "dep": "20:37"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "20:47"
-        },
-        {
-          "station": "新潟",
-          "arr": "20:59",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_413",
       "train_number": "たにがわ413号",
       "train_type": "tanigawa",
@@ -1623,64 +3327,6 @@
       ]
     },
     {
-      "trip_id": "toki_341",
-      "train_number": "とき341号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "19:36"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "19:42"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "20:01"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "20:15"
-        },
-        {
-          "station": "高崎",
-          "arr": "20:31",
-          "dep": "20:32"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "20:55",
-          "dep": "20:56"
-        },
-        {
-          "station": "長岡",
-          "arr": "21:14",
-          "dep": "21:15"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "21:24"
-        },
-        {
-          "station": "新潟",
-          "arr": "21:36",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_415",
       "train_number": "たにがわ415号",
       "train_type": "tanigawa",
@@ -1729,205 +3375,6 @@
         {
           "station": "越後湯沢",
           "arr": "21:16",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_343",
-      "train_number": "とき343号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "20:24"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "20:30"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "20:49"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "21:01"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "21:11"
-        },
-        {
-          "station": "高崎",
-          "arr": "21:20",
-          "dep": "21:21"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "21:45",
-          "dep": "21:46"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "21:57"
-        },
-        {
-          "station": "長岡",
-          "arr": "22:08",
-          "dep": "22:09"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "22:19"
-        },
-        {
-          "station": "新潟",
-          "arr": "22:31",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_345",
-      "train_number": "とき345号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "20:52"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "20:58"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "21:17"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "21:29"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "21:39"
-        },
-        {
-          "station": "高崎",
-          "arr": "21:47",
-          "dep": "21:50"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "22:06"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "22:18",
-          "dep": "22:19"
-        },
-        {
-          "station": "長岡",
-          "arr": "22:37",
-          "dep": "22:38"
-        },
-        {
-          "station": "新潟",
-          "arr": "22:55",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_347",
-      "train_number": "とき347号",
-      "train_type": "toki",
-      "direction": "down",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "東京",
-          "arr": null,
-          "dep": "21:20"
-        },
-        {
-          "station": "上野",
-          "arr": null,
-          "dep": "21:26"
-        },
-        {
-          "station": "大宮",
-          "arr": null,
-          "dep": "21:45"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "21:57"
-        },
-        {
-          "station": "高崎",
-          "arr": "22:11",
-          "dep": "22:12"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "22:27"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "22:39",
-          "dep": "22:40"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "22:51"
-        },
-        {
-          "station": "長岡",
-          "arr": "23:02",
-          "dep": "23:03"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "23:13"
-        },
-        {
-          "station": "新潟",
-          "arr": "23:25",
           "dep": null
         }
       ]
@@ -2244,54 +3691,6 @@
       ]
     },
     {
-      "trip_id": "toki_300",
-      "train_number": "とき300号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "6:12"
-        },
-        {
-          "station": "燕三条",
-          "arr": "6:33",
-          "dep": "6:34"
-        },
-        {
-          "station": "高崎",
-          "arr": "7:12",
-          "dep": "7:13"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "7:31"
-        },
-        {
-          "station": "大宮",
-          "arr": "7:45",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "8:05",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "8:11",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_476",
       "train_number": "たにがわ476号",
       "train_type": "tanigawa",
@@ -2388,122 +3787,6 @@
       ]
     },
     {
-      "trip_id": "toki_302",
-      "train_number": "とき302号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "6:40"
-        },
-        {
-          "station": "燕三条",
-          "arr": "7:01",
-          "dep": "7:02"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "7:13"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "7:24",
-          "dep": "7:25"
-        },
-        {
-          "station": "高崎",
-          "arr": "7:48",
-          "dep": "7:49"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "7:57"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "8:06"
-        },
-        {
-          "station": "大宮",
-          "arr": "8:19",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "8:38",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "8:44",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_304",
-      "train_number": "とき304号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "7:02"
-        },
-        {
-          "station": "燕三条",
-          "arr": "7:23",
-          "dep": "7:24"
-        },
-        {
-          "station": "高崎",
-          "arr": "8:03",
-          "dep": "8:04"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "8:13"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "8:22"
-        },
-        {
-          "station": "大宮",
-          "arr": "8:35",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "8:54",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "9:00",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_404",
       "train_number": "たにがわ404号",
       "train_type": "tanigawa",
@@ -2552,213 +3835,6 @@
         {
           "station": "東京",
           "arr": "9:16",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_306",
-      "train_number": "とき306号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "7:24"
-        },
-        {
-          "station": "燕三条",
-          "arr": "7:45",
-          "dep": "7:46"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "7:59"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "8:10",
-          "dep": "8:11"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "8:23"
-        },
-        {
-          "station": "高崎",
-          "arr": "8:38",
-          "dep": "8:39"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "8:53"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "9:03"
-        },
-        {
-          "station": "大宮",
-          "arr": "9:15",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "9:34",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "9:40",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_308",
-      "train_number": "とき308号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "7:56"
-        },
-        {
-          "station": "燕三条",
-          "arr": "8:18",
-          "dep": "8:19"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "8:31"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "8:42",
-          "dep": "8:43"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "8:56"
-        },
-        {
-          "station": "高崎",
-          "arr": "9:11",
-          "dep": "9:12"
-        },
-        {
-          "station": "大宮",
-          "arr": "9:38",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "9:57",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "10:03",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_310",
-      "train_number": "とき310号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "8:33"
-        },
-        {
-          "station": "燕三条",
-          "arr": "8:54",
-          "dep": "8:55"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "9:13",
-          "dep": "9:14"
-        },
-        {
-          "station": "高崎",
-          "arr": "9:37",
-          "dep": "9:38"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "9:52"
-        },
-        {
-          "station": "大宮",
-          "arr": "10:04",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "10:23",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "10:29",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_312",
-      "train_number": "とき312号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "9:13"
-        },
-        {
-          "station": "大宮",
-          "arr": "10:20",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "10:44",
           "dep": null
         }
       ]
@@ -2817,59 +3893,6 @@
       ]
     },
     {
-      "trip_id": "toki_314",
-      "train_number": "とき314号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "9:30"
-        },
-        {
-          "station": "燕三条",
-          "arr": "9:51",
-          "dep": "9:52"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "10:04"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "10:14",
-          "dep": "10:15"
-        },
-        {
-          "station": "高崎",
-          "arr": "10:38",
-          "dep": "10:39"
-        },
-        {
-          "station": "大宮",
-          "arr": "11:01",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "11:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "11:28",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_408",
       "train_number": "たにがわ408号",
       "train_type": "tanigawa",
@@ -2918,64 +3941,6 @@
         {
           "station": "東京",
           "arr": "12:00",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_316",
-      "train_number": "とき316号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "10:28"
-        },
-        {
-          "station": "燕三条",
-          "arr": "10:48",
-          "dep": "10:49"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "11:01"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "11:12",
-          "dep": "11:13"
-        },
-        {
-          "station": "高崎",
-          "arr": "11:36",
-          "dep": "11:37"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "11:50"
-        },
-        {
-          "station": "大宮",
-          "arr": "12:03",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "12:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "12:28",
           "dep": null
         }
       ]
@@ -3034,276 +3999,6 @@
       ]
     },
     {
-      "trip_id": "toki_318",
-      "train_number": "とき318号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "11:25"
-        },
-        {
-          "station": "燕三条",
-          "arr": "11:46",
-          "dep": "11:47"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "11:59"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "12:10",
-          "dep": "12:11"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "12:23"
-        },
-        {
-          "station": "高崎",
-          "arr": "12:39",
-          "dep": "12:40"
-        },
-        {
-          "station": "大宮",
-          "arr": "13:03",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "13:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "13:28",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_320",
-      "train_number": "とき320号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "12:27"
-        },
-        {
-          "station": "燕三条",
-          "arr": "12:48",
-          "dep": "12:49"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "13:01"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "13:12",
-          "dep": "13:13"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "13:25"
-        },
-        {
-          "station": "高崎",
-          "arr": "13:40",
-          "dep": "13:41"
-        },
-        {
-          "station": "大宮",
-          "arr": "14:03",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "14:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "14:28",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_322",
-      "train_number": "とき322号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "13:23"
-        },
-        {
-          "station": "燕三条",
-          "arr": "13:44",
-          "dep": "13:45"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "13:58"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "14:10",
-          "dep": "14:11"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "14:24"
-        },
-        {
-          "station": "高崎",
-          "arr": "14:40",
-          "dep": "14:41"
-        },
-        {
-          "station": "大宮",
-          "arr": "15:03",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "15:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "15:28",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_324",
-      "train_number": "とき324号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "14:27"
-        },
-        {
-          "station": "燕三条",
-          "arr": "14:48",
-          "dep": "14:49"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "15:01"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "15:11",
-          "dep": "15:12"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "15:25"
-        },
-        {
-          "station": "高崎",
-          "arr": "15:40",
-          "dep": "15:41"
-        },
-        {
-          "station": "大宮",
-          "arr": "16:03",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "16:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "16:28",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_326",
-      "train_number": "とき326号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "15:17"
-        },
-        {
-          "station": "燕三条",
-          "arr": "15:38",
-          "dep": "15:39"
-        },
-        {
-          "station": "大宮",
-          "arr": "16:35",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "16:54",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "17:00",
-          "dep": null
-        }
-      ]
-    },
-    {
       "trip_id": "tanigawa_412",
       "train_number": "たにがわ412号",
       "train_type": "tanigawa",
@@ -3347,369 +4042,6 @@
         {
           "station": "東京",
           "arr": "17:20",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_328",
-      "train_number": "とき328号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "15:38"
-        },
-        {
-          "station": "燕三条",
-          "arr": "15:54",
-          "dep": "15:55"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "16:07"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "16:17",
-          "dep": "16:18"
-        },
-        {
-          "station": "高崎",
-          "arr": "16:41",
-          "dep": "16:42"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "16:53"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "17:02"
-        },
-        {
-          "station": "大宮",
-          "arr": "17:15",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "17:34",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "17:40",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_330",
-      "train_number": "とき330号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "16:30"
-        },
-        {
-          "station": "燕三条",
-          "arr": "16:51",
-          "dep": "16:52"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "17:04"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "17:15",
-          "dep": "17:16"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "17:28"
-        },
-        {
-          "station": "高崎",
-          "arr": "17:43",
-          "dep": "17:44"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "17:53"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "18:02"
-        },
-        {
-          "station": "大宮",
-          "arr": "18:15",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "18:34",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "18:40",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_332",
-      "train_number": "とき332号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "17:04"
-        },
-        {
-          "station": "燕三条",
-          "arr": "17:20",
-          "dep": "17:21"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "17:40",
-          "dep": "17:41"
-        },
-        {
-          "station": "高崎",
-          "arr": "18:03",
-          "dep": "18:04"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "18:13"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "18:22"
-        },
-        {
-          "station": "大宮",
-          "arr": "18:35",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "18:54",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "19:00",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_334",
-      "train_number": "とき334号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "17:26"
-        },
-        {
-          "station": "燕三条",
-          "arr": "17:47",
-          "dep": "17:48"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "18:00"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "18:11",
-          "dep": "18:12"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "18:24"
-        },
-        {
-          "station": "高崎",
-          "arr": "18:39",
-          "dep": "18:40"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "18:49"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "18:58"
-        },
-        {
-          "station": "大宮",
-          "arr": "19:11",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "19:30",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "19:36",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_336",
-      "train_number": "とき336号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "17:50"
-        },
-        {
-          "station": "燕三条",
-          "arr": "18:11",
-          "dep": "18:12"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "18:31",
-          "dep": "18:32"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "18:44"
-        },
-        {
-          "station": "高崎",
-          "arr": "18:59",
-          "dep": "19:00"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "19:14"
-        },
-        {
-          "station": "大宮",
-          "arr": "19:27",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "19:46",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "19:52",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_338",
-      "train_number": "とき338号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "18:18"
-        },
-        {
-          "station": "燕三条",
-          "arr": "18:40",
-          "dep": "18:41"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "18:53"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "19:04",
-          "dep": "19:05"
-        },
-        {
-          "station": "大宮",
-          "arr": "19:47",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "20:06",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "20:12",
           "dep": null
         }
       ]
@@ -3763,271 +4095,6 @@
         {
           "station": "東京",
           "arr": "20:40",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_340",
-      "train_number": "とき340号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "18:58"
-        },
-        {
-          "station": "燕三条",
-          "arr": "19:19",
-          "dep": "19:20"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "19:39",
-          "dep": "19:40"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "19:52"
-        },
-        {
-          "station": "高崎",
-          "arr": "20:08",
-          "dep": "20:09"
-        },
-        {
-          "station": "大宮",
-          "arr": "20:31",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "20:50",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "20:56",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_342",
-      "train_number": "とき342号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "19:42"
-        },
-        {
-          "station": "燕三条",
-          "arr": "20:03",
-          "dep": "20:04"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "20:16"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "20:27",
-          "dep": "20:28"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "20:40"
-        },
-        {
-          "station": "高崎",
-          "arr": "20:55",
-          "dep": "20:56"
-        },
-        {
-          "station": "本庄早稲田",
-          "arr": null,
-          "dep": "21:05"
-        },
-        {
-          "station": "熊谷",
-          "arr": null,
-          "dep": "21:14"
-        },
-        {
-          "station": "大宮",
-          "arr": "21:27",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "21:46",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "21:52",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_344",
-      "train_number": "とき344号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "20:31"
-        },
-        {
-          "station": "燕三条",
-          "arr": "20:52",
-          "dep": "20:53"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "21:05"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "21:16",
-          "dep": "21:17"
-        },
-        {
-          "station": "高崎",
-          "arr": "21:40",
-          "dep": "21:41"
-        },
-        {
-          "station": "大宮",
-          "arr": "22:03",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "22:22",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "22:28",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_346",
-      "train_number": "とき346号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "21:40"
-        },
-        {
-          "station": "燕三条",
-          "arr": "22:00",
-          "dep": "22:01"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "22:13"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "22:24",
-          "dep": "22:25"
-        },
-        {
-          "station": "上毛高原",
-          "arr": null,
-          "dep": "22:37"
-        },
-        {
-          "station": "高崎",
-          "arr": "22:52",
-          "dep": "22:53"
-        },
-        {
-          "station": "大宮",
-          "arr": "23:14",
-          "dep": null
-        },
-        {
-          "station": "上野",
-          "arr": "23:34",
-          "dep": null
-        },
-        {
-          "station": "東京",
-          "arr": "23:40",
-          "dep": null
-        }
-      ]
-    },
-    {
-      "trip_id": "toki_480",
-      "train_number": "とき480号",
-      "train_type": "toki",
-      "direction": "up",
-      "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
-      ],
-      "stops": [
-        {
-          "station": "新潟",
-          "arr": null,
-          "dep": "22:23"
-        },
-        {
-          "station": "燕三条",
-          "arr": "22:44",
-          "dep": "22:45"
-        },
-        {
-          "station": "浦佐",
-          "arr": null,
-          "dep": "22:57"
-        },
-        {
-          "station": "越後湯沢",
-          "arr": "23:08",
           "dep": null
         }
       ]
