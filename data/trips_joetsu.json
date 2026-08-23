@@ -1,16 +1,14 @@
 {
   "line": "joetsu",
-  "source_note": "新幹線研究センター(とき単独ページ・たにがわ単独ページ)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成。定期列車のみ。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化)。ガーラ湯沢方面への季節延長運転は対象外。",
+  "source_note": "新幹線研究センター(とき単独ページ・たにがわ単独ページ)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成。定期列車のみ。とき491号は土曜・休日運休。たにがわ471号は休日運休。たにがわ409号は土曜・休日運休。それ以外は毎日運行として扱っている。ガーラ湯沢方面への季節延長運転は対象外。",
   "trips": [
     {
-      "trip_id": "toki_481",
-      "train_number": "とき481号",
+      "trip_id": "toki_491",
+      "train_number": "とき491号",
       "train_type": "toki",
       "direction": "down",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
@@ -26,6 +24,34 @@
         {
           "station": "新潟",
           "arr": "7:22",
+          "dep": null
+        }
+      ]
+    },
+    {
+      "trip_id": "toki_481",
+      "train_number": "とき481号",
+      "train_type": "toki",
+      "direction": "down",
+      "service_days": [
+        "weekday",
+        "saturday",
+        "sunday_holiday"
+      ],
+      "stops": [
+        {
+          "station": "長岡",
+          "arr": "7:26",
+          "dep": "7:27"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "7:37"
+        },
+        {
+          "station": "新潟",
+          "arr": "7:49",
           "dep": null
         }
       ]
@@ -53,17 +79,17 @@
         },
         {
           "station": "長岡",
-          "arr": "7:26",
-          "dep": "7:27"
+          "arr": "7:47",
+          "dep": "7:48"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "7:37"
+          "dep": "7:58"
         },
         {
           "station": "新潟",
-          "arr": "7:49",
+          "arr": "8:10",
           "dep": null
         }
       ]
@@ -111,17 +137,17 @@
         },
         {
           "station": "長岡",
-          "arr": "7:47",
-          "dep": "7:48"
+          "arr": "8:33",
+          "dep": "8:34"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "7:58"
+          "dep": "8:44"
         },
         {
           "station": "新潟",
-          "arr": "8:10",
+          "arr": "8:56",
           "dep": null
         }
       ]
@@ -164,17 +190,17 @@
         },
         {
           "station": "長岡",
-          "arr": "8:33",
-          "dep": "8:34"
+          "arr": "9:28",
+          "dep": "9:29"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "8:44"
+          "dep": "9:39"
         },
         {
           "station": "新潟",
-          "arr": "8:56",
+          "arr": "9:51",
           "dep": null
         }
       ]
@@ -227,17 +253,17 @@
         },
         {
           "station": "長岡",
-          "arr": "9:28",
-          "dep": "9:29"
+          "arr": "9:58",
+          "dep": "9:59"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "9:39"
+          "dep": "10:09"
         },
         {
           "station": "新潟",
-          "arr": "9:51",
+          "arr": "10:21",
           "dep": null
         }
       ]
@@ -285,17 +311,17 @@
         },
         {
           "station": "長岡",
-          "arr": "9:58",
-          "dep": "9:59"
+          "arr": "10:44",
+          "dep": "10:45"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "10:09"
+          "dep": "10:54"
         },
         {
           "station": "新潟",
-          "arr": "10:21",
+          "arr": "11:06",
           "dep": null
         }
       ]
@@ -357,18 +383,8 @@
           "dep": "10:32"
         },
         {
-          "station": "長岡",
-          "arr": "10:44",
-          "dep": "10:45"
-        },
-        {
-          "station": "燕三条",
-          "arr": null,
-          "dep": "10:54"
-        },
-        {
           "station": "新潟",
-          "arr": "11:06",
+          "arr": "10:41",
           "dep": null
         }
       ]
@@ -395,8 +411,18 @@
           "dep": "9:34"
         },
         {
+          "station": "長岡",
+          "arr": "11:06",
+          "dep": "11:07"
+        },
+        {
+          "station": "燕三条",
+          "arr": null,
+          "dep": "11:17"
+        },
+        {
           "station": "新潟",
-          "arr": "10:41",
+          "arr": "11:29",
           "dep": null
         }
       ]
@@ -444,17 +470,17 @@
         },
         {
           "station": "長岡",
-          "arr": "11:06",
-          "dep": "11:07"
+          "arr": "11:54",
+          "dep": "11:55"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "11:17"
+          "dep": "12:05"
         },
         {
           "station": "新潟",
-          "arr": "11:29",
+          "arr": "12:17",
           "dep": null
         }
       ]
@@ -507,17 +533,17 @@
         },
         {
           "station": "長岡",
-          "arr": "11:54",
-          "dep": "11:55"
+          "arr": "12:09",
+          "dep": "12:10"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "12:05"
+          "dep": "12:20"
         },
         {
           "station": "新潟",
-          "arr": "12:17",
+          "arr": "12:32",
           "dep": null
         }
       ]
@@ -560,17 +586,17 @@
         },
         {
           "station": "長岡",
-          "arr": "12:09",
-          "dep": "12:10"
+          "arr": "13:21",
+          "dep": "13:22"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "12:20"
+          "dep": "13:31"
         },
         {
           "station": "新潟",
-          "arr": "12:32",
+          "arr": "13:43",
           "dep": null
         }
       ]
@@ -623,17 +649,17 @@
         },
         {
           "station": "長岡",
-          "arr": "13:21",
-          "dep": "13:22"
+          "arr": "14:19",
+          "dep": "14:20"
         },
         {
           "station": "燕三条",
           "arr": null,
-          "dep": "13:31"
+          "dep": "14:30"
         },
         {
           "station": "新潟",
-          "arr": "13:43",
+          "arr": "14:42",
           "dep": null
         }
       ]
@@ -2972,8 +2998,7 @@
       "direction": "down",
       "service_days": [
         "weekday",
-        "saturday",
-        "sunday_holiday"
+        "saturday"
       ],
       "stops": [
         {
@@ -3173,9 +3198,7 @@
       "train_type": "tanigawa",
       "direction": "down",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
