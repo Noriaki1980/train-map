@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-25T05:25:09.809270+09:00",
-  "count": 30,
+  "updated_at": "2026-08-25T05:54:36.042648+09:00",
+  "count": 32,
   "trains": [
     {
       "trip_id": "6-1",
@@ -48,6 +48,18 @@
       "lng": 139.7671,
       "status": "stopped",
       "current_segment": "東京",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "6-99",
+      "train_number": "のぞみ99号",
+      "train_type": "nozomi",
+      "is_special": false,
+      "direction": "down",
+      "lat": 35.6285,
+      "lng": 139.7387,
+      "status": "stopped",
+      "current_segment": "品川",
       "delay_min": 0
     },
     {
@@ -360,6 +372,18 @@
       "lng": 130.4207,
       "status": "stopped",
       "current_segment": "博多",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "tsubasa_122M:2221308370-2241601010",
+      "train_number": "つばさ122号",
+      "train_type": "tsubasa",
+      "is_special": false,
+      "direction": "up",
+      "lat": 38.6067,
+      "lng": 140.3661,
+      "status": "stopped",
+      "current_segment": "大石田",
       "delay_min": 0
     }
   ]
