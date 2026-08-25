@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:03:18.770516+09:00",
-  "count": 29,
+  "updated_at": "2026-08-26T05:38:07.662887+09:00",
+  "count": 30,
   "trains": [
     {
       "trip_id": "2-904",
@@ -348,6 +348,18 @@
       "lng": 130.8817,
       "status": "stopped",
       "current_segment": "小倉",
+      "delay_min": 0
+    },
+    {
+      "trip_id": "tsubasa_122M:2221308370-2241601010",
+      "train_number": "つばさ122号",
+      "train_type": "tsubasa",
+      "is_special": false,
+      "direction": "up",
+      "lat": 38.7614,
+      "lng": 140.3006,
+      "status": "stopped",
+      "current_segment": "新庄",
       "delay_min": 0
     }
   ]
