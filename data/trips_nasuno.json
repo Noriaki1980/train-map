@@ -1,7 +1,7 @@
 {
   "line": "tohoku",
   "train_type": "nasuno",
-  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-nasuno/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-nasuno/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。 なすの251号・256号・266号は土曜・休日運休。それ以外は毎日運行。",
   "trips": [
     {
       "trip_id": "nasuno_251",
@@ -9,9 +9,7 @@
       "train_type": "nasuno",
       "direction": "down",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
@@ -790,9 +788,7 @@
       "train_type": "nasuno",
       "direction": "up",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
@@ -1015,9 +1011,7 @@
       "train_type": "nasuno",
       "direction": "up",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
