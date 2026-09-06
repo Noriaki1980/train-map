@@ -482,10 +482,10 @@ function initMap(){
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
   // 明るいベースマップ(CARTO Positron)
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution: '&copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    subdomains: 'abcd',
     maxZoom: 19,
-    maxNativeZoom: 16,
   }).addTo(map);
 
   stationLayer = L.layerGroup().addTo(map);
