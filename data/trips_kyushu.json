@@ -1,6 +1,6 @@
 {
   "line": "kyushu",
-  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-kyushu/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。山陽新幹線からの直通区間(新大阪・広島等始発)は時刻データがないため博多までで打ち切っている。",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-kyushu/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成。定期列車のみ。運転日の注記は無く、全列車が毎日運行。山陽新幹線からの直通区間(新大阪・広島等始発)は時刻データがないため博多までで打ち切っている。PDF抽出時に一部駅のデータが不整合だった場合は、安全のためその駅のデータ点を削除し前後駅間で補間している。",
   "trips": [
     {
       "trip_id": "kyushu_301",
@@ -80,14 +80,34 @@
       ],
       "stops": [
         {
-          "station": "熊本",
+          "station": "博多",
           "arr": null,
-          "dep": "6:35"
+          "dep": "6:10"
+        },
+        {
+          "station": "新鳥栖",
+          "arr": null,
+          "dep": "6:24"
+        },
+        {
+          "station": "久留米",
+          "arr": null,
+          "dep": "6:29"
+        },
+        {
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "6:36"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "6:43"
         },
         {
           "station": "新八代",
           "arr": null,
-          "dep": "6:47"
+          "dep": "6:46"
         },
         {
           "station": "新水俣",
@@ -125,37 +145,27 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "6:10"
+          "dep": "6:42"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "6:24"
+          "dep": "6:55"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "6:29"
+          "dep": "7:00"
         },
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "6:36"
+          "dep": "7:07"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "6:43"
-        },
-        {
-          "station": "新玉名",
-          "arr": null,
-          "dep": "6:51"
-        },
-        {
-          "station": "熊本",
-          "arr": "7:00",
-          "dep": "7:01"
+          "dep": "7:13"
         },
         {
           "station": "新八代",
@@ -198,42 +208,27 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "6:42"
+          "dep": "7:24"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "6:55"
+          "dep": "7:37"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "7:00"
+          "dep": "7:42"
         },
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "7:07"
+          "dep": "7:49"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "7:13"
-        },
-        {
-          "station": "新玉名",
-          "arr": null,
-          "dep": "7:21"
-        },
-        {
-          "station": "熊本",
-          "arr": "7:30",
-          "dep": "7:31"
-        },
-        {
-          "station": "新八代",
-          "arr": null,
-          "dep": "7:43"
+          "dep": "7:56"
         },
         {
           "station": "新水俣",
@@ -271,37 +266,17 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "7:24"
+          "dep": "7:58"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "7:37"
+          "dep": "8:12"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "7:42"
-        },
-        {
-          "station": "筑後船小屋",
-          "arr": null,
-          "dep": "7:49"
-        },
-        {
-          "station": "新大牟田",
-          "arr": null,
-          "dep": "7:56"
-        },
-        {
-          "station": "新玉名",
-          "arr": null,
-          "dep": "8:04"
-        },
-        {
-          "station": "熊本",
-          "arr": "8:12",
-          "dep": "8:13"
+          "dep": "8:16"
         },
         {
           "station": "新八代",
@@ -344,22 +319,27 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "7:58"
+          "dep": "8:10"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "8:12"
+          "dep": "8:24"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "8:16"
+          "dep": "8:28"
         },
         {
-          "station": "熊本",
-          "arr": "8:36",
-          "dep": "8:37"
+          "station": "筑後船小屋",
+          "arr": null,
+          "dep": "8:36"
+        },
+        {
+          "station": "新大牟田",
+          "arr": null,
+          "dep": "8:42"
         },
         {
           "station": "新八代",
@@ -402,27 +382,7 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "8:10"
-        },
-        {
-          "station": "新鳥栖",
-          "arr": null,
-          "dep": "8:24"
-        },
-        {
-          "station": "久留米",
-          "arr": null,
-          "dep": "8:28"
-        },
-        {
-          "station": "筑後船小屋",
-          "arr": null,
-          "dep": "8:36"
-        },
-        {
-          "station": "新大牟田",
-          "arr": null,
-          "dep": "8:42"
+          "dep": "8:30"
         },
         {
           "station": "新玉名",
@@ -447,11 +407,6 @@
         "sunday_holiday"
       ],
       "stops": [
-        {
-          "station": "博多",
-          "arr": null,
-          "dep": "8:30"
-        },
         {
           "station": "熊本",
           "arr": "9:02",
@@ -503,7 +458,7 @@
         {
           "station": "新水俣",
           "arr": null,
-          "dep": "9:44"
+          "dep": "9:45"
         },
         {
           "station": "出水",
@@ -517,7 +472,7 @@
         },
         {
           "station": "鹿児島中央",
-          "arr": "10:15",
+          "arr": "10:16",
           "dep": null
         }
       ]
@@ -571,8 +526,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_541",
-      "train_number": "さくら541号",
+      "trip_id": "kyushu_741",
+      "train_number": "さくら741号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -614,8 +569,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_543",
-      "train_number": "さくら543号",
+      "trip_id": "kyushu_743",
+      "train_number": "さくら743号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -714,7 +669,7 @@
         },
         {
           "station": "熊本",
-          "arr": "10:25",
+          "arr": "10:24",
           "dep": null
         }
       ]
@@ -781,8 +736,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_545",
-      "train_number": "さくら545号",
+      "trip_id": "kyushu_745",
+      "train_number": "さくら745号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -887,8 +842,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_547",
-      "train_number": "さくら547号",
+      "trip_id": "kyushu_747",
+      "train_number": "さくら747号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -978,8 +933,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_549",
-      "train_number": "さくら549号",
+      "trip_id": "kyushu_749",
+      "train_number": "さくら749号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1026,7 +981,7 @@
         {
           "station": "川内",
           "arr": null,
-          "dep": "13:26"
+          "dep": "13:25"
         },
         {
           "station": "鹿児島中央",
@@ -1117,8 +1072,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_551",
-      "train_number": "さくら551号",
+      "trip_id": "kyushu_751",
+      "train_number": "さくら751号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1218,8 +1173,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_553",
-      "train_number": "さくら553号",
+      "trip_id": "kyushu_753",
+      "train_number": "さくら753号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1324,8 +1279,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_555",
-      "train_number": "さくら555号",
+      "trip_id": "kyushu_755",
+      "train_number": "さくら755号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1380,36 +1335,36 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "15:06"
+          "dep": "15:12"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "15:19"
+          "dep": "15:25"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "15:24"
+          "dep": "15:30"
         },
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "15:32"
+          "dep": "15:37"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "15:38"
+          "dep": "15:44"
         },
         {
           "station": "新玉名",
           "arr": null,
-          "dep": "15:46"
+          "dep": "15:51"
         },
         {
           "station": "熊本",
-          "arr": "15:55",
+          "arr": "16:00",
           "dep": null
         }
       ]
@@ -1473,8 +1428,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_557",
-      "train_number": "さくら557号",
+      "trip_id": "kyushu_757",
+      "train_number": "さくら757号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1529,36 +1484,36 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "16:06"
+          "dep": "16:12"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "16:19"
+          "dep": "16:25"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "16:24"
+          "dep": "16:30"
         },
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "16:32"
+          "dep": "16:37"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "16:38"
+          "dep": "16:44"
         },
         {
           "station": "新玉名",
           "arr": null,
-          "dep": "16:46"
+          "dep": "16:51"
         },
         {
           "station": "熊本",
-          "arr": "16:55",
+          "arr": "17:00",
           "dep": null
         }
       ]
@@ -1622,8 +1577,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_559",
-      "train_number": "さくら559号",
+      "trip_id": "kyushu_759",
+      "train_number": "さくら759号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1693,12 +1648,12 @@
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "17:31"
+          "dep": "17:32"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "17:39"
+          "dep": "17:38"
         },
         {
           "station": "新玉名",
@@ -1765,14 +1720,14 @@
         },
         {
           "station": "鹿児島中央",
-          "arr": "19:11",
+          "arr": "19:12",
           "dep": null
         }
       ]
     },
     {
-      "trip_id": "kyushu_561",
-      "train_number": "さくら561号",
+      "trip_id": "kyushu_761",
+      "train_number": "さくら761号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -1804,7 +1759,7 @@
         {
           "station": "新八代",
           "arr": null,
-          "dep": "18:52"
+          "dep": "18:51"
         },
         {
           "station": "新水俣",
@@ -1847,12 +1802,12 @@
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "18:19"
+          "dep": "18:20"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "18:24"
+          "dep": "18:25"
         },
         {
           "station": "筑後船小屋",
@@ -1867,12 +1822,7 @@
         {
           "station": "新玉名",
           "arr": null,
-          "dep": "18:46"
-        },
-        {
-          "station": "熊本",
-          "arr": "18:55",
-          "dep": null
+          "dep": "19:46"
         }
       ]
     },
@@ -1958,8 +1908,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_563",
-      "train_number": "さくら563号",
+      "trip_id": "kyushu_763",
+      "train_number": "さくら763号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -2102,8 +2052,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_565",
-      "train_number": "さくら565号",
+      "trip_id": "kyushu_765",
+      "train_number": "さくら765号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -2213,8 +2163,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_567",
-      "train_number": "さくら567号",
+      "trip_id": "kyushu_767",
+      "train_number": "さくら767号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -2269,43 +2219,43 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "20:36"
+          "dep": "20:39"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "20:49"
+          "dep": "20:52"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "20:54"
+          "dep": "20:57"
         },
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "21:01"
+          "dep": "21:04"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "21:08"
+          "dep": "21:11"
         },
         {
           "station": "新玉名",
           "arr": null,
-          "dep": "21:16"
+          "dep": "21:19"
         },
         {
           "station": "熊本",
-          "arr": "21:24",
+          "arr": "21:27",
           "dep": null
         }
       ]
     },
     {
-      "trip_id": "kyushu_569",
-      "train_number": "さくら569号",
+      "trip_id": "kyushu_769",
+      "train_number": "さくら769号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -2473,8 +2423,8 @@
       ]
     },
     {
-      "trip_id": "kyushu_571",
-      "train_number": "さくら571号",
+      "trip_id": "kyushu_771",
+      "train_number": "さくら771号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
@@ -2557,43 +2507,43 @@
         {
           "station": "博多",
           "arr": null,
-          "dep": "22:36"
+          "dep": "22:39"
         },
         {
           "station": "新鳥栖",
           "arr": null,
-          "dep": "22:49"
+          "dep": "22:52"
         },
         {
           "station": "久留米",
           "arr": null,
-          "dep": "22:54"
+          "dep": "22:57"
         },
         {
           "station": "筑後船小屋",
           "arr": null,
-          "dep": "23:01"
+          "dep": "23:04"
         },
         {
           "station": "新大牟田",
           "arr": null,
-          "dep": "23:08"
+          "dep": "23:11"
         },
         {
           "station": "新玉名",
           "arr": null,
-          "dep": "23:16"
+          "dep": "23:19"
         },
         {
           "station": "熊本",
-          "arr": "23:25",
+          "arr": "23:28",
           "dep": null
         }
       ]
     },
     {
-      "trip_id": "kyushu_573",
-      "train_number": "さくら573号",
+      "trip_id": "kyushu_773",
+      "train_number": "さくら773号",
       "train_type": "sakura",
       "direction": "down",
       "service_days": [
