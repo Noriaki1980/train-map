@@ -1,7 +1,7 @@
 {
   "line": "tohoku",
   "train_type": "yamabiko",
-  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-yamabiko/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。",
+  "source_note": "新幹線研究センター(https://shinkansenkenkyu.com/time-yamabiko/)掲載の時刻表(2026年3月ダイヤ改正版)を参考に作成した定期列車の時刻表。土休日運休の一部列車は区別せず全日運行として扱っている(簡易化のための近似)。 やまびこ293号・99号は土曜・休日運休。それ以外は毎日運行。",
   "trips": [
     {
       "trip_id": "yamabiko_97",
@@ -168,9 +168,7 @@
       "train_type": "yamabiko",
       "direction": "down",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
@@ -1735,9 +1733,7 @@
       "train_type": "yamabiko",
       "direction": "down",
       "service_days": [
-        "weekday",
-        "saturday",
-        "sunday_holiday"
+        "weekday"
       ],
       "stops": [
         {
