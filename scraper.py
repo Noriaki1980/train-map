@@ -216,15 +216,26 @@ def parse_train_positions(raw, stations, jr_id_map):
             if from_name not in stations or to_name not in stations:
                 continue
             a, b = stations[from_name], stations[to_name]
-            lat = lng = None
-            bearing = None
-            result = _interpolate_on_any_detailed_track(from_name, to_name, 0.5)
-            if result:
-                lat, lng, bearing = result
-            if lat is None:
-                lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], 0.5)
+            trains_in_segment = entry.get("trains", [])
+            n = len(trains_in_segment)
 
-            for t in entry.get("trains", []):
+            for i, t in enumerate(trains_in_segment):
+                # 同一区間に複数列車がいる場合、APIは区間内の詳細位置を返さないため
+                # 正確な位置は分からないが、重ならないよう等間隔に散らして表示する。
+                # (先頭に近い列車ほど先行=進行方向側にいると仮定した近似)
+                if n == 1:
+                    ratio = 0.5
+                else:
+                    ratio = (n - i) / (n + 1) if bound_id == "2" else (i + 1) / (n + 1)
+
+                lat = lng = None
+                bearing = None
+                result = _interpolate_on_any_detailed_track(from_name, to_name, ratio)
+                if result:
+                    lat, lng, bearing = result
+                if lat is None:
+                    lat, lng = _interpolate(a["lat"], a["lng"], b["lat"], b["lng"], ratio)
+
                 positions.append({
                     "trip_id": f"{t['train']}-{t['trainNumber']}",
                     "train_number": f"{train_types.get(t['train'], '?')}{t['trainNumber']}号",
@@ -237,6 +248,7 @@ def parse_train_positions(raw, stations, jr_id_map):
                     "status": "running",
                     "current_segment": f"{from_name}→{to_name}",
                     "delay_min": t.get("delay", 0),
+                    "position_approximate": n > 1,
                 })
 
     return positions
